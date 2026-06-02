@@ -1,4 +1,7 @@
-Voornaam;Naam;Affiliatie;E-mail;Website;MijnKolom;
-AuteurVoornaam;AuteurNaam;AuteurAffiliatie;auteurvoornaam.auteurnaam@auteurdomein;https://auteurwebsiteurl;A;
-EditorVoornaam;EditorNaam;EditorAffiliatie;editorvoornaam.editornaam@editordomein;https://editorwebsiteurl;E;
-MedewerkerVoornaam;MedewerkerNaam;MedewerkerAffiliatie;medewerkervoornaam.medewerkernaam@medewerkerdomein;https://medewerkerwebsiteurl;C;
+Voornaam;Naam;Affiliatie;E-mail;Website;Rol;
+Geert;Thijs;Digitaal Vlaanderen;geert.thijs@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;E;
+Dylan;Van Assche;Digitaal Vlaanderen;dylan.vanassche@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;E;
+Sergio;Fenoll;Digitaal Vlaanderen;sergio.fenoll@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;E;
+Emiel;Dhondt;Digitaal Vlaanderen;emiel.dhondt@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;E;
+Bart;Bollen;Agentschap Landbouw en Visserij;bart.bollen@lv.vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO000082;A;
+Laetitia;Roesems;Agentschap Landbouw en Visserij;laetitia.roesems@lv.vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO000082;A;
