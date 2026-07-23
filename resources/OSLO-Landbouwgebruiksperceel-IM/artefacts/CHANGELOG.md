@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Kardinaliteit identificator GeregistreerdPersoon en GeregistreerdeOrganisatie uitgebreid van 1..1 naar 1..*
+- Overlijdensdatum vervangen door een lege Overlijden klasse, conform OSLO Applicatieprofiel Persoon waarbij alle attributen weggelaten zijn.
+
 ## [0.0.1] - 2026-06-02
 
 ### Added
