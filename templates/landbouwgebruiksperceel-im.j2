@@ -1,5 +1,23 @@
 {% extends "impl.j2" %}
 
 {% block summary %}
-<p>Vul hier een samenvatting van mijn implementatiemodel in.</p>
+<p>
+    Landbouwgebruikspercelen geven aan wie de uitbater is van een bepaald perceel voor landbouwactiviteiten en welke activiteiten er mogen plaatsvinden.
+    Het Implementatiemodel LV-Landbouwgebruiksperceel koppelt de uitbater aan een landbouwgebruiksperceel via de AGPAKEY.
+    De <a href="https://landbouwcijfers.vlaanderen.be/open-geodata-landbouwgebruikspercelen" target="_blank">open geodata Landbouwgebruikspercelen</a>
+    van <a href="https://lv.vlaanderen.be/", target="_blank">Agentschap Landbouw en Visserij</a> bevat voor elk gebruiksperceel een AGPAKEY.
+    Deze AGPAKEY is uniek voor elke uitbater, de uitbatingsperiode, en het landbouwgebruiksperceel.
+    Afnemers bij <a href="https://www.vlaanderen.be/magda" target="_blank">MAGDA</a> die de uitbater wensen te kennen
+    in het kader van calamiteiten, handhaving, subsidies, of belastingreglementen van het gebruiksperceel kunnen de uitbatersinformatie,
+    omsloten door dit implementatiemodel, gebruiken om uitbaters te koppelen aan de landbouwgebruikspercelen.
+</p>
+<p>
+    De uitbater is volledig gebaseerd op het
+    <a href="https://data.vlaanderen.be/doc/applicatieprofiel/persoon-basis/" target="_blank">Applicatieprofiel OSLO-Persoon</a>
+    en
+    <a href="https://data.vlaanderen.be/doc/applicatieprofiel/organisatie-basis/" target="_blank">OSLO-Organisatie</a>,
+    waarbij een uitbater aanzien als een Agent die kan optreden als een (Geregistreerd) Persoon of (Geregistreerde) Organisatie.
+    Indien meerdere organisaties of personen een landbouwgebruiksperceel uitbaten,
+    kunnen deze ook gekoppeld worden door Personen te relateren met een Organisatie, of meerdere Organisaties met elkaar.
+</p>
 {% endblock %}
