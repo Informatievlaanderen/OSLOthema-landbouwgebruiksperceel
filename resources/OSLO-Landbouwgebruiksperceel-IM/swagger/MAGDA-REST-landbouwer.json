@@ -1,0 +1,147 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "LV landbouw.landbouwgebruikspercelen REST",
+    "description": "LV OSLO-conforme REST API voor informatie over landbouwgebruikspercelen",
+    "version": "0.1.0"
+  },
+  "servers": [
+    {
+      "url": "https://lv.vlaanderen.be/",
+      "description": "Basis URL"
+    }
+  ],
+  "paths": {
+    "/landbouwgebruikspercelen/{agpakey}": {
+      "get": {
+        "summary": "Vraag de uitbater op van een landbouwgebruiksperceel.",
+        "description": "Vraag de informatie over de uitbater op van een landbouwgebruikersperceel op basis van de AGPAKEY die de uitbating uniek identificeert volgens de uitbatingsperiode, uitbater, en landbouwgebruiksperceel.",
+        "operationId": "LandbouwgebruiksperceelGET",
+        "parameters": [
+          {
+            "name": "agpakey",
+            "required": true,
+            "in": "path",
+            "description": "De AGPAKEY die het Landbouwgebruiksperceel uniek identificeert.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "X-Correlation-Id",
+            "required": true,
+            "in": "header",
+            "description": "Correlatie ID van het request.",
+            "schema": {
+              "type": "string",
+              "minLength": 10,
+              "maxLength": 36
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Landbouwgebruiksperceel object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "components.json#/components/schemas/Landbouwgebruiksperceel"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid data supplied.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "components.json#/components/schemas/Problemdetail"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid authorization.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "components.json#/components/schemas/Problemdetail"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Authentication failed.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "components.json#/components/schemas/Problemdetail"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Resource not found.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "components.json#/components/schemas/Problemdetail"
+                }
+              }
+            }
+          },
+          "412": {
+            "description": "Pre-condition failed.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "components.json#/components/schemas/Problemdetail"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected Server Error.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "components.json#/components/schemas/Problemdetail"
+                }
+              }
+            }
+          },
+          "502": {
+            "description": "Bad Gateway.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "components.json#/components/schemas/Problemdetail"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Service unavailable.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "components.json#/components/schemas/Problemdetail"
+                }
+              }
+            }
+          },
+          "504": {
+            "description": "Gateway Timeout.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "components.json#/components/schemas/Problemdetail"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
