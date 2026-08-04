@@ -11,15 +11,15 @@
     skos:prefLabel "Codelijst Landbouwactiviteiten"@nl;
     skos:definition "Codelijst van mogelijke activiteiten voor een landbouwgerelateerde organisatie."@nl;
     skos:notation "LandbouwActiviteit".
-<https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/TR> a skos:Concept;
-    skos:prefLabel "Landbouwactiviteit"@nl;
+<https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd> a skos:Concept;
+    skos:prefLabel "Gerelateerde landbouwactiviteit"@nl;
     skos:definition "De onderneming voert een landbouwgerelateerde activiteit uit."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/LandbouwActiviteit/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/LandbouwActiviteit/v1>;
-    skos:notation "TR".
-<https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/FA> a skos:Concept;
-    skos:prefLabel "Geen Landbouwactiviteit"@nl;
+    skos:notation "gerelateerd".
+<https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/ongerelateerd> a skos:Concept;
+    skos:prefLabel "Ongerelateerd landbouwactiviteit"@nl;
     skos:definition "De onderneming voert geen landbouwgerelateerde activiteit uit."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/LandbouwActiviteit/v1>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/LandbouwActiviteit/v1>;
-    skos:notation "FA".
+    skos:notation "ongerelateerd".
