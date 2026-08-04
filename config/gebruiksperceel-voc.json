@@ -3,7 +3,7 @@
     "name": "gebruiksperceel",
     "type": "voc",
     "eap": "OSLO-Landbouwgebruiksperceel-IM.eap",
-    "diagram": "Gebruiksperceel",
+    "diagram": "OSLO-Gebruiksperceel",
     "template": "gebruiksperceel-voc.j2",
     "title": "Landbouwgebruiksperceel",
     "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
