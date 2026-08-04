@@ -1,0 +1,60 @@
+@prefix landbouwgebruiksperceel: <https://implementatie.data.vlaanderen.be/ns/lv/landbouwgebruiksperceel#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix core:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix organisatie: <http://data.vlaanderen.be/id/organisatie/> .
+@prefix organisatienl: <https://identifier.overheid.nl/tooi/id/oorg/oorg> .
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix agent: <http://xmlns.com/foaf/0.1/Agent> .
+@prefix adres: <https://data.vlaanderen.be/ns/adres#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+
+<https://data.vlaanderen.be/id/persoon/9>
+	rdf:type persoon:GeregistreerdPersoon ;
+	persoon:registratie [ rdf:type adms:Identifier;
+					  core:notation "16579840242";
+					  terms:creator organisatienl:10103
+					] ;
+	persoon:registratie [ rdf:type adms:Identifier;
+					  core:notation "16579840243";
+					  terms:creator organisatie:OVO008218
+					] ;
+	adms:identifier [ rdf:type adms:Identifier;
+					  core:notation "305792193";
+					  terms:creator organisatie:OVO000082
+					] ;
+	foaf:familyName "Tuinier" ;
+	foaf:givenName "Maria" ;
+	schema:contactPoint [ rdf:type schema:ContactPoint ;
+						  schema:email "Maria@hemel.nl";
+						  schema:telephone "+21 45 78 89 4"^^vcard:Voice;
+						  locn:address [ rdf:type locn:Address;
+		                                        locn:postCode      "11123";
+		                                        locn:thoroughfare  "BROEKSTRAAT"@nl;
+		                                        adres:huisnummer "5";
+		                                        adres:gemeentenaam "DAAR"@nl;
+		                                        adres:land "Nederland"@nl;
+		                                        locn:fullAddress "Broekstraat 5, 11123 DAAR"@nl
+						               ]
+	] .
+
+<https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601717965178>
+	rdf:type landbouwgebruiksperceel:Landbouwgebruiksperceel ;
+	adms:identifier [ rdf:type adms:Identifier;
+					  core:notation "10260_1717965178";
+					  terms:creator organisatie:OVO000082
+					] ;
+	landbouwgebruiksperceel:uitbater <https://data.vlaanderen.be/id/persoon/9> .
+
+organisatie:OVO008218 rdf:type org:Organization ; 
+					  core:prefLabel "Kruispuntbank van de Sociale Zekerheid"@nl .
+organisatie:OVO000082 rdf:type org:Organization ;
+					  core:prefLabel "Agentschap Landbouw en Zeevisserij"@nl . 
+organisatienl:10103 rdf:type org:Organization ;
+					  core:prefLabel "Rijksdienst voor Identiteitsgegevens"@nl . 

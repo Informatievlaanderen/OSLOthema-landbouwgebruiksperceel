@@ -1,0 +1,108 @@
+{
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
+  "@id": "https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601766385053",
+  "@type": "Landbouwgebruiksperceel",
+  "identificator": [
+    {
+      "@type": "Identificator",
+      "toegekendDoor": {
+        "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
+        "@type": "Organisatie",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Agentschap Landbouw en Zeevisserij"
+        }
+      },
+      "identificator": [
+        "10260_1766385053"
+      ]
+    }
+  ],
+  "uitbater": {
+    "@id": "https://example.org/id/organisatie/6",
+    "@type": "GeregistreerdeOrganisatie",
+    "voorkeursnaam": {
+      "@language": "nl",
+      "@value": "GROENMOLEN (BV)"
+    },
+    "activiteit": [
+      {
+        "@id": "https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd"
+      }
+    ],
+    "status": [
+      {
+        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/AC"
+      }
+    ],
+    "registratie": [
+      {
+        "@type": "Identificator",
+        "toegekendDoor": {
+          "@id": "http://data.vlaanderen.be/id/organisatie/OVO027341",
+          "@type": "Organisatie",
+          "voorkeursnaam": {
+            "@language": "nl",
+            "@value": "Kruispuntbank van Ondernemingen"
+          }
+        },
+        "identificator": [
+          "736985907"
+        ]
+      },
+      {
+        "@type": "Identificator",
+        "toegekendDoor": {
+          "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
+          "@type": "Organisatie",
+          "voorkeursnaam": {
+            "@language": "nl",
+            "@value": "Agentschap Landbouw en Zeevisserij"
+          }
+        },
+        "identificator": [
+          "00311329883"
+        ]
+      }
+    ],
+    "rechtspersoonlijkheid": {
+      "@id": "https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/2"
+    },
+    "rechtsvorm": {
+      "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/610"
+    },
+    "contactinfo": [
+      {
+        "@type": "Contactpunt",
+        "adres": {
+          "@type": "Adresvoorstelling",
+          "volledigAdres": {
+            "@language": "nl",
+            "@value": "Sokstraat 10, 1234 Overal"
+          },
+          "postcode": "1234",
+          "straatnaam": {
+            "@language": "nl",
+            "@value": "Sokstraat"
+          },
+          "gemeentenaam": {
+            "@language": "nl",
+            "@value": "Overal"
+          },
+          "huisnummer": "10",
+          "land": {
+            "@language": "nl",
+            "@value": "België"
+          }
+        },
+        "email": "naamvoornaam2@mail.be",
+        "telefoon": [
+          {
+            "@type": "http://www.w3.org/2006/vcard/ns#Cell",
+            "@value": "0457 78 91 23"
+          }
+        ]
+      }
+    ]
+  }
+}

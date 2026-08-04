@@ -1,0 +1,50 @@
+@prefix landbouwgebruiksperceel: <https://implementatie.data.vlaanderen.be/ns/lv/landbouwgebruiksperceel#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix core:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix organisatie: <http://data.vlaanderen.be/id/organisatie/> .
+@prefix organisatienl: <https://identifier.overheid.nl/tooi/id/oorg/oorg> .
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#> .
+@prefix persoonw3c: <http://www.w3.org/ns/person#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix agent: <http://xmlns.com/foaf/0.1/Agent> .
+@prefix adres: <https://data.vlaanderen.be/ns/adres#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+
+<https://data.vlaanderen.be/id/persoon/6>
+	rdf:type persoonw3c:Person ;
+	adms:identifier [ rdf:type adms:Identifier;
+					  core:notation "34000621";
+					  terms:creator organisatie:OVO000082
+					] ;
+	foaf:familyName "DOMS" ;
+	foaf:givenName "AGNES" ;
+	schema:contactPoint [ rdf:type schema:ContactPoint ;
+						  schema:telephone "+31765972123"^^vcard:Voice;
+						  schema:email "ervoor@boomkwekdams.nl";
+						  locn:address [ rdf:type locn:Address;
+		                                        locn:postCode      "4661";
+		                                        locn:thoroughfare  "ACHWEG"@nl;
+		                                        adres:huisnummer "121";
+		                                        locn:poBox "B";
+		                                        adres:gemeentenaam "AZ ZUNDERT"@nl;
+		                                        adres:land "Nederland"@nl;
+		                                        locn:fullAddress "ACHWEG 121 bus B, 4661 AZ ZUNDERT, NEDERLAND"@nl
+						               ]
+	] .
+
+<https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601770789964>
+	rdf:type landbouwgebruiksperceel:Landbouwgebruiksperceel ;
+	adms:identifier [ rdf:type adms:Identifier;
+					  core:notation "10260_1770789964";
+					  terms:creator organisatie:OVO000082
+					] ;
+	landbouwgebruiksperceel:uitbater <https://data.vlaanderen.be/id/persoon/6> .
+
+organisatie:OVO000082 rdf:type org:Organization ;
+					  core:prefLabel "Agentschap Landbouw en Zeevisserij"@nl . 

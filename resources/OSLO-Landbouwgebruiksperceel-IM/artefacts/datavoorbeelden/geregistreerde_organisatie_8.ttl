@@ -1,0 +1,72 @@
+@prefix landbouwgebruiksperceel: <https://implementatie.data.vlaanderen.be/ns/lv/landbouwgebruiksperceel#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix core:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix organisatie: <http://data.vlaanderen.be/id/organisatie/> .
+@prefix organisatienl: <https://identifier.overheid.nl/tooi/id/oorg/oorg> .
+@prefix organisatiens: <https://data.vlaanderen.be/ns/organisatie#> .
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix agent: <http://xmlns.com/foaf/0.1/Agent> .
+@prefix adres: <https://data.vlaanderen.be/ns/adres#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rov: <http://www.w3.org/ns/regorg#> .
+
+
+<https://example.org/id/organisatie/8>
+	rdf:type rov:RegisteredOrganization ;
+	rov:registration [ rdf:type adms:Identifier;
+					  core:notation "761240261";
+					  terms:creator organisatie:OVO027341
+					] ;
+	rov:registration [ rdf:type adms:Identifier;
+					  core:notation "10301295";
+					  terms:creator organisatie:OVO000082
+					] ;
+	rov:orgActivity <https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd> ;
+	rov:orgStatus <https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/ST> ;
+	core:prefLabel "ZWAERT RUDY"@nl ;
+	organisatiens:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/1> ;
+	org:member <https://data.vlaanderen.be/id/persoon/8> ;
+	schema:contactPoint [ rdf:type schema:ContactPoint ;
+						  schema:telephone "052 35 67 89"^^vcard:Voice;
+						  schema:email "naamvoornaam4@mail.be";
+						  locn:address [ rdf:type locn:Address;
+		                                        locn:postCode      "1234";
+		                                        locn:thoroughfare  "Lokstraat"@nl;
+		                                        adres:huisnummer "10";
+		                                        adres:gemeentenaam "Overal"@nl;
+		                                        adres:land "België"@nl;
+		                                        locn:fullAddress "Lokstraat 10, 1234 Overal"@nl
+						               ]
+	] .
+
+<https://data.vlaanderen.be/id/persoon/8>
+	rdf:type persoon:GeregistreerdPersoon ;
+	persoon:registratie [ rdf:type adms:Identifier;
+					  core:notation "16579840247";
+					  terms:creator organisatie:OVO008218
+					] ;
+	foaf:familyName "zwaert" ;
+	foaf:givenName "rudy" ;
+	org:memberOf <https://example.org/id/organisatie/8> .
+
+<https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601683973651>
+	rdf:type landbouwgebruiksperceel:Landbouwgebruiksperceel ;
+	adms:identifier [ rdf:type adms:Identifier;
+					  core:notation "10260_1683973651";
+					  terms:creator organisatie:OVO000082
+					] ;
+	landbouwgebruiksperceel:uitbater <https://example.org/id/organisatie/8> .
+	
+
+organisatie:OVO008218 rdf:type org:Organization ; 
+					  core:prefLabel "Kruispuntbank van de Sociale Zekerheid"@nl .
+organisatie:OVO000082 rdf:type org:Organization ;
+					  core:prefLabel "Agentschap Landbouw en Zeevisserij"@nl . 
+organisatie:OVO027341 rdf:type org:Organization ;
+					  core:prefLabel "Kruispuntbank van Ondernemingen"@nl . 

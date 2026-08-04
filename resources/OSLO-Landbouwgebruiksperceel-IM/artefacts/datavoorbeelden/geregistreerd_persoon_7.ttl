@@ -1,0 +1,53 @@
+@prefix landbouwgebruiksperceel: <https://implementatie.data.vlaanderen.be/ns/lv/landbouwgebruiksperceel#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix core:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix organisatie: <http://data.vlaanderen.be/id/organisatie/> .
+@prefix organisatienl: <https://identifier.overheid.nl/tooi/id/oorg/oorg> .
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix agent: <http://xmlns.com/foaf/0.1/Agent> .
+@prefix adres: <https://data.vlaanderen.be/ns/adres#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+
+<https://data.vlaanderen.be/id/persoon/7>
+	rdf:type persoon:GeregistreerdPersoon ;
+	persoon:registratie [ rdf:type adms:Identifier;
+					  core:notation "16579840240";
+					  terms:creator organisatie:OVO008218
+					] ;
+	adms:identifier [ rdf:type adms:Identifier;
+					  core:notation "33793382";
+					  terms:creator organisatie:OVO000082
+					] ;
+	foaf:familyName "Keilen" ;
+	foaf:givenName "Swans" ;
+	schema:contactPoint [ rdf:type schema:ContactPoint ;
+						  schema:telephone "010 11 12 17"^^vcard:Voice;
+						  locn:address [ rdf:type locn:Address;
+		                                        locn:postCode      "1111";
+		                                        locn:thoroughfare  "BROEKSTRAAT"@nl;
+		                                        adres:huisnummer "3";
+		                                        adres:gemeentenaam "Nergens"@nl;
+		                                        adres:land "België"@nl;
+		                                        locn:fullAddress "Broekstraat 3, 1111 Nergens"@nl
+						               ]
+	] .
+
+<https://data.vlaanderen.be/id/landbouwgebruiksperceel/102621853210864>
+	rdf:type landbouwgebruiksperceel:Landbouwgebruiksperceel ;
+	adms:identifier [ rdf:type adms:Identifier;
+					  core:notation "10262_1853210864";
+					  terms:creator organisatie:OVO000082
+					] ;
+	landbouwgebruiksperceel:uitbater <https://data.vlaanderen.be/id/persoon/7> .
+
+organisatie:OVO008218 rdf:type org:Organization ; 
+					  core:prefLabel "Kruispuntbank van de Sociale Zekerheid"@nl .
+organisatie:OVO000082 rdf:type org:Organization ;
+					  core:prefLabel "Agentschap Landbouw en Zeevisserij"@nl . 

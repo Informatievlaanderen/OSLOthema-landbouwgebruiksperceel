@@ -1,0 +1,96 @@
+{
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
+  "@id": "https://data.vlaanderen.be/id/landbouwgebruiksperceel/102621257238218",
+  "@type": "Landbouwgebruiksperceel",
+  "identificator": [
+    {
+      "@type": "Identificator",
+      "toegekendDoor": {
+        "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
+        "@type": "Organisatie",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Agentschap Landbouw en Zeevisserij"
+        }
+      },
+      "identificator": [
+        "10262_1257238218"
+      ]
+    }
+  ],
+  "uitbater": {
+    "@id": "https://data.vlaanderen.be/id/persoon/5",
+    "@type": "GeregistreerdPersoon",
+    "identificator": [
+      {
+        "@type": "Identificator",
+        "toegekendDoor": {
+          "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
+          "@type": "Organisatie",
+          "voorkeursnaam": {
+            "@language": "nl",
+            "@value": "Agentschap Landbouw en Zeevisserij"
+          }
+        },
+        "identificator": [
+          "15248905"
+        ]
+      }
+    ],
+    "achternaam": "Wijlen",
+    "voornaam": [
+      "Frans"
+    ],
+    "heeftOverlijden": {
+      "@type": "Overlijden"
+    },
+    "registratie": [
+      {
+        "@type": "Identificator",
+        "toegekendDoor": {
+          "@id": "http://data.vlaanderen.be/id/organisatie/OVO008218",
+          "@type": "Organisatie",
+          "voorkeursnaam": {
+            "@language": "nl",
+            "@value": "Kruispuntbank van de Sociale Zekerheid"
+          }
+        },
+        "identificator": [
+          "16579840238"
+        ]
+      }
+    ],
+    "contactinfo": [
+      {
+        "@type": "Contactpunt",
+        "adres": {
+          "@type": "Adresvoorstelling",
+          "volledigAdres": {
+            "@language": "nl",
+            "@value": "Broekstraat 2, 1111 Nergens"
+          },
+          "postcode": "1111",
+          "straatnaam": {
+            "@language": "nl",
+            "@value": "BROEKSTRAAT"
+          },
+          "gemeentenaam": {
+            "@language": "nl",
+            "@value": "Nergens"
+          },
+          "huisnummer": "2",
+          "land": {
+            "@language": "nl",
+            "@value": "België"
+          }
+        },
+        "telefoon": [
+          {
+            "@type": "http://www.w3.org/2006/vcard/ns#Voice",
+            "@value": "010 11 12 15"
+          }
+        ]
+      }
+    ]
+  }
+}

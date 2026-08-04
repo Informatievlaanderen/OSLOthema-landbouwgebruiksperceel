@@ -1,0 +1,82 @@
+{
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
+  "@id": "https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601672708618",
+  "@type": "Landbouwgebruiksperceel",
+  "identificator": [
+    {
+      "@type": "Identificator",
+      "toegekendDoor": {
+        "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
+        "@type": "Organisatie",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Agentschap Landbouw en Zeevisserij"
+        }
+      },
+      "identificator": [
+        "10260_1672708618"
+      ]
+    }
+  ],
+  "uitbater": {
+    "@id": "https://example.org/id/organisatie/6",
+    "@type": "Organisatie",
+    "voorkeursnaam": {
+      "@language": "nl",
+      "@value": "GOEDLEVEN"
+    },
+    "identificator": [
+      {
+        "@type": "Identificator",
+        "toegekendDoor": {
+          "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
+          "@type": "Organisatie",
+          "voorkeursnaam": {
+            "@language": "nl",
+            "@value": "Agentschap Landbouw en Zeevisserij"
+          }
+        },
+        "identificator": [
+          "4301603527"
+        ]
+      }
+    ],
+    "type": [
+      {
+        "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/610"
+      }
+    ],
+    "contactinfo": [
+      {
+        "@type": "Contactpunt",
+        "adres": {
+          "@type": "Adresvoorstelling",
+          "volledigAdres": {
+            "@language": "nl",
+            "@value": "SLECHTLEVEN 12, 4508 PE LANDKERKJE, NEDERLAND"
+          },
+          "postcode": "4508",
+          "straatnaam": {
+            "@language": "nl",
+            "@value": "SLECHTLEVEN"
+          },
+          "gemeentenaam": {
+            "@language": "nl",
+            "@value": "PE Landkerkje"
+          },
+          "huisnummer": "12",
+          "land": {
+            "@language": "nl",
+            "@value": "Nederland"
+          }
+        },
+        "telefoon": [
+          {
+            "@type": "http://www.w3.org/2006/vcard/ns#Voice",
+            "@value": "09 222 33 44"
+          }
+        ]
+      }
+    ]
+  }
+}

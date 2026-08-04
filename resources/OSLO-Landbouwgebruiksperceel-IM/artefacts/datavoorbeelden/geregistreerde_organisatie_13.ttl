@@ -1,0 +1,56 @@
+@prefix landbouwgebruiksperceel: <https://implementatie.data.vlaanderen.be/ns/lv/landbouwgebruiksperceel#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix core:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix organisatie: <http://data.vlaanderen.be/id/organisatie/> .
+@prefix organisatienl: <https://identifier.overheid.nl/tooi/id/oorg/oorg> .
+@prefix organisatiens: <https://data.vlaanderen.be/ns/organisatie#> .
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix agent: <http://xmlns.com/foaf/0.1/Agent> .
+@prefix adres: <https://data.vlaanderen.be/ns/adres#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rov: <http://www.w3.org/ns/regorg#> .
+
+
+<https://example.org/id/organisatie/13>
+	rdf:type rov:RegisteredOrganization ;
+	rov:registration [ rdf:type adms:Identifier;
+					  core:notation "2144562508";
+					  terms:creator organisatie:OVO027341
+					] ;
+	rov:registration [ rdf:type adms:Identifier;
+					  core:notation "00038102610";
+					  terms:creator organisatie:OVO000082
+					] ;
+	rov:orgStatus <https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/AC> ;
+	core:prefLabel "OPZ Rekem"@nl ;
+	schema:contactPoint [ rdf:type schema:ContactPoint ;
+						  schema:telephone "012 23 45 67"^^vcard:Voice;
+						  schema:email "naamvoornaam6@mail.be";
+						  locn:address [ rdf:type locn:Address;
+		                                        locn:postCode      "3621";
+		                                        locn:thoroughfare  "DALBROKSTRAAT"@nl;
+		                                        adres:huisnummer "112";
+		                                        adres:gemeentenaam "Panaken"@nl;
+		                                        adres:land "België"@nl;
+		                                        locn:fullAddress "DALBROKSTRAAT 112, 3631 PANAKEN"@nl
+						               ]
+	] .
+
+<https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601835413889>
+	rdf:type landbouwgebruiksperceel:Landbouwgebruiksperceel ;
+	adms:identifier [ rdf:type adms:Identifier;
+					  core:notation "10260_1835413889";
+					  terms:creator organisatie:OVO000082
+					] ;
+	landbouwgebruiksperceel:uitbater <https://example.org/id/organisatie/13> .
+
+organisatie:OVO000082 rdf:type org:Organization ;
+					  core:prefLabel "Agentschap Landbouw en Zeevisserij"@nl . 
+organisatie:OVO027341 rdf:type org:Organization ;
+					  core:prefLabel "Kruispuntbank van Ondernemingen"@nl . 

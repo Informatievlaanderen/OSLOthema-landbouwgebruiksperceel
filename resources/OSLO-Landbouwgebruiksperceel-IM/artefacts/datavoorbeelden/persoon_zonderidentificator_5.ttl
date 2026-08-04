@@ -1,0 +1,48 @@
+@prefix landbouwgebruiksperceel: <https://implementatie.data.vlaanderen.be/ns/lv/landbouwgebruiksperceel#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix core:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix organisatie: <http://data.vlaanderen.be/id/organisatie/> .
+@prefix organisatienl: <https://identifier.overheid.nl/tooi/id/oorg/oorg> .
+@prefix persoon: <https://data.vlaanderen.be/ns/persoon#> .
+@prefix persoonw3c: <http://www.w3.org/ns/person#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix agent: <http://xmlns.com/foaf/0.1/Agent> .
+@prefix adres: <https://data.vlaanderen.be/ns/adres#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+
+<https://data.vlaanderen.be/id/persoon/5>
+	rdf:type persoonw3c:Person ;
+	adms:identifier [ rdf:type adms:Identifier;
+					  core:notation "33331927";
+					  terms:creator organisatie:OVO000082
+					] ;
+	foaf:familyName "BROENS" ;
+	foaf:givenName "JOHANA" ;
+	schema:contactPoint [ rdf:type schema:ContactPoint ;
+						  schema:telephone "+25 67 89 12 56 7"^^vcard:Cell;
+						  locn:address [ rdf:type locn:Address;
+		                                        locn:postCode      "6561";
+		                                        locn:thoroughfare  "WEIDE"@nl;
+		                                        adres:huisnummer "42";
+		                                        adres:gemeentenaam "NZ ELSLOO"@nl;
+		                                        adres:land "Nederland"@nl;
+		                                        locn:fullAddress "WEIDE 42, 6561 NZ ELSLOO, NEDERLAND"@nl
+						               ]
+	] .
+
+<https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601577152807>
+	rdf:type landbouwgebruiksperceel:Landbouwgebruiksperceel ;
+	adms:identifier [ rdf:type adms:Identifier;
+					  core:notation "10260_1577152807";
+					  terms:creator organisatie:OVO000082
+					] ;
+	landbouwgebruiksperceel:uitbater <https://data.vlaanderen.be/id/persoon/5> .
+	
+organisatie:OVO000082 rdf:type org:Organization ;
+					  core:prefLabel "Agentschap Landbouw en Zeevisserij"@nl . 

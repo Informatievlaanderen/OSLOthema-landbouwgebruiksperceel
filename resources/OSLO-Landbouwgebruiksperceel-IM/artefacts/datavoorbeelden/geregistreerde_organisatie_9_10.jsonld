@@ -1,0 +1,208 @@
+{
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
+  "@id": "https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601820939570",
+  "@type": "Landbouwgebruiksperceel",
+  "identificator": [
+    {
+      "@type": "Identificator",
+      "toegekendDoor": {
+        "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
+        "@type": "Organisatie",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Agentschap Landbouw en Zeevisserij"
+        }
+      },
+      "identificator": [
+        "10260_1820939570"
+      ]
+    }
+  ],
+  "uitbater": {
+    "@id": "https://example.org/id/organisatie/9",
+    "@type": "GeregistreerdeOrganisatie",
+    "voorkeursnaam": {
+      "@language": "nl",
+      "@value": "SCHENNING V.O.F."
+    },
+    "isGeassocieerdMet": [
+      {
+        "@id": "https://example.org/id/organisatie/10",
+        "@type": "GeregistreerdeOrganisatie",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "SCHENNING V.O.F."
+        },
+        "isGeassocieerdMet": [
+          {
+            "@id": "https://example.org/id/organisatie/9"
+          }
+        ],
+        "activiteit": [
+          {
+            "@id": "https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd"
+          }
+        ],
+        "status": [
+          {
+            "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/AC"
+          }
+        ],
+        "registratie": [
+          {
+            "@type": "Identificator",
+            "toegekendDoor": {
+              "@id": "https://identifier.overheid.nl/tooi/id/zbo/zb000184",
+              "@type": "Organisatie",
+              "voorkeursnaam": {
+                "@language": "nl",
+                "@value": "Kamer van Koophandel"
+              }
+            },
+            "identificator": [
+              "17254674"
+            ]
+          },
+          {
+            "@type": "Identificator",
+            "toegekendDoor": {
+              "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
+              "@type": "Organisatie",
+              "voorkeursnaam": {
+                "@language": "nl",
+                "@value": "Agentschap Landbouw en Zeevisserij"
+              }
+            },
+            "identificator": [
+              "10704453"
+            ]
+          }
+        ],
+        "rechtspersoonlijkheid": {
+          "@id": "https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/2"
+        },
+        "rechtsvorm": {
+          "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/030"
+        },
+        "contactinfo": [
+          {
+            "@type": "Contactpunt",
+            "adres": {
+              "@type": "Adresvoorstelling",
+              "volledigAdres": {
+                "@language": "nl",
+                "@value": "VULSELSEWEG 17, 5531 PE PADEL, NEDERLAND"
+              },
+              "postcode": "5531",
+              "straatnaam": {
+                "@language": "nl",
+                "@value": "Vulselseweg"
+              },
+              "gemeentenaam": {
+                "@language": "nl",
+                "@value": "Padel"
+              },
+              "huisnummer": "17",
+              "land": {
+                "@language": "nl",
+                "@value": "Nederland"
+              }
+            },
+            "telefoon": [
+              {
+                "@type": "http://www.w3.org/2006/vcard/ns#Voice",
+                "@value": "+37 89 12 45 78 10"
+              },
+              {
+                "@type": "http://www.w3.org/2006/vcard/ns#Cell",
+                "@value": "+34 65 13 97 53 3"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "activiteit": [
+      {
+        "@id": "https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd"
+      }
+    ],
+    "status": [
+      {
+        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/ST"
+      }
+    ],
+    "registratie": [
+      {
+        "@type": "Identificator",
+        "toegekendDoor": {
+          "@id": "http://data.vlaanderen.be/id/organisatie/OVO027341",
+          "@type": "Organisatie",
+          "voorkeursnaam": {
+            "@language": "nl",
+            "@value": "Kruispuntbank van Ondernemingen"
+          }
+        },
+        "identificator": [
+          "802757845"
+        ]
+      },
+      {
+        "@type": "Identificator",
+        "toegekendDoor": {
+          "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
+          "@type": "Organisatie",
+          "voorkeursnaam": {
+            "@language": "nl",
+            "@value": "Agentschap Landbouw en Zeevisserij"
+          }
+        },
+        "identificator": [
+          "10704453"
+        ]
+      }
+    ],
+    "rechtspersoonlijkheid": {
+      "@id": "https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/2"
+    },
+    "rechtsvorm": {
+      "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/030"
+    },
+    "contactinfo": [
+      {
+        "@type": "Contactpunt",
+        "adres": {
+          "@type": "Adresvoorstelling",
+          "volledigAdres": {
+            "@language": "nl",
+            "@value": "PULSELSEWEG 17, 5531 PE PADEL, NEDERLAND"
+          },
+          "postcode": "5531",
+          "straatnaam": {
+            "@language": "nl",
+            "@value": "Pulselseweg"
+          },
+          "gemeentenaam": {
+            "@language": "nl",
+            "@value": "PE Padel"
+          },
+          "huisnummer": "17",
+          "land": {
+            "@language": "nl",
+            "@value": "Nederland"
+          }
+        },
+        "telefoon": [
+          {
+            "@type": "http://www.w3.org/2006/vcard/ns#Voice",
+            "@value": "+37 89 12 45 78 9"
+          },
+          {
+            "@type": "http://www.w3.org/2006/vcard/ns#Cell",
+            "@value": "+34 65 13 97 53 2"
+          }
+        ]
+      }
+    ]
+  }
+}

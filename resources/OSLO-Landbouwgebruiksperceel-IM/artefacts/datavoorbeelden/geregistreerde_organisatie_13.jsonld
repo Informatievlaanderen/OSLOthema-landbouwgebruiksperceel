@@ -1,0 +1,97 @@
+{
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
+  "@id": "https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601835413889",
+  "@type": "Landbouwgebruiksperceel",
+  "identificator": [
+    {
+      "@type": "Identificator",
+      "toegekendDoor": {
+        "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
+        "@type": "Organisatie",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Agentschap Landbouw en Zeevisserij"
+        }
+      },
+      "identificator": [
+        "10260_1835413889"
+      ]
+    }
+  ],
+  "uitbater": {
+    "@id": "https://example.org/id/organisatie/13",
+    "@type": "GeregistreerdeOrganisatie",
+    "voorkeursnaam": {
+      "@language": "nl",
+      "@value": "OPZ Rekem"
+    },
+    "status": [
+      {
+        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/AC"
+      }
+    ],
+    "registratie": [
+      {
+        "@type": "Identificator",
+        "toegekendDoor": {
+          "@id": "http://data.vlaanderen.be/id/organisatie/OVO027341",
+          "@type": "Organisatie",
+          "voorkeursnaam": {
+            "@language": "nl",
+            "@value": "Kruispuntbank van Ondernemingen"
+          }
+        },
+        "identificator": [
+          "2144562508"
+        ]
+      },
+      {
+        "@type": "Identificator",
+        "toegekendDoor": {
+          "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
+          "@type": "Organisatie",
+          "voorkeursnaam": {
+            "@language": "nl",
+            "@value": "Agentschap Landbouw en Zeevisserij"
+          }
+        },
+        "identificator": [
+          "00038102610"
+        ]
+      }
+    ],
+    "contactinfo": [
+      {
+        "@type": "Contactpunt",
+        "adres": {
+          "@type": "Adresvoorstelling",
+          "volledigAdres": {
+            "@language": "nl",
+            "@value": "DALBROKSTRAAT 112, 3631 PANAKEN"
+          },
+          "postcode": "3621",
+          "straatnaam": {
+            "@language": "nl",
+            "@value": "DALBROKSTRAAT"
+          },
+          "gemeentenaam": {
+            "@language": "nl",
+            "@value": "Panaken"
+          },
+          "huisnummer": "112",
+          "land": {
+            "@language": "nl",
+            "@value": "België"
+          }
+        },
+        "email": "naamvoornaam6@mail.be",
+        "telefoon": [
+          {
+            "@type": "http://www.w3.org/2006/vcard/ns#Voice",
+            "@value": "012 23 45 67"
+          }
+        ]
+      }
+    ]
+  }
+}
