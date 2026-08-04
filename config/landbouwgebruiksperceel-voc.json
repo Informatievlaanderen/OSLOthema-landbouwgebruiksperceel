@@ -6,13 +6,13 @@
     "diagram": "Landbouwgebruiksperceel",
     "template": "landbouwgebruiksperceel-voc.j2",
     "title": "Vocabularium Landbouwgebruiksperceel",
-    "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+    "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/ZonderStatus",
     "publication-date": "2026-08-04",
     "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
     "contributors-file": "stakeholders.csv",
     "contributors-column": "Rol",
     "site": "site-skeleton/landbouwgebruiksperceel-im",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-landbouwgebruiksperceel/issues",
-    "standaardregisterurl": "https://data.vlaanderen.be/standaarden/landbouwgebruiksperceel"
+    "standaardregisterurl": "https://data.vlaanderen.be/standaarden/vocabularium-landbouwgebruiksperceel"
   }
 ]
