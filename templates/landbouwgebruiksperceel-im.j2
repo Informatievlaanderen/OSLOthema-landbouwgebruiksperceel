@@ -1,5 +1,36 @@
 {% extends "impl.j2" %}
 
+{% block metainfo %}
+<div class="head" role="metainfo" id="metainfo">
+     <dl>
+        <dt>Brondata</dt>
+        <dd>
+           <a href="https://github.com/Informatievlaanderen/OSLOthema-landbouwgebruiksperceel/releases/tag/{{ data.metadata.branchtag }}">https://github.com/Informatievlaanderen/OSLOthema-landbouwgebruiksperceel/releases/tag/{{ data.metadata.branchtag }}</a>
+        </dd>
+        <dt>Changelog</dt>
+        <dd>
+           <a href="{{ data.metadata.documentroot }}/resources/CHANGELOG.md">{{ data.metadata.documentroot }}/resources/CHANGELOG.md</a>
+        </dd>
+        <dt>Opmerkingen en feedback</dt>
+        <dd>
+           <a href="https://vlaamseoverheid.atlassian.net/servicedesk/customer/portal/2038">MAGDA Service Desk</a>
+        </dd>
+        <dd>
+           <a href="{{ data.metadata.standaardregisterurl }}">{{ data.metadata.standaardregisterurl }}</a>
+        </dd>
+        {% if data.metadata.dependencies %}
+           <dt>Afhankelijkheden</dt>
+           <dd>
+              {% for dep in metadata.dependencies %}
+                 <a href="{{ dep.packageurl }}">{{ dep.packagelabel }}</a>
+              {% endfor %}
+           </dd>
+        {% endif %}
+     </dl>
+</div>
+
+{% endblock %}
+
 {% block summary %}
 <p>
     Landbouwgebruikspercelen geven aan wie de uitbater is van een bepaald perceel voor landbouwactiviteiten en welke activiteiten er mogen plaatsvinden.
@@ -13,11 +44,22 @@
 </p>
 <p>
     De uitbater is volledig gebaseerd op het
-    <a href="https://data.vlaanderen.be/doc/applicatieprofiel/persoon-basis/" target="_blank">Applicatieprofiel OSLO-Persoon</a>
+    <a href="https://data.vlaanderen.be/doc/applicatieprofiel/landbouwgebruiksperceel-basis/" target="_blank">Applicatieprofiel OSLO-Persoon</a>
     en
     <a href="https://data.vlaanderen.be/doc/applicatieprofiel/organisatie-basis/" target="_blank">OSLO-Organisatie</a>,
     waarbij een uitbater aanzien als een Agent die kan optreden als een (Geregistreerd) Persoon of (Geregistreerde) Organisatie.
     Indien meerdere organisaties of personen een landbouwgebruiksperceel uitbaten,
     kunnen deze ook gekoppeld worden door Personen te relateren met een Organisatie, of meerdere Organisaties met elkaar.
+</p>
+{% endblock %}
+
+{% block swagger %}
+<p>
+Een set van herbruikbare Swagger OpenAPI componenten voor dit implementatiemodel is terug te vinden op:
+<a href="{{ data.metadata.documentroot }}/resources/swagger/components.json" target="_blank">{{ data.metadata.documentroot }}/resources/swagger/components.json</a>
+</p>
+<p>
+Deze componenten zijn gebruikt in de LV en MAGDA OpenAPI beschrijvingen van de landbouw.uitbaters REST dienst, die hier terug te vinden is:
+<a href="{{ data.metadata.documentroot }}/resources/swagger/LV-REST-landbouw-uitbaters-Swagger.json" target="_blank">{{ data.metadata.documentroot }}/resources/swagger/LV-REST-landbouw-uitbaters-Swagger.json</a>
 </p>
 {% endblock %}
