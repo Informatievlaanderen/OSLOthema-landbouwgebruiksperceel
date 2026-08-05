@@ -22,7 +22,6 @@
     }
   ],
   "uitbater": {
-    "@id": "https://data.vlaanderen.be/id/persoon/6",
     "@type": "Persoon",
     "identificator": [
       {

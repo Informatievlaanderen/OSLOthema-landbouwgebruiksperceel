@@ -22,7 +22,6 @@
     }
   ],
   "uitbater": {
-    "@id": "https://example.org/id/organisatie/6",
     "@type": "Organisatie",
     "voorkeursnaam": {
       "@language": "nl",

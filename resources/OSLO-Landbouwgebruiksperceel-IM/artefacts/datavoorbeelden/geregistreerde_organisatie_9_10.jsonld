@@ -22,7 +22,6 @@
     }
   ],
   "uitbater": {
-    "@id": "https://example.org/id/organisatie/9",
     "@type": "GeregistreerdeOrganisatie",
     "voorkeursnaam": {
       "@language": "nl",
@@ -30,7 +29,6 @@
     },
     "isGeassocieerdMet": [
       {
-        "@id": "https://example.org/id/organisatie/10",
         "@type": "GeregistreerdeOrganisatie",
         "voorkeursnaam": {
           "@language": "nl",

@@ -22,7 +22,6 @@
     }
   ],
   "uitbater": {
-    "@id": "https://example.org/id/organisatie/5",
     "@type": "GeregistreerdeOrganisatie",
     "voorkeursnaam": {
       "@language": "nl",
@@ -30,7 +29,6 @@
     },
     "lid": [
       {
-        "@id": "https://data.vlaanderen.be/id/persoon/5",
         "@type": "GeregistreerdPersoon",
         "achternaam": { "@value": "Bernouts" },
         "voornaam": [
