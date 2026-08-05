@@ -1,6 +1,5 @@
 {
   "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
-  "@id": "https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601645768785",
   "@type": "Landbouwgebruiksperceel",
   "identificator": [
     {
@@ -11,15 +10,18 @@
         "voorkeursnaam": {
           "@language": "nl",
           "@value": "Agentschap Landbouw en Zeevisserij"
+        },
+        "registratie": {
+          "@type": "Identificator",
+          "identificator": [ { "@value": "OVO000082" } ]
         }
       },
       "identificator": [
-        "10260_1645768785"
+        { "@value": "10260_1645768785" }
       ]
     }
   ],
   "uitbater": {
-    "@id": "https://example.org/id/organisatie/5",
     "@type": "Organisatie",
     "voorkeursnaam": {
       "@language": "nl",
@@ -34,10 +36,14 @@
           "voorkeursnaam": {
             "@language": "nl",
             "@value": "Agentschap Landbouw en Zeevisserij"
+          },
+          "registratie": {
+            "@type": "Identificator",
+            "identificator": [ { "@value": "OVO000082" } ]
           }
         },
         "identificator": [
-          "00037256989"
+          { "@value": "00037256989" }
         ]
       }
     ],
@@ -55,7 +61,7 @@
             "@language": "nl",
             "@value": "PEERS 23, 5504 RG HOVEN, NEDERLAND"
           },
-          "postcode": "5504",
+          "postcode": { "@value": "5504" },
           "straatnaam": {
             "@language": "nl",
             "@value": "Peers"
@@ -64,7 +70,7 @@
             "@language": "nl",
             "@value": "RG Hoven"
           },
-          "huisnummer": "23",
+          "huisnummer": { "@value": "23" },
           "land": {
             "@language": "nl",
             "@value": "Nederland"

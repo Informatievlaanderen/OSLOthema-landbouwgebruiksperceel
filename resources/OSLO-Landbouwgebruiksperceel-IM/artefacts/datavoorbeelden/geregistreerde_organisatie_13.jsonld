@@ -1,25 +1,27 @@
 {
   "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
-  "@id": "https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601835413889",
   "@type": "Landbouwgebruiksperceel",
   "identificator": [
     {
       "@type": "Identificator",
       "toegekendDoor": {
         "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-        "@type": "Organisatie",
+        "@type": "GeregistreerdeOrganisatie",
         "voorkeursnaam": {
           "@language": "nl",
           "@value": "Agentschap Landbouw en Zeevisserij"
+        },
+        "registratie": {
+          "@type": "Identificator",
+          "identificator": [ { "@value": "OVO000082" } ]
         }
       },
       "identificator": [
-        "10260_1835413889"
+        { "@value": "10260_1835413889" }
       ]
     }
   ],
   "uitbater": {
-    "@id": "https://example.org/id/organisatie/13",
     "@type": "GeregistreerdeOrganisatie",
     "voorkeursnaam": {
       "@language": "nl",
@@ -35,28 +37,36 @@
         "@type": "Identificator",
         "toegekendDoor": {
           "@id": "http://data.vlaanderen.be/id/organisatie/OVO027341",
-          "@type": "Organisatie",
+          "@type": "GeregistreerdeOrganisatie",
           "voorkeursnaam": {
             "@language": "nl",
             "@value": "Kruispuntbank van Ondernemingen"
+          },
+          "registratie": {
+            "@type": "Identificator",
+            "identificator": [ { "@value": "OVO027341" } ]
           }
         },
         "identificator": [
-          "2144562508"
+          { "@value": "2144562508" }
         ]
       },
       {
         "@type": "Identificator",
         "toegekendDoor": {
           "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-          "@type": "Organisatie",
+          "@type": "GeregistreerdeOrganisatie",
           "voorkeursnaam": {
             "@language": "nl",
             "@value": "Agentschap Landbouw en Zeevisserij"
+          },
+          "registratie": {
+            "@type": "Identificator",
+            "identificator": [ { "@value": "OVO000082" } ]
           }
         },
         "identificator": [
-          "00038102610"
+          { "@value": "00038102610" }
         ]
       }
     ],
@@ -69,7 +79,7 @@
             "@language": "nl",
             "@value": "DALBROKSTRAAT 112, 3631 PANAKEN"
           },
-          "postcode": "3621",
+          "postcode": { "@value": "3621" },
           "straatnaam": {
             "@language": "nl",
             "@value": "DALBROKSTRAAT"
@@ -78,13 +88,13 @@
             "@language": "nl",
             "@value": "Panaken"
           },
-          "huisnummer": "112",
+          "huisnummer": { "@value": "112" },
           "land": {
             "@language": "nl",
             "@value": "België"
           }
         },
-        "email": "naamvoornaam6@mail.be",
+        "email": { "@value": "naamvoornaam6@mail.be" },
         "telefoon": [
           {
             "@type": "http://www.w3.org/2006/vcard/ns#Voice",

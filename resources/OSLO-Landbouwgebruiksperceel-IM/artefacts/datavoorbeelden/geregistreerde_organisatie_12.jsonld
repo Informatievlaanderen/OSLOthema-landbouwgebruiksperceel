@@ -1,25 +1,27 @@
 {
   "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
-  "@id": "https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601672682245",
   "@type": "Landbouwgebruiksperceel",
   "identificator": [
     {
       "@type": "Identificator",
       "toegekendDoor": {
         "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-        "@type": "Organisatie",
+        "@type": "GeregistreerdeOrganisatie",
         "voorkeursnaam": {
           "@language": "nl",
           "@value": "Agentschap Landbouw en Zeevisserij"
+        },
+        "registratie": {
+          "@type": "Identificator",
+          "identificator": [ { "@value": "OVO000082" } ]
         }
       },
       "identificator": [
-        "10260_1672682245"
+        { "@value": "10260_1672682245" }
       ]
     }
   ],
   "uitbater": {
-    "@id": "https://example.org/id/organisatie/12",
     "@type": "GeregistreerdeOrganisatie",
     "voorkeursnaam": {
       "@language": "nl",
@@ -35,28 +37,36 @@
         "@type": "Identificator",
         "toegekendDoor": {
           "@id": "http://data.vlaanderen.be/id/organisatie/OVO027341",
-          "@type": "Organisatie",
+          "@type": "GeregistreerdeOrganisatie",
           "voorkeursnaam": {
             "@language": "nl",
             "@value": "Kruispuntbank van Ondernemingen"
+          },
+          "registratie": {
+            "@type": "Identificator",
+            "identificator": [ { "@value": "OVO027341" } ]
           }
         },
         "identificator": [
-          "2161418831"
+          { "@value": "2161418831" }
         ]
       },
       {
         "@type": "Identificator",
         "toegekendDoor": {
           "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-          "@type": "Organisatie",
+          "@type": "GeregistreerdeOrganisatie",
           "voorkeursnaam": {
             "@language": "nl",
             "@value": "Agentschap Landbouw en Zeevisserij"
+          },
+          "registratie": {
+            "@type": "Identificator",
+            "identificator": [ { "@value": "OVO000082" } ]
           }
         },
         "identificator": [
-          "07102305442"
+          { "@value": "07102305442" }
         ]
       }
     ],
@@ -69,7 +79,7 @@
             "@language": "nl",
             "@value": "ZENNESTRAAT 18, 3556 PASSELT"
           },
-          "postcode": "3556",
+          "postcode": { "@value": "3556" },
           "straatnaam": {
             "@language": "nl",
             "@value": "Zennestraat"
@@ -78,13 +88,13 @@
             "@language": "nl",
             "@value": "Passelt"
           },
-          "huisnummer": "18",
+          "huisnummer": { "@value": "18" },
           "land": {
             "@language": "nl",
             "@value": "België"
           }
         },
-        "email": "kiewit@hasselt.be",
+        "email": { "@value": "kiewit@hasselt.be" },
         "telefoon": [
           {
             "@type": "http://www.w3.org/2006/vcard/ns#Voice",

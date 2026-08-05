@@ -1,6 +1,5 @@
 {
   "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
-  "@id": "https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601672708618",
   "@type": "Landbouwgebruiksperceel",
   "identificator": [
     {
@@ -11,15 +10,18 @@
         "voorkeursnaam": {
           "@language": "nl",
           "@value": "Agentschap Landbouw en Zeevisserij"
+        },
+        "registratie": {
+          "@type": "Identificator",
+          "identificator": [ { "@value": "OVO000082" } ]
         }
       },
       "identificator": [
-        "10260_1672708618"
+        { "@value": "10260_1672708618" }
       ]
     }
   ],
   "uitbater": {
-    "@id": "https://example.org/id/organisatie/6",
     "@type": "Organisatie",
     "voorkeursnaam": {
       "@language": "nl",
@@ -34,10 +36,14 @@
           "voorkeursnaam": {
             "@language": "nl",
             "@value": "Agentschap Landbouw en Zeevisserij"
+          },
+          "registratie": {
+            "@type": "Identificator",
+            "identificator": [ { "@value": "OVO000082" } ]
           }
         },
         "identificator": [
-          "4301603527"
+          { "@value": "4301603527" }
         ]
       }
     ],
@@ -55,7 +61,7 @@
             "@language": "nl",
             "@value": "SLECHTLEVEN 12, 4508 PE LANDKERKJE, NEDERLAND"
           },
-          "postcode": "4508",
+          "postcode": { "@value": "4508" },
           "straatnaam": {
             "@language": "nl",
             "@value": "SLECHTLEVEN"
@@ -64,7 +70,7 @@
             "@language": "nl",
             "@value": "PE Landkerkje"
           },
-          "huisnummer": "12",
+          "huisnummer": { "@value": "12" },
           "land": {
             "@language": "nl",
             "@value": "Nederland"

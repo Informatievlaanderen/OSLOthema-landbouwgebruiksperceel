@@ -1,59 +1,69 @@
 {
   "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
-  "@id": "https://data.vlaanderen.be/id/landbouwgebruiksperceel/102621791336180",
   "@type": "Landbouwgebruiksperceel",
   "identificator": [
     {
       "@type": "Identificator",
       "toegekendDoor": {
         "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-        "@type": "Organisatie",
+        "@type": "GeregistreerdeOrganisatie",
         "voorkeursnaam": {
           "@language": "nl",
           "@value": "Agentschap Landbouw en Zeevisserij"
+        },
+        "registratie": {
+          "@type": "Identificator",
+          "identificator": [ { "@value": "OVO000082" } ]
         }
       },
       "identificator": [
-        "10262_1791336180"
+        { "@value": "10262_1791336180" }
       ]
     }
   ],
   "uitbater": {
-    "@id": "https://data.vlaanderen.be/id/persoon/8",
     "@type": "GeregistreerdPersoon",
     "identificator": [
       {
         "@type": "Identificator",
         "toegekendDoor": {
           "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-          "@type": "Organisatie",
+          "@type": "GeregistreerdeOrganisatie",
           "voorkeursnaam": {
             "@language": "nl",
             "@value": "Agentschap Landbouw en Zeevisserij"
+          },
+          "registratie": {
+            "@type": "Identificator",
+            "identificator": [ { "@value": "OVO000082" } ]
           }
         },
         "identificator": [
-          "38804949"
+          { "@value": "38804949" }
         ]
       }
     ],
-    "achternaam": "Spring",
+    "achternaam": { "@value": "Spring" },
     "voornaam": [
-      "Schans"
+      { "@value": "Schans" }
     ],
     "registratie": [
       {
         "@type": "Identificator",
         "toegekendDoor": {
           "@id": "https://identifier.overheid.nl/tooi/id/oorg/oorg10103",
-          "@type": "Organisatie",
+          "@type": "GeregistreerdeOrganisatie",
           "voorkeursnaam": {
             "@language": "nl",
             "@value": "Rijksdienst voor Identiteitsgegevens"
+          },
+          "registratie": {
+            "@type": "Identificator",
+            "identificator": [ { "@value": "oorg10103" } ]
           }
         },
         "identificator": [
-          "16579840241"
+          { "@value": "16579840241" }
         ]
       }
     ],
@@ -66,7 +76,7 @@
             "@language": "nl",
             "@value": "Broekstraat 4, 1111 Nergens"
           },
-          "postcode": "1111",
+          "postcode": { "@value": "1111" },
           "straatnaam": {
             "@language": "nl",
             "@value": "BROEKSTRAAT"
@@ -75,13 +85,13 @@
             "@language": "nl",
             "@value": "Nergens"
           },
-          "huisnummer": "4",
+          "huisnummer": { "@value": "4" },
           "land": {
             "@language": "nl",
             "@value": "Nederland"
           }
         },
-        "email": "Springschans@mail.be",
+        "email": { "@value": "Springschans@mail.be" },
         "telefoon": [
           {
             "@type": "http://www.w3.org/2006/vcard/ns#Voice",

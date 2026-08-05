@@ -1,6 +1,5 @@
 {
   "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
-  "@id": "https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601577152807",
   "@type": "Landbouwgebruiksperceel",
   "identificator": [
     {
@@ -11,15 +10,18 @@
         "voorkeursnaam": {
           "@language": "nl",
           "@value": "Agentschap Landbouw en Zeevisserij"
+        },
+        "registratie": {
+          "@type": "Identificator",
+          "identificator": [ { "@value": "OVO000082" } ]
         }
       },
       "identificator": [
-        "10260_1577152807"
+        { "@value": "10260_1577152807" }
       ]
     }
   ],
   "uitbater": {
-    "@id": "https://data.vlaanderen.be/id/persoon/5",
     "@type": "Persoon",
     "identificator": [
       {
@@ -30,16 +32,20 @@
           "voorkeursnaam": {
             "@language": "nl",
             "@value": "Agentschap Landbouw en Zeevisserij"
+          },
+          "registratie": {
+            "@type": "Identificator",
+            "identificator": [ { "@value": "OVO000082" } ]
           }
         },
         "identificator": [
-          "33331927"
+          { "@value": "33331927" }
         ]
       }
     ],
-    "achternaam": "BROENS",
+    "achternaam": { "@value": "BROENS" },
     "voornaam": [
-      "JOHANA"
+      { "@value": "JOHANA" }
     ],
     "contactinfo": [
       {
@@ -50,7 +56,7 @@
             "@language": "nl",
             "@value": "WEIDE 42, 6561 NZ ELSLOO, NEDERLAND"
           },
-          "postcode": "6561",
+          "postcode": { "@value": "6561" },
           "straatnaam": {
             "@language": "nl",
             "@value": "WEIDE"
@@ -59,7 +65,7 @@
             "@language": "nl",
             "@value": "NZ ELSLOO"
           },
-          "huisnummer": "42",
+          "huisnummer": { "@value": "42" },
           "land": {
             "@language": "nl",
             "@value": "Nederland"

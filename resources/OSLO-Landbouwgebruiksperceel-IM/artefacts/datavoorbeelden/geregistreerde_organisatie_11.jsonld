@@ -1,25 +1,27 @@
 {
   "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
-  "@id": "https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601847480689",
   "@type": "Landbouwgebruiksperceel",
   "identificator": [
     {
       "@type": "Identificator",
       "toegekendDoor": {
         "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-        "@type": "Organisatie",
+        "@type": "GeregistreerdeOrganisatie",
         "voorkeursnaam": {
           "@language": "nl",
           "@value": "Agentschap Landbouw en Zeevisserij"
+        },
+        "registratie": {
+          "@type": "Identificator",
+          "identificator": [ { "@value": "OVO000082" } ]
         }
       },
       "identificator": [
-        "10260_1847480689"
+        { "@value": "10260_1847480689" }
       ]
     }
   ],
   "uitbater": {
-    "@id": "https://example.org/id/organisatie/11",
     "@type": "GeregistreerdeOrganisatie",
     "voorkeursnaam": {
       "@language": "nl",
@@ -40,28 +42,36 @@
         "@type": "Identificator",
         "toegekendDoor": {
           "@id": "http://data.vlaanderen.be/id/organisatie/OVO027341",
-          "@type": "Organisatie",
+          "@type": "GeregistreerdeOrganisatie",
           "voorkeursnaam": {
             "@language": "nl",
             "@value": "Kruispuntbank van Ondernemingen"
+          },
+          "registratie": {
+            "@type": "Identificator",
+            "identificator": [ { "@value": "OVO027341" } ]
           }
         },
         "identificator": [
-          "836014294"
+          { "@value": "836014294" }
         ]
       },
       {
         "@type": "Identificator",
         "toegekendDoor": {
           "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-          "@type": "Organisatie",
+          "@type": "GeregistreerdeOrganisatie",
           "voorkeursnaam": {
             "@language": "nl",
             "@value": "Agentschap Landbouw en Zeevisserij"
+          },
+          "registratie": {
+            "@type": "Identificator",
+            "identificator": [ { "@value": "OVO000082" } ]
           }
         },
         "identificator": [
-          "33414880"
+          { "@value": "33414880" }
         ]
       }
     ],
@@ -80,7 +90,7 @@
             "@language": "nl",
             "@value": "FERME DE BRONFAY - ROUTE DE PARICOURT 0, 80340 BRAY SUR Lesse, FRANKRIJK"
           },
-          "postcode": "80340",
+          "postcode": { "@value": "80340" },
           "straatnaam": {
             "@language": "nl",
             "@value": "ROUTE DE PARICOURT"
@@ -89,13 +99,13 @@
             "@language": "nl",
             "@value": "BRAY SUR Lesse"
           },
-          "huisnummer": "0",
+          "huisnummer": { "@value": "0" },
           "land": {
             "@language": "nl",
             "@value": "Frankrijk"
           }
         },
-        "email": "naamvoornaam5@mail.be",
+        "email": { "@value": "naamvoornaam5@mail.be" },
         "telefoon": [
           {
             "@type": "http://www.w3.org/2006/vcard/ns#Voice",

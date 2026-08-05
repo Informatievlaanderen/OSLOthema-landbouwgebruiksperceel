@@ -1,25 +1,27 @@
 {
   "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
-  "@id": "https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601770790772",
   "@type": "Landbouwgebruiksperceel",
   "identificator": [
     {
       "@type": "Identificator",
       "toegekendDoor": {
         "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-        "@type": "Organisatie",
+        "@type": "GeregistreerdeOrganisatie",
         "voorkeursnaam": {
           "@language": "nl",
           "@value": "Agentschap Landbouw en Zeevisserij"
+        },
+        "registratie": {
+          "@type": "Identificator",
+          "identificator": [ { "@value": "OVO000082" } ]
         }
       },
       "identificator": [
-        "10260_1770790772"
+        { "@value": "10260_1770790772" }
       ]
     }
   ],
   "uitbater": {
-    "@id": "https://example.org/id/organisatie/14",
     "@type": "GeregistreerdeOrganisatie",
     "voorkeursnaam": {
       "@language": "nl",
@@ -35,28 +37,36 @@
         "@type": "Identificator",
         "toegekendDoor": {
           "@id": "http://data.vlaanderen.be/id/organisatie/OVO027341",
-          "@type": "Organisatie",
+          "@type": "GeregistreerdeOrganisatie",
           "voorkeursnaam": {
             "@language": "nl",
             "@value": "Kruispuntbank van Ondernemingen"
+          },
+          "registratie": {
+            "@type": "Identificator",
+            "identificator": [ { "@value": "OVO027341" } ]
           }
         },
         "identificator": [
-          "2199335537"
+          { "@value": "2199335537" }
         ]
       },
       {
         "@type": "Identificator",
         "toegekendDoor": {
           "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-          "@type": "Organisatie",
+          "@type": "GeregistreerdeOrganisatie",
           "voorkeursnaam": {
             "@language": "nl",
             "@value": "Agentschap Landbouw en Zeevisserij"
+          },
+          "registratie": {
+            "@type": "Identificator",
+            "identificator": [ { "@value": "OVO000082" } ]
           }
         },
         "identificator": [
-          "00015614774"
+          { "@value": "00015614774" }
         ]
       }
     ],
@@ -69,8 +79,8 @@
             "@language": "nl",
             "@value": "HAVENLAAN 88 bus 75, 1000 BRUSSEL"
           },
-          "postbus": "75",
-          "postcode": "1000",
+          "postbus": { "@value": "75" },
+          "postcode": { "@value": "1000" },
           "straatnaam": {
             "@language": "nl",
             "@value": "Havenlaan"
@@ -79,13 +89,13 @@
             "@language": "nl",
             "@value": "Brussel"
           },
-          "huisnummer": "88",
+          "huisnummer": { "@value": "88" },
           "land": {
             "@language": "nl",
             "@value": "België"
           }
         },
-        "email": "anb@vlaanderen.be"
+        "email": { "@value": "anb@vlaanderen.be" }
       }
     ]
   }
