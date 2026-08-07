@@ -54,3 +54,7 @@ organisatie:OVO000082 rdf:type org:Organization ;
 					  core:prefLabel "Agentschap Landbouw en Zeevisserij"@nl . 
 organisatie:OVO027341 rdf:type org:Organization ;
 					  core:prefLabel "Kruispuntbank van Ondernemingen"@nl . 
+
+<https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/AC> rdf:type core:Concept ;
+	core:notation "AC" ;
+	core:prefLabel "Actief"@nl .

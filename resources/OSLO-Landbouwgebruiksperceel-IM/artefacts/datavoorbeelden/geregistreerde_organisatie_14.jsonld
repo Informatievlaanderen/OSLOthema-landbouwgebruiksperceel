@@ -13,11 +13,17 @@
         },
         "registratie": {
           "@type": "Identificator",
-          "identificator": [ { "@value": "OVO000082" } ]
+          "identificator": [
+            {
+              "@value": "OVO000082"
+            }
+          ]
         }
       },
       "identificator": [
-        { "@value": "10260_1770790772" }
+        {
+          "@value": "10260_1770790772"
+        }
       ]
     }
   ],
@@ -29,7 +35,13 @@
     },
     "status": [
       {
-        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/AC"
+        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/AC",
+        "@type": "OrganisatieStatus",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Actief"
+        },
+        "code": "AC"
       }
     ],
     "registratie": [
@@ -44,11 +56,17 @@
           },
           "registratie": {
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO027341" } ]
+            "identificator": [
+              {
+                "@value": "OVO027341"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "2199335537" }
+          {
+            "@value": "2199335537"
+          }
         ]
       },
       {
@@ -62,11 +80,17 @@
           },
           "registratie": {
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO000082" } ]
+            "identificator": [
+              {
+                "@value": "OVO000082"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "00015614774" }
+          {
+            "@value": "00015614774"
+          }
         ]
       }
     ],
@@ -79,8 +103,12 @@
             "@language": "nl",
             "@value": "HAVENLAAN 88 bus 75, 1000 BRUSSEL"
           },
-          "postbus": { "@value": "75" },
-          "postcode": { "@value": "1000" },
+          "postbus": {
+            "@value": "75"
+          },
+          "postcode": {
+            "@value": "1000"
+          },
           "straatnaam": {
             "@language": "nl",
             "@value": "Havenlaan"
@@ -89,13 +117,17 @@
             "@language": "nl",
             "@value": "Brussel"
           },
-          "huisnummer": { "@value": "88" },
+          "huisnummer": {
+            "@value": "88"
+          },
           "land": {
             "@language": "nl",
             "@value": "België"
           }
         },
-        "email": { "@value": "anb@vlaanderen.be" }
+        "email": {
+          "@value": "anb@vlaanderen.be"
+        }
       }
     ]
   }

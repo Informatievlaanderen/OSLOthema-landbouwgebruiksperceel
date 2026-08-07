@@ -13,11 +13,17 @@
         },
         "registratie": {
           "@type": "Identificator",
-          "identificator": [ { "@value": "OVO000082" } ]
+          "identificator": [
+            {
+              "@value": "OVO000082"
+            }
+          ]
         }
       },
       "identificator": [
-        { "@value": "10260_1672708618" }
+        {
+          "@value": "10260_1672708618"
+        }
       ]
     }
   ],
@@ -39,17 +45,29 @@
           },
           "registratie": {
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO000082" } ]
+            "identificator": [
+              {
+                "@value": "OVO000082"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "4301603527" }
+          {
+            "@value": "4301603527"
+          }
         ]
       }
     ],
     "type": [
       {
-        "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/610"
+        "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/610",
+        "@type": "Rechtsvormtype",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Besloten Vennootschap"
+        },
+        "code": "610"
       }
     ],
     "contactinfo": [
@@ -61,7 +79,9 @@
             "@language": "nl",
             "@value": "SLECHTLEVEN 12, 4508 PE LANDKERKJE, NEDERLAND"
           },
-          "postcode": { "@value": "4508" },
+          "postcode": {
+            "@value": "4508"
+          },
           "straatnaam": {
             "@language": "nl",
             "@value": "SLECHTLEVEN"
@@ -70,7 +90,9 @@
             "@language": "nl",
             "@value": "PE Landkerkje"
           },
-          "huisnummer": { "@value": "12" },
+          "huisnummer": {
+            "@value": "12"
+          },
           "land": {
             "@language": "nl",
             "@value": "Nederland"

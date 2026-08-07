@@ -13,11 +13,17 @@
         },
         "registratie": {
           "@type": "Identificator",
-          "identificator": [ { "@value": "OVO000082" } ]
+          "identificator": [
+            {
+              "@value": "OVO000082"
+            }
+          ]
         }
       },
       "identificator": [
-        { "@value": "10260_1766385053" }
+        {
+          "@value": "10260_1766385053"
+        }
       ]
     }
   ],
@@ -29,12 +35,24 @@
     },
     "activiteit": [
       {
-        "@id": "https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd"
+        "@id": "https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd",
+        "@type": "Activiteittype",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Gerelateerde landbouwactiviteit"
+        },
+        "code": "gerelateerd"
       }
     ],
     "status": [
       {
-        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/AC"
+        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/AC",
+        "@type": "OrganisatieStatus",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Actief"
+        },
+        "code": "AC"
       }
     ],
     "registratie": [
@@ -49,11 +67,17 @@
           },
           "registratie": {
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO027341" } ]
+            "identificator": [
+              {
+                "@value": "OVO027341"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "736985907" }
+          {
+            "@value": "736985907"
+          }
         ]
       },
       {
@@ -67,19 +91,37 @@
           },
           "registratie": {
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO000082" } ]
+            "identificator": [
+              {
+                "@value": "OVO000082"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "00311329883" }
+          {
+            "@value": "00311329883"
+          }
         ]
       }
     ],
     "rechtspersoonlijkheid": {
-      "@id": "https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/2"
+      "@id": "https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/2",
+      "@type": "Rechtspersoonlijkheidtype",
+      "voorkeursnaam": {
+        "@language": "nl",
+        "@value": "Rechtspersoon"
+      },
+      "code": "2"
     },
     "rechtsvorm": {
-      "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/610"
+      "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/610",
+      "@type": "Rechtsvormtype",
+      "voorkeursnaam": {
+        "@language": "nl",
+        "@value": "Besloten Vennootschap"
+      },
+      "code": "610"
     },
     "contactinfo": [
       {
@@ -90,7 +132,9 @@
             "@language": "nl",
             "@value": "Sokstraat 10, 1234 Overal"
           },
-          "postcode": { "@value": "1234" },
+          "postcode": {
+            "@value": "1234"
+          },
           "straatnaam": {
             "@language": "nl",
             "@value": "Sokstraat"
@@ -99,13 +143,17 @@
             "@language": "nl",
             "@value": "Overal"
           },
-          "huisnummer": { "@value": "10" },
+          "huisnummer": {
+            "@value": "10"
+          },
           "land": {
             "@language": "nl",
             "@value": "België"
           }
         },
-        "email": { "@value": "naamvoornaam2@mail.be" },
+        "email": {
+          "@value": "naamvoornaam2@mail.be"
+        },
         "telefoon": [
           {
             "@type": "http://www.w3.org/2006/vcard/ns#Cell",

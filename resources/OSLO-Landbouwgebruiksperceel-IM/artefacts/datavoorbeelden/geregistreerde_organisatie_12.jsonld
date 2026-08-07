@@ -13,11 +13,17 @@
         },
         "registratie": {
           "@type": "Identificator",
-          "identificator": [ { "@value": "OVO000082" } ]
+          "identificator": [
+            {
+              "@value": "OVO000082"
+            }
+          ]
         }
       },
       "identificator": [
-        { "@value": "10260_1672682245" }
+        {
+          "@value": "10260_1672682245"
+        }
       ]
     }
   ],
@@ -29,7 +35,13 @@
     },
     "status": [
       {
-        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/AC"
+        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/AC",
+        "@type": "OrganisatieStatus",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Actief"
+        },
+        "code": "AC"
       }
     ],
     "registratie": [
@@ -44,11 +56,17 @@
           },
           "registratie": {
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO027341" } ]
+            "identificator": [
+              {
+                "@value": "OVO027341"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "2161418831" }
+          {
+            "@value": "2161418831"
+          }
         ]
       },
       {
@@ -62,11 +80,17 @@
           },
           "registratie": {
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO000082" } ]
+            "identificator": [
+              {
+                "@value": "OVO000082"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "07102305442" }
+          {
+            "@value": "07102305442"
+          }
         ]
       }
     ],
@@ -79,7 +103,9 @@
             "@language": "nl",
             "@value": "ZENNESTRAAT 18, 3556 PASSELT"
           },
-          "postcode": { "@value": "3556" },
+          "postcode": {
+            "@value": "3556"
+          },
           "straatnaam": {
             "@language": "nl",
             "@value": "Zennestraat"
@@ -88,13 +114,17 @@
             "@language": "nl",
             "@value": "Passelt"
           },
-          "huisnummer": { "@value": "18" },
+          "huisnummer": {
+            "@value": "18"
+          },
           "land": {
             "@language": "nl",
             "@value": "België"
           }
         },
-        "email": { "@value": "kiewit@hasselt.be" },
+        "email": {
+          "@value": "kiewit@hasselt.be"
+        },
         "telefoon": [
           {
             "@type": "http://www.w3.org/2006/vcard/ns#Voice",

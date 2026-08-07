@@ -13,11 +13,17 @@
         },
         "registratie": {
           "@type": "Identificator",
-          "identificator": [ { "@value": "OVO000082" } ]
+          "identificator": [
+            {
+              "@value": "OVO000082"
+            }
+          ]
         }
       },
       "identificator": [
-        { "@value": "10260_1683973651" }
+        {
+          "@value": "10260_1683973651"
+        }
       ]
     }
   ],
@@ -30,9 +36,13 @@
     "lid": [
       {
         "@type": "GeregistreerdPersoon",
-        "achternaam": { "@value": "zwaert" },
+        "achternaam": {
+          "@value": "zwaert"
+        },
         "voornaam": [
-          { "@value": "rudy" }
+          {
+            "@value": "rudy"
+          }
         ],
         "registratie": [
           {
@@ -46,11 +56,17 @@
               },
               "registratie": {
                 "@type": "Identificator",
-                "identificator": [ { "@value": "OVO008218" } ]
+                "identificator": [
+                  {
+                    "@value": "OVO008218"
+                  }
+                ]
               }
             },
             "identificator": [
-              { "@value": "16579840247" }
+              {
+                "@value": "16579840247"
+              }
             ]
           }
         ]
@@ -58,12 +74,24 @@
     ],
     "activiteit": [
       {
-        "@id": "https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd"
+        "@id": "https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd",
+        "@type": "Activiteittype",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Gerelateerde landbouwactiviteit"
+        },
+        "code": "gerelateerd"
       }
     ],
     "status": [
       {
-        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/ST"
+        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/ST",
+        "@type": "OrganisatieStatus",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Stopgezet"
+        },
+        "code": "ST"
       }
     ],
     "registratie": [
@@ -78,11 +106,17 @@
           },
           "registratie": {
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO027341" } ]
+            "identificator": [
+              {
+                "@value": "OVO027341"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "761240261" }
+          {
+            "@value": "761240261"
+          }
         ]
       },
       {
@@ -96,16 +130,28 @@
           },
           "registratie": {
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO000082" } ]
+            "identificator": [
+              {
+                "@value": "OVO000082"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "10301295" }
+          {
+            "@value": "10301295"
+          }
         ]
       }
     ],
     "rechtspersoonlijkheid": {
-      "@id": "https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/1"
+      "@id": "https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/1",
+      "@type": "Rechtspersoonlijkheidtype",
+      "voorkeursnaam": {
+        "@language": "nl",
+        "@value": "Natuurlijk Persoon"
+      },
+      "code": "1"
     },
     "contactinfo": [
       {
@@ -116,7 +162,9 @@
             "@language": "nl",
             "@value": "Lokstraat 10, 1234 Overal"
           },
-          "postcode": { "@value": "1234" },
+          "postcode": {
+            "@value": "1234"
+          },
           "straatnaam": {
             "@language": "nl",
             "@value": "Lokstraat"
@@ -125,13 +173,17 @@
             "@language": "nl",
             "@value": "Overal"
           },
-          "huisnummer": { "@value": "10" },
+          "huisnummer": {
+            "@value": "10"
+          },
           "land": {
             "@language": "nl",
             "@value": "België"
           }
         },
-        "email": { "@value": "naamvoornaam4@mail.be" },
+        "email": {
+          "@value": "naamvoornaam4@mail.be"
+        },
         "telefoon": [
           {
             "@type": "http://www.w3.org/2006/vcard/ns#Voice",

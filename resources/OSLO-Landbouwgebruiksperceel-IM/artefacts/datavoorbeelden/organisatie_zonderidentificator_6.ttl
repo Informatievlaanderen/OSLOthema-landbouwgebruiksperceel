@@ -47,3 +47,7 @@
 
 organisatie:OVO000082 rdf:type org:Organization ;
 					  core:prefLabel "Agentschap Landbouw en Zeevisserij"@nl . 
+
+<https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/610> rdf:type core:Concept ;
+	core:notation "610" ;
+	core:prefLabel "Besloten Vennootschap"@nl .

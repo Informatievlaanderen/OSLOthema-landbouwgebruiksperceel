@@ -17,38 +17,8 @@
 @prefix rov: <http://www.w3.org/ns/regorg#> .
 
 
-<https://example.org/id/organisatie/9>
-	rdf:type rov:RegisteredOrganization ;
-	org:linkedTo <https://example.org/id/organisatie/10>;
-	rov:registration [ rdf:type adms:Identifier;
-					  core:notation "802757845";
-					  terms:creator organisatie:OVO027341
-					] ;
-	rov:registration [ rdf:type adms:Identifier;
-					  core:notation "10704453";
-					  terms:creator organisatie:OVO000082
-					] ;
-	rov:orgActivity <https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd> ;
-	rov:orgStatus <https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/ST> ;
-	core:prefLabel "SCHENNING V.O.F."@nl ;
-	organisatiens:rechtsvorm <https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/030> ;
-	organisatiens:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/2> ;
-	schema:contactPoint [ rdf:type schema:ContactPoint ;
-						  schema:telephone "+37 89 12 45 78 9"^^vcard:Voice;
-						  schema:telephone "+34 65 13 97 53 2"^^vcard:Cell;
-						  locn:address [ rdf:type locn:Address;
-		                                        locn:postCode      "5531";
-		                                        locn:thoroughfare  "Pulselseweg"@nl;
-		                                        adres:huisnummer "17";
-		                                        adres:gemeentenaam "PE Padel"@nl;
-		                                        adres:land "Nederland"@nl;
-		                                        locn:fullAddress "PULSELSEWEG 17, 5531 PE PADEL, NEDERLAND"@nl
-						               ]
-	] .
-	
 <https://example.org/id/organisatie/10>
 	rdf:type rov:RegisteredOrganization ;
-	org:linkedTo <https://example.org/id/organisatie/9>;
 	rov:registration [ rdf:type adms:Identifier;
 					  core:notation "17254674";
 					  terms:creator <https://identifier.overheid.nl/tooi/id/zbo/zb000184>
@@ -81,7 +51,7 @@
 					  core:notation "10260_1820939570";
 					  terms:creator organisatie:OVO000082
 					] ;
-	landbouwgebruiksperceel:uitbater <https://example.org/id/organisatie/9> .
+	landbouwgebruiksperceel:uitbater <https://example.org/id/organisatie/10> .
 	
 organisatie:OVO000082 rdf:type org:Organization ;
 					  core:prefLabel "Agentschap Landbouw en Zeevisserij"@nl . 
@@ -89,3 +59,19 @@ organisatie:OVO027341 rdf:type org:Organization ;
 					  core:prefLabel "Kruispuntbank van Ondernemingen"@nl . 
 <https://identifier.overheid.nl/tooi/id/zbo/zb000184> rdf:type org:Organization ;
 					  core:prefLabel "Kamer van Koophandel"@nl .
+
+<https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd> rdf:type core:Concept ;
+																		  core:notation "gerelateerd" ;
+																		  core:prefLabel "Gerelateerde landbouwactiviteit"@nl .
+
+<https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/AC> rdf:type core:Concept ;
+																		 core:notation "AC" ;
+																		 core:prefLabel "Actief"@nl .
+
+<https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/030> rdf:type core:Concept ;
+																	   core:notation "030" ;
+																	   core:prefLabel "Buitenlandse entiteit"@nl .
+																		 
+<https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/2> rdf:type core:Concept ;
+																		 core:notation "2" ;
+																		 core:prefLabel "Rechtspersoon"@nl .

@@ -57,3 +57,19 @@ organisatie:OVO000082 rdf:type org:Organization ;
 					  core:prefLabel "Agentschap Landbouw en Zeevisserij"@nl . 
 organisatie:OVO027341 rdf:type org:Organization ;
 					  core:prefLabel "Kruispuntbank van Ondernemingen"@nl . 
+
+<https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd> rdf:type core:Concept ;
+	core:notation "gerelateerd" ;
+	core:prefLabel "Gerelateerde landbouwactiviteit"@nl .
+
+<https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/ST> rdf:type core:Concept ;
+	core:notation "ST" ;
+	core:prefLabel "Stopgezet"@nl .
+
+<https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/2> rdf:type core:Concept ;
+	core:notation "2" ;
+	core:prefLabel "Rechtspersoon"@nl .
+
+<https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/721> rdf:type core:Concept ;
+	core:notation "721" ;
+	core:prefLabel "Vennootschap of vereniging zonder rechtspersoonlijkheid"@nl .

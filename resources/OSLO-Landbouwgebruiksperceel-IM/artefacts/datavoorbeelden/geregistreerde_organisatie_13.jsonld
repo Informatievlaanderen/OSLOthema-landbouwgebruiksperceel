@@ -13,11 +13,17 @@
         },
         "registratie": {
           "@type": "Identificator",
-          "identificator": [ { "@value": "OVO000082" } ]
+          "identificator": [
+            {
+              "@value": "OVO000082"
+            }
+          ]
         }
       },
       "identificator": [
-        { "@value": "10260_1835413889" }
+        {
+          "@value": "10260_1835413889"
+        }
       ]
     }
   ],
@@ -29,7 +35,13 @@
     },
     "status": [
       {
-        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/AC"
+        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/AC",
+        "@type": "OrganisatieStatus",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Actief"
+        },
+        "code": "AC"
       }
     ],
     "registratie": [
@@ -44,11 +56,17 @@
           },
           "registratie": {
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO027341" } ]
+            "identificator": [
+              {
+                "@value": "OVO027341"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "2144562508" }
+          {
+            "@value": "2144562508"
+          }
         ]
       },
       {
@@ -62,11 +80,17 @@
           },
           "registratie": {
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO000082" } ]
+            "identificator": [
+              {
+                "@value": "OVO000082"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "00038102610" }
+          {
+            "@value": "00038102610"
+          }
         ]
       }
     ],
@@ -79,7 +103,9 @@
             "@language": "nl",
             "@value": "DALBROKSTRAAT 112, 3631 PANAKEN"
           },
-          "postcode": { "@value": "3621" },
+          "postcode": {
+            "@value": "3621"
+          },
           "straatnaam": {
             "@language": "nl",
             "@value": "DALBROKSTRAAT"
@@ -88,13 +114,17 @@
             "@language": "nl",
             "@value": "Panaken"
           },
-          "huisnummer": { "@value": "112" },
+          "huisnummer": {
+            "@value": "112"
+          },
           "land": {
             "@language": "nl",
             "@value": "België"
           }
         },
-        "email": { "@value": "naamvoornaam6@mail.be" },
+        "email": {
+          "@value": "naamvoornaam6@mail.be"
+        },
         "telefoon": [
           {
             "@type": "http://www.w3.org/2006/vcard/ns#Voice",

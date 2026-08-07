@@ -13,11 +13,17 @@
         },
         "registratie": {
           "@type": "Identificator",
-          "identificator": [ { "@value": "OVO000082" } ]
+          "identificator": [
+            {
+              "@value": "OVO000082"
+            }
+          ]
         }
       },
       "identificator": [
-        { "@value": "10260_1847480689" }
+        {
+          "@value": "10260_1847480689"
+        }
       ]
     }
   ],
@@ -29,12 +35,24 @@
     },
     "activiteit": [
       {
-        "@id": "https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd"
+        "@id": "https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd",
+        "@type": "Activiteittype",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Gerelateerde landbouwactiviteit"
+        },
+        "code": "gerelateerd"
       }
     ],
     "status": [
       {
-        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/ST"
+        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/ST",
+        "@type": "OrganisatieStatus",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Stopgezet"
+        },
+        "code": "ST"
       }
     ],
     "registratie": [
@@ -49,11 +67,17 @@
           },
           "registratie": {
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO027341" } ]
+            "identificator": [
+              {
+                "@value": "OVO027341"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "836014294" }
+          {
+            "@value": "836014294"
+          }
         ]
       },
       {
@@ -67,19 +91,37 @@
           },
           "registratie": {
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO000082" } ]
+            "identificator": [
+              {
+                "@value": "OVO000082"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "33414880" }
+          {
+            "@value": "33414880"
+          }
         ]
       }
     ],
     "rechtspersoonlijkheid": {
-      "@id": "https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/2"
+      "@id": "https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/2",
+      "@type": "Rechtspersoonlijkheidtype",
+      "voorkeursnaam": {
+        "@language": "nl",
+        "@value": "Rechtspersoon"
+      },
+      "code": "2"
     },
     "rechtsvorm": {
-      "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/030"
+      "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/030",
+      "@type": "Rechtsvormtype",
+      "voorkeursnaam": {
+        "@language": "nl",
+        "@value": "Buitenlandse entiteit"
+      },
+      "code": "030"
     },
     "contactinfo": [
       {
@@ -90,7 +132,9 @@
             "@language": "nl",
             "@value": "FERME DE BRONFAY - ROUTE DE PARICOURT 0, 80340 BRAY SUR Lesse, FRANKRIJK"
           },
-          "postcode": { "@value": "80340" },
+          "postcode": {
+            "@value": "80340"
+          },
           "straatnaam": {
             "@language": "nl",
             "@value": "ROUTE DE PARICOURT"
@@ -99,13 +143,17 @@
             "@language": "nl",
             "@value": "BRAY SUR Lesse"
           },
-          "huisnummer": { "@value": "0" },
+          "huisnummer": {
+            "@value": "0"
+          },
           "land": {
             "@language": "nl",
             "@value": "Frankrijk"
           }
         },
-        "email": { "@value": "naamvoornaam5@mail.be" },
+        "email": {
+          "@value": "naamvoornaam5@mail.be"
+        },
         "telefoon": [
           {
             "@type": "http://www.w3.org/2006/vcard/ns#Voice",

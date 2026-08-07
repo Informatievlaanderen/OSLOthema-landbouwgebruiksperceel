@@ -1,5 +1,6 @@
 {
   "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
+  "@id": "https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601820939570",
   "@type": "Landbouwgebruiksperceel",
   "identificator": [
     {
@@ -13,151 +14,72 @@
         },
         "registratie": {
           "@type": "Identificator",
-          "identificator": [ { "@value": "OVO000082" } ]
+          "identificator": [
+            {
+              "@value": "OVO000082"
+            }
+          ]
         }
       },
       "identificator": [
-        { "@value": "10260_1820939570" }
+        {
+          "@value": "10260_1820939570"
+        }
       ]
     }
   ],
   "uitbater": {
+    "@id": "https://example.org/id/organisatie/10",
     "@type": "GeregistreerdeOrganisatie",
     "voorkeursnaam": {
       "@language": "nl",
       "@value": "SCHENNING V.O.F."
     },
-    "isGeassocieerdMet": [
-      {
-        "@type": "GeregistreerdeOrganisatie",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "SCHENNING V.O.F."
-        },
-        "isGeassocieerdMet": [
-          {
-            "@id": "https://example.org/id/organisatie/9"
-          }
-        ],
-        "activiteit": [
-          {
-            "@id": "https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd"
-          }
-        ],
-        "status": [
-          {
-            "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/AC"
-          }
-        ],
-        "registratie": [
-          {
-            "@type": "Identificator",
-            "toegekendDoor": {
-              "@id": "https://identifier.overheid.nl/tooi/id/zbo/zb000184",
-              "@type": "GeregistreerdeOrganisatie",
-              "voorkeursnaam": {
-                "@language": "nl",
-                "@value": "Kamer van Koophandel"
-              },
-              "registratie": {
-                "@type": "Identificator",
-                "identificator": [ { "@value": "zb000184" } ]
-              }
-            },
-            "identificator": [
-              { "@value": "17254674" }
-            ]
-          },
-          {
-            "@type": "Identificator",
-            "toegekendDoor": {
-              "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-              "@type": "GeregistreerdeOrganisatie",
-              "voorkeursnaam": {
-                "@language": "nl",
-                "@value": "Agentschap Landbouw en Zeevisserij"
-              },
-              "registratie": {
-                "@type": "Identificator",
-                "identificator": [ { "@value": "OVO000082" } ]
-              }
-            },
-            "identificator": [
-              { "@value": "10704453" }
-            ]
-          }
-        ],
-        "rechtspersoonlijkheid": {
-          "@id": "https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/2"
-        },
-        "rechtsvorm": {
-          "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/030"
-        },
-        "contactinfo": [
-          {
-            "@type": "Contactpunt",
-            "adres": {
-              "@type": "Adresvoorstelling",
-              "volledigAdres": {
-                "@language": "nl",
-                "@value": "VULSELSEWEG 17, 5531 PE PADEL, NEDERLAND"
-              },
-              "postcode": { "@value": "5531" },
-              "straatnaam": {
-                "@language": "nl",
-                "@value": "Vulselseweg"
-              },
-              "gemeentenaam": {
-                "@language": "nl",
-                "@value": "Padel"
-              },
-              "huisnummer": { "@value": "17" },
-              "land": {
-                "@language": "nl",
-                "@value": "Nederland"
-              }
-            },
-            "telefoon": [
-              {
-                "@type": "http://www.w3.org/2006/vcard/ns#Voice",
-                "@value": "+37 89 12 45 78 10"
-              },
-              {
-                "@type": "http://www.w3.org/2006/vcard/ns#Cell",
-                "@value": "+34 65 13 97 53 3"
-              }
-            ]
-          }
-        ]
-      }
-    ],
     "activiteit": [
       {
-        "@id": "https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd"
+        "@id": "https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd",
+        "@type": "Activiteittype",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Gerelateerde landbouwactiviteit"
+        },
+        "code": "gerelateerd"
       }
     ],
     "status": [
       {
-        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/ST"
+        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/AC",
+        "@type": "OrganisatieStatus",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Actief"
+        },
+        "code": "AC"
       }
     ],
     "registratie": [
       {
         "@type": "Identificator",
         "toegekendDoor": {
-          "@id": "http://data.vlaanderen.be/id/organisatie/OVO027341",
+          "@id": "https://identifier.overheid.nl/tooi/id/zbo/zb000184",
           "@type": "GeregistreerdeOrganisatie",
           "voorkeursnaam": {
             "@language": "nl",
-            "@value": "Kruispuntbank van Ondernemingen"
+            "@value": "Kamer van Koophandel"
           },
           "registratie": {
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO027341" } ]
+            "identificator": [
+              {
+                "@value": "zb000184"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "802757845" }
+          {
+            "@value": "17254674"
+          }
         ]
       },
       {
@@ -171,19 +93,37 @@
           },
           "registratie": {
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO000082" } ]
+            "identificator": [
+              {
+                "@value": "OVO000082"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "10704453" }
+          {
+            "@value": "10704453"
+          }
         ]
       }
     ],
     "rechtspersoonlijkheid": {
-      "@id": "https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/2"
+      "@id": "https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/2",
+      "@type": "Rechtspersoonlijkheidtype",
+      "voorkeursnaam": {
+        "@language": "nl",
+        "@value": "Rechtspersoon"
+      },
+      "code": "2"
     },
     "rechtsvorm": {
-      "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/030"
+      "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/030",
+      "@type": "Rechtsvormtype",
+      "voorkeursnaam": {
+        "@language": "nl",
+        "@value": "Buitenlandse entiteit"
+      },
+      "code": "030"
     },
     "contactinfo": [
       {
@@ -192,18 +132,22 @@
           "@type": "Adresvoorstelling",
           "volledigAdres": {
             "@language": "nl",
-            "@value": "PULSELSEWEG 17, 5531 PE PADEL, NEDERLAND"
+            "@value": "VULSELSEWEG 17, 5531 PE PADEL, NEDERLAND"
           },
-          "postcode": { "@value": "5531" },
+          "postcode": {
+            "@value": "5531"
+          },
           "straatnaam": {
             "@language": "nl",
-            "@value": "Pulselseweg"
+            "@value": "Vulselseweg"
           },
           "gemeentenaam": {
             "@language": "nl",
-            "@value": "PE Padel"
+            "@value": "Padel"
           },
-          "huisnummer": { "@value": "17" },
+          "huisnummer": {
+            "@value": "17"
+          },
           "land": {
             "@language": "nl",
             "@value": "Nederland"
@@ -212,11 +156,11 @@
         "telefoon": [
           {
             "@type": "http://www.w3.org/2006/vcard/ns#Voice",
-            "@value": "+37 89 12 45 78 9"
+            "@value": "+37 89 12 45 78 10"
           },
           {
             "@type": "http://www.w3.org/2006/vcard/ns#Cell",
-            "@value": "+34 65 13 97 53 2"
+            "@value": "+34 65 13 97 53 3"
           }
         ]
       }

@@ -13,11 +13,17 @@
         },
         "registratie": {
           "@type": "Identificator",
-          "identificator": [ { "@value": "OVO000082" } ]
+          "identificator": [
+            {
+              "@value": "OVO000082"
+            }
+          ]
         }
       },
       "identificator": [
-        { "@value": "10260_1645768785" }
+        {
+          "@value": "10260_1645768785"
+        }
       ]
     }
   ],
@@ -39,17 +45,29 @@
           },
           "registratie": {
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO000082" } ]
+            "identificator": [
+              {
+                "@value": "OVO000082"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "00037256989" }
+          {
+            "@value": "00037256989"
+          }
         ]
       }
     ],
     "type": [
       {
-        "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/610"
+        "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/610",
+        "@type": "Rechtsvormtype",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Besloten Vennootschap"
+        },
+        "code": "610"
       }
     ],
     "contactinfo": [
@@ -61,7 +79,9 @@
             "@language": "nl",
             "@value": "PEERS 23, 5504 RG HOVEN, NEDERLAND"
           },
-          "postcode": { "@value": "5504" },
+          "postcode": {
+            "@value": "5504"
+          },
           "straatnaam": {
             "@language": "nl",
             "@value": "Peers"
@@ -70,7 +90,9 @@
             "@language": "nl",
             "@value": "RG Hoven"
           },
-          "huisnummer": { "@value": "23" },
+          "huisnummer": {
+            "@value": "23"
+          },
           "land": {
             "@language": "nl",
             "@value": "Nederland"
