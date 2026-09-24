@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### [0.2.0] - 2026-09-24
+
+### Changed
+- Envelop als root object in Swagger.
+- Definities uitgebreid na feedback.
+- Status is nu alleen nog bij GeregistreerdeOrganisatie.
+- Codelijsten links bijgewerkt.
+- Uitbater is nu Gebruiker wat beter overeenkomt.
+
+### Added
+- Afgeleide velden zoals gemeentecode en isOverleden toegevoegd.
+- Identificatortype codelijst voorzien om aan te geven of het over een INSZ etc. gaat.
+- Landbouwactiviteitstype codelijst voorzien van waarden op diagram voor de leesbaarheid.
+
+### Removed
+- Rechtstoestand verwijdert wegens geen gebruik.
+
 ### [0.1.0] - 2026-08-04
 
 ### Added
