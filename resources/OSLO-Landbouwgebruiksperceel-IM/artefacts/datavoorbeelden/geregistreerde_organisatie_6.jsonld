@@ -1,5 +1,5 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.2.0/context/landbouwgebruiksperceel.jsonld",
   "@type": "Landbouwgebruiksperceel",
   "identificator": [
     {
@@ -12,9 +12,11 @@
           "@value": "Agentschap Landbouw en Zeevisserij"
         },
         "registratie": {
+          "@id": "_:registratie:OVO000082",
           "@type": "Identificator",
           "identificator": [
             {
+              "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode",
               "@value": "OVO000082"
             }
           ]
@@ -22,12 +24,13 @@
       },
       "identificator": [
         {
+          "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/AGPAKEY",
           "@value": "10260_1766385053"
         }
       ]
     }
   ],
-  "uitbater": {
+  "gebruiker": {
     "@type": "GeregistreerdeOrganisatie",
     "voorkeursnaam": {
       "@language": "nl",
@@ -35,7 +38,7 @@
     },
     "activiteit": [
       {
-        "@id": "https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd",
+        "@id": "https://data.vlaanderen.be/id/concept/Activiteitstype/gerelateerd",
         "@type": "Activiteittype",
         "voorkeursnaam": {
           "@language": "nl",
@@ -55,6 +58,35 @@
         "code": "AC"
       }
     ],
+    "identificator": [
+      {
+        "@type": "Identificator",
+        "toegekendDoor": {
+          "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
+          "@type": "GeregistreerdeOrganisatie",
+          "voorkeursnaam": {
+            "@language": "nl",
+            "@value": "Agentschap Landbouw en Zeevisserij"
+          },
+          "registratie": {
+            "@id": "_:registratie:OVO000082",
+            "@type": "Identificator",
+            "identificator": [
+              {
+                "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode",
+                "@value": "OVO000082"
+              }
+            ]
+          }
+        },
+        "identificator": [
+          {
+            "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer",
+            "@value": "00311329883"
+          }
+        ]
+      }
+    ],
     "registratie": [
       {
         "@type": "Identificator",
@@ -66,9 +98,11 @@
             "@value": "Kruispuntbank van Ondernemingen"
           },
           "registratie": {
+            "@id": "_:registratie:OVO027341",
             "@type": "Identificator",
             "identificator": [
               {
+                "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode",
                 "@value": "OVO027341"
               }
             ]
@@ -76,31 +110,8 @@
         },
         "identificator": [
           {
+            "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Ondernemingsnummer",
             "@value": "736985907"
-          }
-        ]
-      },
-      {
-        "@type": "Identificator",
-        "toegekendDoor": {
-          "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-          "@type": "GeregistreerdeOrganisatie",
-          "voorkeursnaam": {
-            "@language": "nl",
-            "@value": "Agentschap Landbouw en Zeevisserij"
-          },
-          "registratie": {
-            "@type": "Identificator",
-            "identificator": [
-              {
-                "@value": "OVO000082"
-              }
-            ]
-          }
-        },
-        "identificator": [
-          {
-            "@value": "00311329883"
           }
         ]
       }
@@ -132,9 +143,7 @@
             "@language": "nl",
             "@value": "Sokstraat 10, 1234 Overal"
           },
-          "postcode": {
-            "@value": "1234"
-          },
+          "postcode": { "@value": "1234" },
           "straatnaam": {
             "@language": "nl",
             "@value": "Sokstraat"
@@ -143,17 +152,14 @@
             "@language": "nl",
             "@value": "Overal"
           },
-          "huisnummer": {
-            "@value": "10"
-          },
+          "gemeentecode": { "@value": "44099" },
+          "huisnummer": { "@value": "10" },
           "land": {
             "@language": "nl",
             "@value": "België"
           }
         },
-        "email": {
-          "@value": "naamvoornaam2@mail.be"
-        },
+        "email": { "@value": "naamvoornaam2@mail.be" },
         "telefoon": [
           {
             "@type": "http://www.w3.org/2006/vcard/ns#Cell",

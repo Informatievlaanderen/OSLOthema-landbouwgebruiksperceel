@@ -1,76 +1,89 @@
 @prefix landbouwgebruiksperceel: <https://implementatie.data.vlaanderen.be/ns/lv/landbouwgebruiksperceel#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix terms: <http://purl.org/dc/terms/> .
-@prefix core:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix adms:  <http://www.w3.org/ns/adms#> .
-@prefix org: <http://www.w3.org/ns/org#> .
+@prefix core: <http://www.w3.org/2004/02/skos/core#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix rov: <http://www.w3.org/ns/regorg#> .
 @prefix organisatie: <http://data.vlaanderen.be/id/organisatie/> .
-@prefix organisatienl: <https://identifier.overheid.nl/tooi/id/oorg/oorg> .
-@prefix organisatiens: <https://data.vlaanderen.be/ns/organisatie#> .
-@prefix persoon: <https://data.vlaanderen.be/ns/persoon#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix schema: <https://schema.org/> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
-@prefix agent: <http://xmlns.com/foaf/0.1/Agent> .
 @prefix adres: <https://data.vlaanderen.be/ns/adres#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix rov: <http://www.w3.org/ns/regorg#> .
-
+@prefix identificatortype: <https://data.vlaanderen.be/id/concept/Identificatortype/> .
+@prefix organisatiens: <https://data.vlaanderen.be/ns/organisatie#> .
+@prefix onderneming: <https://implementatie.data.vlaanderen.be/ns/vkbo/onderneming#> .
 
 <https://example.org/id/organisatie/11>
 	rdf:type rov:RegisteredOrganization ;
-	rov:registration [ rdf:type adms:Identifier;
-					  core:notation "836014294";
-					  terms:creator organisatie:OVO027341
-					] ;
-	rov:registration [ rdf:type adms:Identifier;
-					  core:notation "33414880";
-					  terms:creator organisatie:OVO000082
-					] ;
-	rov:orgActivity <https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd> ;
-	rov:orgStatus <https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/ST> ;
 	core:prefLabel "MICHELS X-MICHELS D FV"@nl ;
+	adms:identifier [ rdf:type adms:Identifier ;
+		core:notation "33414880"^^identificatortype:Klantnummer ;
+		terms:creator organisatie:OVO000082
+	] ;
+	rov:registration [ rdf:type adms:Identifier ;
+		core:notation "836014294"^^identificatortype:Ondernemingsnummer ;
+		terms:creator organisatie:OVO027341
+	] ;
+	rov:orgActivity <https://data.vlaanderen.be/id/concept/Activiteitstype/gerelateerd> ;
+	rov:orgStatus <https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/ST> ;
 	organisatiens:rechtsvorm <https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/030> ;
 	organisatiens:rechtspersoonlijkheid <https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/2> ;
 	schema:contactPoint [ rdf:type schema:ContactPoint ;
-						  schema:telephone "+37 89 12 45 78 11"^^vcard:Voice;
-						  schema:telephone "+34 65 13 97 53 4"^^vcard:Cell;
-						  schema:email "naamvoornaam5@mail.be";
-						  locn:address [ rdf:type locn:Address;
-		                                        locn:postCode      "80340";
-		                                        locn:thoroughfare  "ROUTE DE PARICOURT"@nl;
-		                                        adres:huisnummer "0";
-		                                        adres:gemeentenaam "BRAY SUR Lesse"@nl;
-		                                        adres:land "Frankrijk"@nl;
-		                                        locn:fullAddress "FERME DE BRONFAY - ROUTE DE PARICOURT 0, 80340 BRAY SUR Lesse, FRANKRIJK"@nl
-						               ]
+		schema:email "naamvoornaam5@mail.be" ;
+		schema:telephone "+37 89 12 45 78 11"^^vcard:Voice ;
+		schema:telephone "+34 65 13 97 53 4"^^vcard:Cell ;
+		locn:address [ rdf:type locn:Address ;
+			locn:postCode "80340" ;
+			locn:thoroughfare "ROUTE DE PARICOURT"@nl ;
+			adres:huisnummer "0" ;
+			adres:gemeentenaam "BRAY SUR Lesse"@nl ;
+			adres:land "Frankrijk"@nl ;
+			locn:fullAddress "FERME DE BRONFAY - ROUTE DE PARICOURT 0, 80340 BRAY SUR Lesse, FRANKRIJK"@nl
+		]
 	] .
 
 <https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601847480689>
 	rdf:type landbouwgebruiksperceel:Landbouwgebruiksperceel ;
-	adms:identifier [ rdf:type adms:Identifier;
-					  core:notation "10260_1847480689";
-					  terms:creator organisatie:OVO000082
-					] ;
-	landbouwgebruiksperceel:uitbater <https://example.org/id/organisatie/11> .
+	adms:identifier [ rdf:type adms:Identifier ;
+		core:notation "10260_1847480689"^^identificatortype:AGPAKEY ;
+		terms:creator organisatie:OVO000082
+	] ;
+	landbouwgebruiksperceel:gebruiker <https://example.org/id/organisatie/11> .
 
-organisatie:OVO000082 rdf:type org:Organization ;
-					  core:prefLabel "Agentschap Landbouw en Zeevisserij"@nl . 
-organisatie:OVO027341 rdf:type org:Organization ;
-					  core:prefLabel "Kruispuntbank van Ondernemingen"@nl . 
+organisatie:OVO000082
+	rdf:type rov:RegisteredOrganization ;
+	core:prefLabel "Agentschap Landbouw en Zeevisserij"@nl ;
+	rov:registration _:registratie_OVO000082 .
 
-<https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd> rdf:type core:Concept ;
+_:registratie_OVO000082
+	rdf:type adms:Identifier ;
+	core:notation "OVO000082"^^identificatortype:OVOCode .
+
+organisatie:OVO027341
+	rdf:type rov:RegisteredOrganization ;
+	core:prefLabel "Kruispuntbank van Ondernemingen"@nl ;
+	rov:registration _:registratie_OVO027341 .
+
+_:registratie_OVO027341
+	rdf:type adms:Identifier ;
+	core:notation "OVO027341"^^identificatortype:OVOCode .
+
+<https://data.vlaanderen.be/id/concept/Activiteitstype/gerelateerd>
+	rdf:type onderneming:Activiteittype ;
 	core:notation "gerelateerd" ;
 	core:prefLabel "Gerelateerde landbouwactiviteit"@nl .
 
-<https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/ST> rdf:type core:Concept ;
+<https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/ST>
+	rdf:type onderneming:OrganisatieStatus ;
 	core:notation "ST" ;
 	core:prefLabel "Stopgezet"@nl .
 
-<https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/2> rdf:type core:Concept ;
-	core:notation "2" ;
-	core:prefLabel "Rechtspersoon"@nl .
-
-<https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/030> rdf:type core:Concept ;
+<https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/030>
+	rdf:type onderneming:Rechtsvormtype ;
 	core:notation "030" ;
 	core:prefLabel "Buitenlandse entiteit"@nl .
+
+<https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/2>
+	rdf:type onderneming:Rechtspersoonlijkheidtype ;
+	core:notation "2" ;
+	core:prefLabel "Rechtspersoon"@nl .

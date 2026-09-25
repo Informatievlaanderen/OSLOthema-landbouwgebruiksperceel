@@ -1,45 +1,63 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.2.0/context/landbouwgebruiksperceel.jsonld",
   "@type": "Landbouwgebruiksperceel",
   "identificator": [
     {
       "@type": "Identificator",
       "toegekendDoor": {
         "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-        "@type": "Organisatie",
+        "@type": "GeregistreerdeOrganisatie",
         "voorkeursnaam": {
           "@language": "nl",
           "@value": "Agentschap Landbouw en Zeevisserij"
         },
         "registratie": {
+          "@id": "_:registratie:OVO000082",
           "@type": "Identificator",
-          "identificator": [ { "@value": "OVO000082" } ]
+          "identificator": [
+            {
+              "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode",
+              "@value": "OVO000082"
+            }
+          ]
         }
       },
       "identificator": [
-        { "@value": "10260_1770789964" }
+        {
+          "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/AGPAKEY",
+          "@value": "10260_1770789964"
+        }
       ]
     }
   ],
-  "uitbater": {
+  "gebruiker": {
     "@type": "Persoon",
     "identificator": [
       {
         "@type": "Identificator",
         "toegekendDoor": {
           "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-          "@type": "Organisatie",
+          "@type": "GeregistreerdeOrganisatie",
           "voorkeursnaam": {
             "@language": "nl",
             "@value": "Agentschap Landbouw en Zeevisserij"
           },
           "registratie": {
+            "@id": "_:registratie:OVO000082",
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO000082" } ]
+            "identificator": [
+              {
+                "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode",
+                "@value": "OVO000082"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "34000621" }
+          {
+            "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer",
+            "@value": "34000621"
+          }
         ]
       }
     ],
@@ -47,6 +65,7 @@
     "voornaam": [
       { "@value": "AGNES" }
     ],
+    "isOverleden": { "@value": false },
     "contactinfo": [
       {
         "@type": "Contactpunt",

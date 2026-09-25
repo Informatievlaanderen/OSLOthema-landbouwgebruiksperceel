@@ -1,54 +1,66 @@
 @prefix landbouwgebruiksperceel: <https://implementatie.data.vlaanderen.be/ns/lv/landbouwgebruiksperceel#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix terms: <http://purl.org/dc/terms/> .
-@prefix core:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix adms:  <http://www.w3.org/ns/adms#> .
-@prefix org: <http://www.w3.org/ns/org#> .
+@prefix core: <http://www.w3.org/2004/02/skos/core#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix rov: <http://www.w3.org/ns/regorg#> .
 @prefix organisatie: <http://data.vlaanderen.be/id/organisatie/> .
-@prefix organisatienl: <https://identifier.overheid.nl/tooi/id/oorg/oorg> .
 @prefix persoon: <https://data.vlaanderen.be/ns/persoon#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix schema: <https://schema.org/> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
-@prefix agent: <http://xmlns.com/foaf/0.1/Agent> .
 @prefix adres: <https://data.vlaanderen.be/ns/adres#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-
+@prefix identificatortype: <https://data.vlaanderen.be/id/concept/Identificatortype/> .
 
 <https://data.vlaanderen.be/id/persoon/6>
 	rdf:type persoon:GeregistreerdPersoon ;
-	persoon:registratie [ rdf:type adms:Identifier;
-					  core:notation "16579840239";
-					  terms:creator organisatie:OVO008218
-					] ;
-	adms:identifier [ rdf:type adms:Identifier;
-					  core:notation "15218084";
-					  terms:creator organisatie:OVO000082
-					] ;
+	persoon:registratie [ rdf:type adms:Identifier ;
+		core:notation "16579840239"^^identificatortype:INSZ ;
+		terms:creator organisatie:OVO008218
+	] ;
+	adms:identifier [ rdf:type adms:Identifier ;
+		core:notation "15218084"^^identificatortype:Klantnummer ;
+		terms:creator organisatie:OVO000082
+	] ;
 	foaf:familyName "Zeilen" ;
 	foaf:givenName "Pans" ;
+	landbouwgebruiksperceel:isOverleden true ;
 	schema:contactPoint [ rdf:type schema:ContactPoint ;
-						  schema:telephone "0456 78 45 12"^^vcard:Cell;
-						  locn:address [ rdf:type locn:Address;
-		                                        locn:postCode      "1111";
-		                                        locn:thoroughfare  "BROEKSTRAAT"@nl;
-		                                        adres:huisnummer "1";
-		                                        adres:gemeentenaam "Nergens"@nl;
-		                                        adres:land "België"@nl;
-		                                        locn:fullAddress "Broekstraat 1, 1111 Nergens"@nl
-						               ]
-	] ;
-	persoon:heeftOverlijden [ rdf:type persoon:Overlijden ] .
+		schema:telephone "0456 78 45 12"^^vcard:Cell ;
+		locn:address [ rdf:type locn:Address ;
+			locn:postCode "1111" ;
+			locn:thoroughfare "BROEKSTRAAT"@nl ;
+			adres:huisnummer "1" ;
+			adres:gemeentenaam "Nergens"@nl ;
+			landbouwgebruiksperceel:gemeentecode "46099" ;
+			adres:land "België"@nl ;
+			locn:fullAddress "Broekstraat 1, 1111 Nergens"@nl
+		]
+	] .
 
 <https://data.vlaanderen.be/id/landbouwgebruiksperceel/102621858037121>
 	rdf:type landbouwgebruiksperceel:Landbouwgebruiksperceel ;
-	adms:identifier [ rdf:type adms:Identifier;
-					  core:notation "10262_1858037121";
-					  terms:creator organisatie:OVO000082
-					] ;
-	landbouwgebruiksperceel:uitbater <https://data.vlaanderen.be/id/persoon/6> .
-	
-organisatie:OVO008218 rdf:type org:Organization ; 
-					  core:prefLabel "Kruispuntbank van de Sociale Zekerheid"@nl .
-organisatie:OVO000082 rdf:type org:Organization ;
-					  core:prefLabel "Agentschap Landbouw en Zeevisserij"@nl . 
+	adms:identifier [ rdf:type adms:Identifier ;
+		core:notation "10262_1858037121"^^identificatortype:AGPAKEY ;
+		terms:creator organisatie:OVO000082
+	] ;
+	landbouwgebruiksperceel:gebruiker <https://data.vlaanderen.be/id/persoon/6> .
+
+organisatie:OVO008218
+	rdf:type rov:RegisteredOrganization ;
+	core:prefLabel "Kruispuntbank van de Sociale Zekerheid"@nl ;
+	rov:registration _:registratie_OVO008218 .
+
+_:registratie_OVO008218
+	rdf:type adms:Identifier ;
+	core:notation "OVO008218"^^identificatortype:OVOCode .
+
+organisatie:OVO000082
+	rdf:type rov:RegisteredOrganization ;
+	core:prefLabel "Agentschap Landbouw en Zeevisserij"@nl ;
+	rov:registration _:registratie_OVO000082 .
+
+_:registratie_OVO000082
+	rdf:type adms:Identifier ;
+	core:notation "OVO000082"^^identificatortype:OVOCode .

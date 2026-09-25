@@ -1,5 +1,5 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.2.0/context/landbouwgebruiksperceel.jsonld",
   "@type": "Landbouwgebruiksperceel",
   "identificator": [
     {
@@ -12,16 +12,25 @@
           "@value": "Agentschap Landbouw en Zeevisserij"
         },
         "registratie": {
+          "@id": "_:registratie:OVO000082",
           "@type": "Identificator",
-          "identificator": [ { "@value": "OVO000082" } ]
+          "identificator": [
+            {
+              "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode",
+              "@value": "OVO000082"
+            }
+          ]
         }
       },
       "identificator": [
-        { "@value": "10262_1853210864" }
+        {
+          "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/AGPAKEY",
+          "@value": "10262_1853210864"
+        }
       ]
     }
   ],
-  "uitbater": {
+  "gebruiker": {
     "@type": "GeregistreerdPersoon",
     "identificator": [
       {
@@ -34,12 +43,21 @@
             "@value": "Agentschap Landbouw en Zeevisserij"
           },
           "registratie": {
+            "@id": "_:registratie:OVO000082",
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO000082" } ]
+            "identificator": [
+              {
+                "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode",
+                "@value": "OVO000082"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "33793382" }
+          {
+            "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer",
+            "@value": "33793382"
+          }
         ]
       }
     ],
@@ -47,6 +65,7 @@
     "voornaam": [
       { "@value": "Swans" }
     ],
+    "isOverleden": { "@value": false },
     "registratie": [
       {
         "@type": "Identificator",
@@ -58,12 +77,21 @@
             "@value": "Kruispuntbank van de Sociale Zekerheid"
           },
           "registratie": {
+            "@id": "_:registratie:OVO008218",
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO008218" } ]
+            "identificator": [
+              {
+                "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode",
+                "@value": "OVO008218"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "16579840240" }
+          {
+            "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/INSZ",
+            "@value": "16579840240"
+          }
         ]
       }
     ],
@@ -85,6 +113,7 @@
             "@language": "nl",
             "@value": "Nergens"
           },
+          "gemeentecode": { "@value": "46099" },
           "huisnummer": { "@value": "3" },
           "land": {
             "@language": "nl",

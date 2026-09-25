@@ -1,5 +1,5 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.2.0/context/landbouwgebruiksperceel.jsonld",
   "@type": "Landbouwgebruiksperceel",
   "identificator": [
     {
@@ -12,17 +12,26 @@
           "@value": "Agentschap Landbouw en Zeevisserij"
         },
         "registratie": {
+          "@id": "_:registratie:OVO000082",
           "@type": "Identificator",
-          "identificator": [ { "@value": "OVO000082" } ]
+          "identificator": [
+            {
+              "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode",
+              "@value": "OVO000082"
+            }
+          ]
         }
       },
       "identificator": [
-        { "@value": "10262_1791336180" }
+        {
+          "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/AGPAKEY",
+          "@value": "10262_1791336180"
+        }
       ]
     }
   ],
-  "uitbater": {
-    "@type": "GeregistreerdPersoon",
+  "gebruiker": {
+    "@type": "Persoon",
     "identificator": [
       {
         "@type": "Identificator",
@@ -34,12 +43,21 @@
             "@value": "Agentschap Landbouw en Zeevisserij"
           },
           "registratie": {
+            "@id": "_:registratie:OVO000082",
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO000082" } ]
+            "identificator": [
+              {
+                "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode",
+                "@value": "OVO000082"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "38804949" }
+          {
+            "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer",
+            "@value": "38804949"
+          }
         ]
       }
     ],
@@ -47,26 +65,7 @@
     "voornaam": [
       { "@value": "Schans" }
     ],
-    "registratie": [
-      {
-        "@type": "Identificator",
-        "toegekendDoor": {
-          "@id": "https://identifier.overheid.nl/tooi/id/oorg/oorg10103",
-          "@type": "GeregistreerdeOrganisatie",
-          "voorkeursnaam": {
-            "@language": "nl",
-            "@value": "Rijksdienst voor Identiteitsgegevens"
-          },
-          "registratie": {
-            "@type": "Identificator",
-            "identificator": [ { "@value": "oorg10103" } ]
-          }
-        },
-        "identificator": [
-          { "@value": "16579840241" }
-        ]
-      }
-    ],
+    "isOverleden": { "@value": false },
     "contactinfo": [
       {
         "@type": "Contactpunt",

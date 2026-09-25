@@ -1,5 +1,5 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.2.0/context/landbouwgebruiksperceel.jsonld",
   "@type": "Landbouwgebruiksperceel",
   "identificator": [
     {
@@ -12,16 +12,25 @@
           "@value": "Agentschap Landbouw en Zeevisserij"
         },
         "registratie": {
+          "@id": "_:registratie:OVO000082",
           "@type": "Identificator",
-          "identificator": [ { "@value": "OVO000082" } ]
+          "identificator": [
+            {
+              "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode",
+              "@value": "OVO000082"
+            }
+          ]
         }
       },
       "identificator": [
-        { "@value": "10260_1717965178" }
+        {
+          "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/AGPAKEY",
+          "@value": "10260_1717965178"
+        }
       ]
     }
   ],
-  "uitbater": {
+  "gebruiker": {
     "@type": "GeregistreerdPersoon",
     "identificator": [
       {
@@ -34,12 +43,21 @@
             "@value": "Agentschap Landbouw en Zeevisserij"
           },
           "registratie": {
+            "@id": "_:registratie:OVO000082",
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO000082" } ]
+            "identificator": [
+              {
+                "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode",
+                "@value": "OVO000082"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "305792193" }
+          {
+            "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer",
+            "@value": "305792193"
+          }
         ]
       }
     ],
@@ -47,25 +65,8 @@
     "voornaam": [
       { "@value": "Maria" }
     ],
+    "isOverleden": { "@value": false },
     "registratie": [
-      {
-        "@type": "Identificator",
-        "toegekendDoor": {
-          "@id": "https://identifier.overheid.nl/tooi/id/oorg/oorg10103",
-          "@type": "GeregistreerdeOrganisatie",
-          "voorkeursnaam": {
-            "@language": "nl",
-            "@value": "Rijksdienst voor Identiteitsgegevens"
-          },
-          "registratie": {
-            "@type": "Identificator",
-            "identificator": [ { "@value": "oorg10103" } ]
-          }
-        },
-        "identificator": [
-          { "@value": "16579840242" }
-        ]
-      },
       {
         "@type": "Identificator",
         "toegekendDoor": {
@@ -76,12 +77,21 @@
             "@value": "Kruispuntbank van de Sociale Zekerheid"
           },
           "registratie": {
+            "@id": "_:registratie:OVO008218",
             "@type": "Identificator",
-            "identificator": [ { "@value": "OVO008218" } ]
+            "identificator": [
+              {
+                "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode",
+                "@value": "OVO008218"
+              }
+            ]
           }
         },
         "identificator": [
-          { "@value": "16579840243" }
+          {
+            "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/INSZ",
+            "@value": "16579840243"
+          }
         ]
       }
     ],

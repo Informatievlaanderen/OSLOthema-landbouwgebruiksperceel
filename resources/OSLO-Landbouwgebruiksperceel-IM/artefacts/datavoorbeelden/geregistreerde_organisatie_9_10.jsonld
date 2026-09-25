@@ -1,6 +1,5 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
-  "@id": "https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601820939570",
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.2.0/context/landbouwgebruiksperceel.jsonld",
   "@type": "Landbouwgebruiksperceel",
   "identificator": [
     {
@@ -13,9 +12,11 @@
           "@value": "Agentschap Landbouw en Zeevisserij"
         },
         "registratie": {
+          "@id": "_:registratie:OVO000082",
           "@type": "Identificator",
           "identificator": [
             {
+              "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode",
               "@value": "OVO000082"
             }
           ]
@@ -23,21 +24,21 @@
       },
       "identificator": [
         {
+          "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/AGPAKEY",
           "@value": "10260_1820939570"
         }
       ]
     }
   ],
-  "uitbater": {
-    "@id": "https://example.org/id/organisatie/10",
-    "@type": "GeregistreerdeOrganisatie",
+  "gebruiker": {
+    "@type": "Organisatie",
     "voorkeursnaam": {
       "@language": "nl",
       "@value": "SCHENNING V.O.F."
     },
     "activiteit": [
       {
-        "@id": "https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd",
+        "@id": "https://data.vlaanderen.be/id/concept/Activiteitstype/gerelateerd",
         "@type": "Activiteittype",
         "voorkeursnaam": {
           "@language": "nl",
@@ -46,42 +47,27 @@
         "code": "gerelateerd"
       }
     ],
-    "status": [
+    "type": [
       {
-        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/AC",
-        "@type": "OrganisatieStatus",
+        "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/030",
+        "@type": "Rechtsvormtype",
         "voorkeursnaam": {
           "@language": "nl",
-          "@value": "Actief"
+          "@value": "Buitenlandse entiteit"
         },
-        "code": "AC"
+        "code": "030"
+      },
+      {
+        "@id": "https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/2",
+        "@type": "Rechtspersoonlijkheidtype",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Rechtspersoon"
+        },
+        "code": "2"
       }
     ],
-    "registratie": [
-      {
-        "@type": "Identificator",
-        "toegekendDoor": {
-          "@id": "https://identifier.overheid.nl/tooi/id/zbo/zb000184",
-          "@type": "GeregistreerdeOrganisatie",
-          "voorkeursnaam": {
-            "@language": "nl",
-            "@value": "Kamer van Koophandel"
-          },
-          "registratie": {
-            "@type": "Identificator",
-            "identificator": [
-              {
-                "@value": "zb000184"
-              }
-            ]
-          }
-        },
-        "identificator": [
-          {
-            "@value": "17254674"
-          }
-        ]
-      },
+    "identificator": [
       {
         "@type": "Identificator",
         "toegekendDoor": {
@@ -92,9 +78,11 @@
             "@value": "Agentschap Landbouw en Zeevisserij"
           },
           "registratie": {
+            "@id": "_:registratie:OVO000082",
             "@type": "Identificator",
             "identificator": [
               {
+                "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode",
                 "@value": "OVO000082"
               }
             ]
@@ -102,29 +90,12 @@
         },
         "identificator": [
           {
+            "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer",
             "@value": "10704453"
           }
         ]
       }
     ],
-    "rechtspersoonlijkheid": {
-      "@id": "https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/2",
-      "@type": "Rechtspersoonlijkheidtype",
-      "voorkeursnaam": {
-        "@language": "nl",
-        "@value": "Rechtspersoon"
-      },
-      "code": "2"
-    },
-    "rechtsvorm": {
-      "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/030",
-      "@type": "Rechtsvormtype",
-      "voorkeursnaam": {
-        "@language": "nl",
-        "@value": "Buitenlandse entiteit"
-      },
-      "code": "030"
-    },
     "contactinfo": [
       {
         "@type": "Contactpunt",
@@ -134,9 +105,7 @@
             "@language": "nl",
             "@value": "VULSELSEWEG 17, 5531 PE PADEL, NEDERLAND"
           },
-          "postcode": {
-            "@value": "5531"
-          },
+          "postcode": { "@value": "5531" },
           "straatnaam": {
             "@language": "nl",
             "@value": "Vulselseweg"
@@ -145,9 +114,7 @@
             "@language": "nl",
             "@value": "Padel"
           },
-          "huisnummer": {
-            "@value": "17"
-          },
+          "huisnummer": { "@value": "17" },
           "land": {
             "@language": "nl",
             "@value": "Nederland"

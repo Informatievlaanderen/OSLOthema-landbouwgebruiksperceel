@@ -5,7 +5,7 @@
 @prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix rov: <http://www.w3.org/ns/regorg#> .
 @prefix organisatie: <http://data.vlaanderen.be/id/organisatie/> .
-@prefix persoon: <https://data.vlaanderen.be/ns/persoon#> .
+@prefix person: <http://www.w3.org/ns/person#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix schema: <https://schema.org/> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
@@ -13,48 +13,36 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix identificatortype: <https://data.vlaanderen.be/id/concept/Identificatortype/> .
 
-<https://data.vlaanderen.be/id/persoon/9>
-	rdf:type persoon:GeregistreerdPersoon ;
-	persoon:registratie [ rdf:type adms:Identifier ;
-		core:notation "16579840243"^^identificatortype:INSZ ;
-		terms:creator organisatie:OVO008218
-	] ;
+<https://data.vlaanderen.be/id/persoon/8>
+	rdf:type person:Person ;
 	adms:identifier [ rdf:type adms:Identifier ;
-		core:notation "305792193"^^identificatortype:Klantnummer ;
+		core:notation "38804949"^^identificatortype:Klantnummer ;
 		terms:creator organisatie:OVO000082
 	] ;
-	foaf:familyName "Tuinier" ;
-	foaf:givenName "Maria" ;
+	foaf:familyName "Spring" ;
+	foaf:givenName "Schans" ;
 	landbouwgebruiksperceel:isOverleden false ;
 	schema:contactPoint [ rdf:type schema:ContactPoint ;
-		schema:email "Maria@hemel.nl" ;
-		schema:telephone "+21 45 78 89 4"^^vcard:Voice ;
+		schema:email "Springschans@mail.be" ;
+		schema:telephone "+21 45 78 89 3"^^vcard:Voice ;
+		schema:telephone "+21 31 54 97 2"^^vcard:Cell ;
 		locn:address [ rdf:type locn:Address ;
-			locn:postCode "11123" ;
+			locn:postCode "1111" ;
 			locn:thoroughfare "BROEKSTRAAT"@nl ;
-			adres:huisnummer "5" ;
-			adres:gemeentenaam "DAAR"@nl ;
+			adres:huisnummer "4" ;
+			adres:gemeentenaam "Nergens"@nl ;
 			adres:land "Nederland"@nl ;
-			locn:fullAddress "Broekstraat 5, 11123 DAAR"@nl
+			locn:fullAddress "Broekstraat 4, 1111 Nergens"@nl
 		]
 	] .
 
-<https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601717965178>
+<https://data.vlaanderen.be/id/landbouwgebruiksperceel/102621791336180>
 	rdf:type landbouwgebruiksperceel:Landbouwgebruiksperceel ;
 	adms:identifier [ rdf:type adms:Identifier ;
-		core:notation "10260_1717965178"^^identificatortype:AGPAKEY ;
+		core:notation "10262_1791336180"^^identificatortype:AGPAKEY ;
 		terms:creator organisatie:OVO000082
 	] ;
-	landbouwgebruiksperceel:gebruiker <https://data.vlaanderen.be/id/persoon/9> .
-
-organisatie:OVO008218
-	rdf:type rov:RegisteredOrganization ;
-	core:prefLabel "Kruispuntbank van de Sociale Zekerheid"@nl ;
-	rov:registration _:registratie_OVO008218 .
-
-_:registratie_OVO008218
-	rdf:type adms:Identifier ;
-	core:notation "OVO008218"^^identificatortype:OVOCode .
+	landbouwgebruiksperceel:gebruiker <https://data.vlaanderen.be/id/persoon/8> .
 
 organisatie:OVO000082
 	rdf:type rov:RegisteredOrganization ;
