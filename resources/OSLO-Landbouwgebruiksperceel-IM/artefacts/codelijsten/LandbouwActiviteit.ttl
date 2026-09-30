@@ -1,25 +1,19 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 
-<https://data.vlaanderen.be/id/conceptscheme/LandbouwActiviteit/v1> a skos:ConceptScheme;
-    skos:prefLabel "Codelijst Landbouwactiviteiten (v1)"@nl;
-    skos:definition "Codelijst van mogelijke activiteiten voor een landbouwgerelateerde organisatie."@nl;
-    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/LandbouwActiviteit>;
-    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/LandbouwActiviteit>;
-    skos:notation "LandbouwActiviteit-v1".
 <https://data.vlaanderen.be/id/conceptscheme/LandbouwActiviteit> a skos:ConceptScheme;
     skos:prefLabel "Codelijst Landbouwactiviteiten"@nl;
     skos:definition "Codelijst van mogelijke activiteiten voor een landbouwgerelateerde organisatie."@nl;
     skos:notation "LandbouwActiviteit".
-<https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd> a skos:Concept;
+<https://data.vlaanderen.be/id/concept/LandbouwActiviteit/gerelateerd> a skos:Concept;
     skos:prefLabel "Gerelateerde landbouwactiviteit"@nl;
     skos:definition "De onderneming voert een landbouwgerelateerde activiteit uit."@nl;
-    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/LandbouwActiviteit/v1>;
-    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/LandbouwActiviteit/v1>;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/LandbouwActiviteit>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/LandbouwActiviteit>;
     skos:notation "gerelateerd".
-<https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/ongerelateerd> a skos:Concept;
-    skos:prefLabel "Ongerelateerd landbouwactiviteit"@nl;
+<https://data.vlaanderen.be/id/concept/LandbouwActiviteit/ongerelateerd> a skos:Concept;
+    skos:prefLabel "Ongerelateerde landbouwactiviteit"@nl;
     skos:definition "De onderneming voert geen landbouwgerelateerde activiteit uit."@nl;
-    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/LandbouwActiviteit/v1>;
-    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/LandbouwActiviteit/v1>;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/LandbouwActiviteit>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/LandbouwActiviteit>;
     skos:notation "ongerelateerd".
