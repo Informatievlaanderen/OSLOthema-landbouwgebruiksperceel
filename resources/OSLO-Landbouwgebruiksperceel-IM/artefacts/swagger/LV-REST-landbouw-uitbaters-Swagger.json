@@ -3,7 +3,7 @@
   "info": {
     "title": "LV landbouw.uitbaters REST",
     "description": "LV OSLO-conforme REST API voor informatie over landbouwgebruikspercelen",
-    "version": "0.1.0"
+    "version": "0.2.0"
   },
   "servers": [
     {
