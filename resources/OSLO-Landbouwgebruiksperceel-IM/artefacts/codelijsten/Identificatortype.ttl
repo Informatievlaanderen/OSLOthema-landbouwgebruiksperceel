@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+<https://data.vlaanderen.be/id/conceptscheme/Identificatortype> a skos:ConceptScheme;
+    skos:prefLabel "Codelijst Identificator types"@nl;
+    skos:definition "Codelijst van mogelijke soorten identificatoren"@nl;
+    skos:notation "Identificatortype".
+<https://data.vlaanderen.be/id/concept/Identificatortype/INSZ> a skos:Concept;
+    skos:prefLabel "Identificatienummer van de Sociale Zekerheid (INSZ)"@nl;
+    skos:definition "Unieke identificator voor iedereen die in België werkt."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/Identificatortype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/Identificatortype>;
+    skos:notation "INSZ".
+<https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer> a skos:Concept;
+    skos:prefLabel "Klantnummer"@nl;
+    skos:definition "Unieke identificator voor een klant binnen een organisatie."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/Identificatortype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/Identificatortype>;
+    skos:notation "Klantnummer".
+<https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode> a skos:Concept;
+    skos:prefLabel "OVO Code"@nl;
+    skos:definition "Unieke identificator van een organisatie uit het Organisatieregister."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/Identificatortype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/Identificatortype>;
+    skos:notation "OVOCode".
+<https://data.vlaanderen.be/id/concept/Identificatortype/VCode> a skos:Concept;
+    skos:prefLabel "V Code"@nl;
+    skos:definition "Unieke identificator van een vereniging uit het Verenigingenregister."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/Identificatortype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/Identificatortype>;
+    skos:notation "VCode".
+<https://data.vlaanderen.be/id/concept/Identificatortype/Ondernemingsnummer> a skos:Concept;
+    skos:prefLabel "Ondernemingsnummer"@nl;
+    skos:definition "Unieke identificator van een onderneming."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/Identificatortype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/Identificatortype>;
+    skos:notation "Ondernemingsnummer".
+<https://data.vlaanderen.be/id/concept/Identificatortype/Vestigingseenheidnummer> a skos:Concept;
+    skos:prefLabel "Vestigingseenheidnummer"@nl;
+    skos:definition "Unieke identificator van een vestiging van een onderneming."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/Identificatortype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/Identificatortype>;
+    skos:notation "Vestingingseenheidnummer".
+<https://data.vlaanderen.be/id/concept/Identificatortype/AGPAKEY> a skos:Concept;
+    skos:prefLabel "AGPAKEY"@nl;
+    skos:definition "Unieke identificator voor het gebruik in een bepaalde tijd van een landbouwgebruiksperceel."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/Identificatortype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/Identificatortype>;
+    skos:notation "AGPAKEY".
