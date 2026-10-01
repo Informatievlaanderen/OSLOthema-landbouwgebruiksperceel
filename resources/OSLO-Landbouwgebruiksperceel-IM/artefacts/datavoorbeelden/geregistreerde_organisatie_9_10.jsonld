@@ -1,34 +1,24 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
-  "@id": "https://data.vlaanderen.be/id/landbouwgebruiksperceel/102601820939570",
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.2.0/context/landbouwgebruiksperceel.jsonld",
   "@type": "Landbouwgebruiksperceel",
-  "identificator": [
-    {
-      "@type": "Identificator",
-      "toegekendDoor": {
-        "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-        "@type": "GeregistreerdeOrganisatie",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Agentschap Landbouw en Zeevisserij"
-        },
-        "registratie": {
-          "@type": "Identificator",
-          "identificator": [
-            {
-              "@value": "OVO000082"
-            }
-          ]
-        }
+  "identificator": {
+    "@type": "Identificator",
+    "toegekendDoor": {
+      "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
+      "@type": "GeregistreerdeOrganisatie",
+      "voorkeursnaam": {
+        "@language": "nl",
+        "@value": "Agentschap Landbouw en Zeevisserij"
       },
-      "identificator": [
-        {
-          "@value": "10260_1820939570"
-        }
-      ]
-    }
-  ],
-  "uitbater": {
+      "registratie": {
+        "@id": "_:registratie:OVO000082",
+        "@type": "Identificator",
+        "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+      }
+    },
+    "identificator": { "@value": "10260_1820939570", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/AGPAKEY" }
+  },
+  "gebruiker": {
     "@id": "https://example.org/id/organisatie/10",
     "@type": "GeregistreerdeOrganisatie",
     "voorkeursnaam": {
@@ -37,8 +27,8 @@
     },
     "activiteit": [
       {
-        "@id": "https://data.vlaanderen.be/id/concept/LandbouwActiviteit/v1/gerelateerd",
-        "@type": "Activiteittype",
+        "@id": "https://data.vlaanderen.be/id/concept/LandbouwActiviteit/gerelateerd",
+        "@type": "LandbouwActiviteit",
         "voorkeursnaam": {
           "@language": "nl",
           "@value": "Gerelateerde landbouwactiviteit"
@@ -48,7 +38,7 @@
     ],
     "status": [
       {
-        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/AC",
+        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/AC",
         "@type": "OrganisatieStatus",
         "voorkeursnaam": {
           "@language": "nl",
@@ -57,58 +47,36 @@
         "code": "AC"
       }
     ],
-    "registratie": [
-      {
-        "@type": "Identificator",
-        "toegekendDoor": {
-          "@id": "https://identifier.overheid.nl/tooi/id/zbo/zb000184",
-          "@type": "GeregistreerdeOrganisatie",
-          "voorkeursnaam": {
-            "@language": "nl",
-            "@value": "Kamer van Koophandel"
-          },
-          "registratie": {
-            "@type": "Identificator",
-            "identificator": [
-              {
-                "@value": "zb000184"
-              }
-            ]
-          }
-        },
-        "identificator": [
-          {
-            "@value": "17254674"
-          }
-        ]
+    "registratie": {
+      "@type": "Identificator",
+      "toegekendDoor": {
+        "@type": "Organisatie",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Kamer van Koophandel"
+        }
       },
-      {
-        "@type": "Identificator",
-        "toegekendDoor": {
-          "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-          "@type": "GeregistreerdeOrganisatie",
-          "voorkeursnaam": {
-            "@language": "nl",
-            "@value": "Agentschap Landbouw en Zeevisserij"
-          },
-          "registratie": {
-            "@type": "Identificator",
-            "identificator": [
-              {
-                "@value": "OVO000082"
-              }
-            ]
-          }
+      "identificator": { "@value": "17254674", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Ondernemingsnummer" }
+    },
+    "identificator": {
+      "@type": "Identificator",
+      "toegekendDoor": {
+        "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
+        "@type": "GeregistreerdeOrganisatie",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Agentschap Landbouw en Zeevisserij"
         },
-        "identificator": [
-          {
-            "@value": "10704453"
-          }
-        ]
-      }
-    ],
+        "registratie": {
+          "@id": "_:registratie:OVO000082",
+          "@type": "Identificator",
+          "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+        }
+      },
+      "identificator": { "@value": "10704453", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer" }
+    },
     "rechtspersoonlijkheid": {
-      "@id": "https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/v1/2",
+      "@id": "https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/2",
       "@type": "Rechtspersoonlijkheidtype",
       "voorkeursnaam": {
         "@language": "nl",
@@ -117,7 +85,7 @@
       "code": "2"
     },
     "rechtsvorm": {
-      "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/v1/030",
+      "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/030",
       "@type": "Rechtsvormtype",
       "voorkeursnaam": {
         "@language": "nl",
@@ -134,9 +102,7 @@
             "@language": "nl",
             "@value": "VULSELSEWEG 17, 5531 PE PADEL, NEDERLAND"
           },
-          "postcode": {
-            "@value": "5531"
-          },
+          "postcode": "5531",
           "straatnaam": {
             "@language": "nl",
             "@value": "Vulselseweg"
@@ -145,9 +111,7 @@
             "@language": "nl",
             "@value": "Padel"
           },
-          "huisnummer": {
-            "@value": "17"
-          },
+          "huisnummer": "17",
           "land": {
             "@language": "nl",
             "@value": "Nederland"

@@ -1,8 +1,26 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.2.0/context/landbouwgebruiksperceel.jsonld",
   "@type": "Landbouwgebruiksperceel",
-  "identificator": [
-    {
+  "identificator": {
+    "@type": "Identificator",
+    "toegekendDoor": {
+      "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
+      "@type": "GeregistreerdeOrganisatie",
+      "voorkeursnaam": {
+        "@language": "nl",
+        "@value": "Agentschap Landbouw en Zeevisserij"
+      },
+      "registratie": {
+        "@id": "_:registratie:OVO000082",
+        "@type": "Identificator",
+        "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+      }
+    },
+    "identificator": { "@value": "10262_1257238218", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/AGPAKEY" }
+  },
+  "gebruiker": {
+    "@type": "GeregistreerdPersoon",
+    "identificator": {
       "@type": "Identificator",
       "toegekendDoor": {
         "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
@@ -12,64 +30,35 @@
           "@value": "Agentschap Landbouw en Zeevisserij"
         },
         "registratie": {
+          "@id": "_:registratie:OVO000082",
           "@type": "Identificator",
-          "identificator": [ { "@value": "OVO000082" } ]
+          "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
         }
       },
-      "identificator": [
-        { "@value": "10262_1257238218" }
-      ]
-    }
-  ],
-  "uitbater": {
-    "@type": "GeregistreerdPersoon",
-    "identificator": [
-      {
-        "@type": "Identificator",
-        "toegekendDoor": {
-          "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-          "@type": "GeregistreerdeOrganisatie",
-          "voorkeursnaam": {
-            "@language": "nl",
-            "@value": "Agentschap Landbouw en Zeevisserij"
-          },
-          "registratie": {
-            "@type": "Identificator",
-            "identificator": [ { "@value": "OVO000082" } ]
-          }
-        },
-        "identificator": [
-          { "@value": "15248905" }
-        ]
-      }
-    ],
-    "achternaam": { "@value": "Wijlen" },
-    "voornaam": [
-      { "@value": "Frans" }
-    ],
-    "heeftOverlijden": {
-      "@type": "Overlijden"
+      "identificator": { "@value": "15248905", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer" }
     },
-    "registratie": [
-      {
-        "@type": "Identificator",
-        "toegekendDoor": {
-          "@id": "http://data.vlaanderen.be/id/organisatie/OVO008218",
-          "@type": "GeregistreerdeOrganisatie",
-          "voorkeursnaam": {
-            "@language": "nl",
-            "@value": "Kruispuntbank van de Sociale Zekerheid"
-          },
-          "registratie": {
-            "@type": "Identificator",
-            "identificator": [ { "@value": "OVO008218" } ]
-          }
-        },
-        "identificator": [
-          { "@value": "16579840238" }
-        ]
-      }
+    "achternaam": "Wijlen",
+    "voornaam": [
+      "Frans"
     ],
+    "isOverleden": true,
+    "registratie": {
+      "@type": "Identificator",
+      "toegekendDoor": {
+        "@id": "http://data.vlaanderen.be/id/organisatie/OVO008218",
+        "@type": "GeregistreerdeOrganisatie",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Kruispuntbank van de Sociale Zekerheid"
+        },
+        "registratie": {
+          "@id": "_:registratie:OVO008218",
+          "@type": "Identificator",
+          "identificator": { "@value": "OVO008218", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+        }
+      },
+      "identificator": { "@value": "16579840238", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/INSZ" }
+    },
     "contactinfo": [
       {
         "@type": "Contactpunt",
@@ -79,7 +68,7 @@
             "@language": "nl",
             "@value": "Broekstraat 2, 1111 Nergens"
           },
-          "postcode": { "@value": "1111" },
+          "postcode": "1111",
           "straatnaam": {
             "@language": "nl",
             "@value": "BROEKSTRAAT"
@@ -88,7 +77,7 @@
             "@language": "nl",
             "@value": "Nergens"
           },
-          "huisnummer": { "@value": "2" },
+          "huisnummer": "2",
           "land": {
             "@language": "nl",
             "@value": "België"

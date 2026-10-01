@@ -1,8 +1,58 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.2.0/context/landbouwgebruiksperceel.jsonld",
   "@type": "Landbouwgebruiksperceel",
-  "identificator": [
-    {
+  "identificator": {
+    "@type": "Identificator",
+    "toegekendDoor": {
+      "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
+      "@type": "GeregistreerdeOrganisatie",
+      "voorkeursnaam": {
+        "@language": "nl",
+        "@value": "Agentschap Landbouw en Zeevisserij"
+      },
+      "registratie": {
+        "@id": "_:registratie:OVO000082",
+        "@type": "Identificator",
+        "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+      }
+    },
+    "identificator": { "@value": "10260_1672682245", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/AGPAKEY" }
+  },
+  "gebruiker": {
+    "@type": "GeregistreerdeOrganisatie",
+    "voorkeursnaam": {
+      "@language": "nl",
+      "@value": "Natuurdomein Kiewit"
+    },
+    "status": [
+      {
+        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/AC",
+        "@type": "OrganisatieStatus",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Actief"
+        },
+        "code": "AC"
+      }
+    ],
+    "registratie": {
+      "@type": "Identificator",
+      "toegekendDoor": {
+        "@id": "http://data.vlaanderen.be/id/organisatie/OVO027341",
+        "@type": "GeregistreerdeOrganisatie",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Kruispuntbank van Ondernemingen"
+        },
+        "registratie": {
+          "@id": "_:registratie:OVO027341",
+          "@type": "Identificator",
+          "identificator": { "@value": "OVO027341", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+        }
+      },
+      "identificator": { "@value": "2161418831", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Vestigingseenheidnummer" }
+    },
+    "identificator": {
       "@type": "Identificator",
       "toegekendDoor": {
         "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
@@ -12,88 +62,13 @@
           "@value": "Agentschap Landbouw en Zeevisserij"
         },
         "registratie": {
+          "@id": "_:registratie:OVO000082",
           "@type": "Identificator",
-          "identificator": [
-            {
-              "@value": "OVO000082"
-            }
-          ]
+          "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
         }
       },
-      "identificator": [
-        {
-          "@value": "10260_1672682245"
-        }
-      ]
-    }
-  ],
-  "uitbater": {
-    "@type": "GeregistreerdeOrganisatie",
-    "voorkeursnaam": {
-      "@language": "nl",
-      "@value": "Natuurdomein Kiewit"
+      "identificator": { "@value": "07102305442", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer" }
     },
-    "status": [
-      {
-        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/AC",
-        "@type": "OrganisatieStatus",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Actief"
-        },
-        "code": "AC"
-      }
-    ],
-    "registratie": [
-      {
-        "@type": "Identificator",
-        "toegekendDoor": {
-          "@id": "http://data.vlaanderen.be/id/organisatie/OVO027341",
-          "@type": "GeregistreerdeOrganisatie",
-          "voorkeursnaam": {
-            "@language": "nl",
-            "@value": "Kruispuntbank van Ondernemingen"
-          },
-          "registratie": {
-            "@type": "Identificator",
-            "identificator": [
-              {
-                "@value": "OVO027341"
-              }
-            ]
-          }
-        },
-        "identificator": [
-          {
-            "@value": "2161418831"
-          }
-        ]
-      },
-      {
-        "@type": "Identificator",
-        "toegekendDoor": {
-          "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-          "@type": "GeregistreerdeOrganisatie",
-          "voorkeursnaam": {
-            "@language": "nl",
-            "@value": "Agentschap Landbouw en Zeevisserij"
-          },
-          "registratie": {
-            "@type": "Identificator",
-            "identificator": [
-              {
-                "@value": "OVO000082"
-              }
-            ]
-          }
-        },
-        "identificator": [
-          {
-            "@value": "07102305442"
-          }
-        ]
-      }
-    ],
     "contactinfo": [
       {
         "@type": "Contactpunt",
@@ -103,9 +78,7 @@
             "@language": "nl",
             "@value": "ZENNESTRAAT 18, 3556 PASSELT"
           },
-          "postcode": {
-            "@value": "3556"
-          },
+          "postcode": "3556",
           "straatnaam": {
             "@language": "nl",
             "@value": "Zennestraat"
@@ -122,9 +95,7 @@
             "@value": "België"
           }
         },
-        "email": {
-          "@value": "kiewit@hasselt.be"
-        },
+        "email": "kiewit@hasselt.be",
         "telefoon": [
           {
             "@type": "http://www.w3.org/2006/vcard/ns#Voice",

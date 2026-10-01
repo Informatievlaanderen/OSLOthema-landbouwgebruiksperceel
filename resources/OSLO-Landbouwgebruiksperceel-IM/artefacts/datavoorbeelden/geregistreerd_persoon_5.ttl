@@ -47,7 +47,7 @@
 					  core:notation "10262_1257238218";
 					  terms:creator organisatie:OVO000082
 					] ;
-	landbouwgebruiksperceel:uitbater <https://data.vlaanderen.be/id/persoon/5> .
+	landbouwgebruiksperceel:gebruiker <https://data.vlaanderen.be/id/persoon/5> .
 
 organisatie:OVO008218 rdf:type org:Organization ; 
 					  core:prefLabel "Kruispuntbank van de Sociale Zekerheid"@nl .

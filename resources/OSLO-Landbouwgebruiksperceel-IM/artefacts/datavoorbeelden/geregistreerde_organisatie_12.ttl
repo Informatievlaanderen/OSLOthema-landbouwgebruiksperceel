@@ -48,7 +48,7 @@
 					  core:notation "10260_1672682245";
 					  terms:creator organisatie:OVO000082
 					] ;
-	landbouwgebruiksperceel:uitbater <https://example.org/id/organisatie/12> .
+	landbouwgebruiksperceel:gebruiker <https://example.org/id/organisatie/12> .
 
 organisatie:OVO000082 rdf:type org:Organization ;
 					  core:prefLabel "Agentschap Landbouw en Zeevisserij"@nl . 

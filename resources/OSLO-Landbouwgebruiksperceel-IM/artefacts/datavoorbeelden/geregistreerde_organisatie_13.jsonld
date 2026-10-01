@@ -1,8 +1,58 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.1.0/context/landbouwgebruiksperceel.jsonld",
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.2.0/context/landbouwgebruiksperceel.jsonld",
   "@type": "Landbouwgebruiksperceel",
-  "identificator": [
-    {
+  "identificator": {
+    "@type": "Identificator",
+    "toegekendDoor": {
+      "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
+      "@type": "GeregistreerdeOrganisatie",
+      "voorkeursnaam": {
+        "@language": "nl",
+        "@value": "Agentschap Landbouw en Zeevisserij"
+      },
+      "registratie": {
+        "@id": "_:registratie:OVO000082",
+        "@type": "Identificator",
+        "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+      }
+    },
+    "identificator": { "@value": "10260_1835413889", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/AGPAKEY" }
+  },
+  "gebruiker": {
+    "@type": "GeregistreerdeOrganisatie",
+    "voorkeursnaam": {
+      "@language": "nl",
+      "@value": "OPZ Rekem"
+    },
+    "status": [
+      {
+        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/AC",
+        "@type": "OrganisatieStatus",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Actief"
+        },
+        "code": "AC"
+      }
+    ],
+    "registratie":{
+      "@type": "Identificator",
+      "toegekendDoor": {
+        "@id": "http://data.vlaanderen.be/id/organisatie/OVO027341",
+        "@type": "GeregistreerdeOrganisatie",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Kruispuntbank van Ondernemingen"
+        },
+        "registratie": {
+          "@id": "_:registratie:OVO027341",
+          "@type": "Identificator",
+          "identificator": { "@value": "OVO027341", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+        }
+      },
+      "identificator": { "@value": "2144562508", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Vestigingseenheidnummer" }
+    },
+    "identificator": {
       "@type": "Identificator",
       "toegekendDoor": {
         "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
@@ -12,88 +62,13 @@
           "@value": "Agentschap Landbouw en Zeevisserij"
         },
         "registratie": {
+          "@id": "_:registratie:OVO000082",
           "@type": "Identificator",
-          "identificator": [
-            {
-              "@value": "OVO000082"
-            }
-          ]
+          "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
         }
       },
-      "identificator": [
-        {
-          "@value": "10260_1835413889"
-        }
-      ]
-    }
-  ],
-  "uitbater": {
-    "@type": "GeregistreerdeOrganisatie",
-    "voorkeursnaam": {
-      "@language": "nl",
-      "@value": "OPZ Rekem"
+      "identificator": { "@value": "00038102610", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer" }
     },
-    "status": [
-      {
-        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/v1/AC",
-        "@type": "OrganisatieStatus",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Actief"
-        },
-        "code": "AC"
-      }
-    ],
-    "registratie": [
-      {
-        "@type": "Identificator",
-        "toegekendDoor": {
-          "@id": "http://data.vlaanderen.be/id/organisatie/OVO027341",
-          "@type": "GeregistreerdeOrganisatie",
-          "voorkeursnaam": {
-            "@language": "nl",
-            "@value": "Kruispuntbank van Ondernemingen"
-          },
-          "registratie": {
-            "@type": "Identificator",
-            "identificator": [
-              {
-                "@value": "OVO027341"
-              }
-            ]
-          }
-        },
-        "identificator": [
-          {
-            "@value": "2144562508"
-          }
-        ]
-      },
-      {
-        "@type": "Identificator",
-        "toegekendDoor": {
-          "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-          "@type": "GeregistreerdeOrganisatie",
-          "voorkeursnaam": {
-            "@language": "nl",
-            "@value": "Agentschap Landbouw en Zeevisserij"
-          },
-          "registratie": {
-            "@type": "Identificator",
-            "identificator": [
-              {
-                "@value": "OVO000082"
-              }
-            ]
-          }
-        },
-        "identificator": [
-          {
-            "@value": "00038102610"
-          }
-        ]
-      }
-    ],
     "contactinfo": [
       {
         "@type": "Contactpunt",
@@ -103,9 +78,7 @@
             "@language": "nl",
             "@value": "DALBROKSTRAAT 112, 3631 PANAKEN"
           },
-          "postcode": {
-            "@value": "3621"
-          },
+          "postcode": "3621",
           "straatnaam": {
             "@language": "nl",
             "@value": "DALBROKSTRAAT"
@@ -114,17 +87,13 @@
             "@language": "nl",
             "@value": "Panaken"
           },
-          "huisnummer": {
-            "@value": "112"
-          },
+          "huisnummer": "112",
           "land": {
             "@language": "nl",
             "@value": "België"
           }
         },
-        "email": {
-          "@value": "naamvoornaam6@mail.be"
-        },
+        "email": "naamvoornaam6@mail.be",
         "telefoon": [
           {
             "@type": "http://www.w3.org/2006/vcard/ns#Voice",

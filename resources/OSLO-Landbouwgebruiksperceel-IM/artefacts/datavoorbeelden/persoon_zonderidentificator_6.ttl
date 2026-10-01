@@ -44,7 +44,7 @@
 					  core:notation "10260_1770789964";
 					  terms:creator organisatie:OVO000082
 					] ;
-	landbouwgebruiksperceel:uitbater <https://data.vlaanderen.be/id/persoon/6> .
+	landbouwgebruiksperceel:gebruiker <https://data.vlaanderen.be/id/persoon/6> .
 
 organisatie:OVO000082 rdf:type org:Organization ;
 					  core:prefLabel "Agentschap Landbouw en Zeevisserij"@nl . 
