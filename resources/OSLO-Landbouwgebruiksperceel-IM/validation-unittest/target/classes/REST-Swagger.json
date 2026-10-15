@@ -1,0 +1,1089 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "LV landbouw.uitbaters REST",
+    "description": "LV OSLO-conforme REST API voor informatie over landbouwgebruikspercelen",
+    "version": "0.2.0"
+  },
+  "servers": [
+    {
+      "url": "https://lv.vlaanderen.be/",
+      "description": "Basis URL"
+    }
+  ],
+  "paths": {
+    "/uitbaters/{agpakey}": {
+      "get": {
+        "summary": "Vraag de uitbater op van een landbouwgebruiksperceel.",
+        "description": "Vraag de informatie over de uitbater op van een landbouwgebruikersperceel op basis van de AGPAKEY die de uitbating uniek identificeert volgens de uitbatingsperiode, uitbater, en landbouwgebruiksperceel.",
+        "operationId": "LandbouwgebruiksperceelGET",
+        "parameters": [
+          {
+            "name": "agpakey",
+            "required": true,
+            "in": "path",
+            "description": "De AGPAKEY die het Landbouwgebruiksperceel uniek identificeert.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "X-Correlation-Id",
+            "required": true,
+            "in": "header",
+            "description": "Correlatie ID van het request.",
+            "schema": {
+              "type": "string",
+              "minLength": 10,
+              "maxLength": 36
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Landbouwgebruiksperceel object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Landbouwgebruiksperceel"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid data supplied.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problemdetail"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid authorization.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problemdetail"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Authentication failed.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problemdetail"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Resource not found.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problemdetail"
+                }
+              }
+            }
+          },
+          "412": {
+            "description": "Pre-condition failed.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problemdetail"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected Server Error.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problemdetail"
+                }
+              }
+            }
+          },
+          "502": {
+            "description": "Bad Gateway.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problemdetail"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Service unavailable.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problemdetail"
+                }
+              }
+            }
+          },
+          "504": {
+            "description": "Gateway Timeout.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problemdetail"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+      "schemas": {
+      "OrganisatieType": {
+        "title": "OrganisatieType",
+        "type": "object",
+        "description": "Enumeratie van OrganisatieType",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "Rechtspersoonlijkheidtype": {
+        "title": "Rechtspersoonlijkheidtype",
+        "type": "object",
+        "description": "Enumeratie van Rechtspersoonlijkheidtype",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "Rechtsvormtype": {
+        "title": "Rechtsvormtype",
+        "type": "object",
+        "description": "Enumeratie van Rechtsvormtype",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "LandbouwActiviteit": {
+        "title": "LandbouwActiviteit",
+        "type": "object",
+        "description": "Enumeratie van LandbouwActiviteit",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "OrganisatieStatus": {
+        "title": "OrganisatieStatus",
+        "type": "object",
+        "description": "Enumeratie van OrganisatieStatus",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "Identificatortype": {
+        "title": "Identificatortype",
+        "type": "object",
+        "description": "Enumeratie van Identificatortype",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "Problemdetail.detail": {
+        "title": "Problemdetail.detail",
+        "description": "Mensleesbare beschrijving van de fout.",
+        "type": "string"
+      },
+      "Problemdetail.instance": {
+        "title": "Problemdetail.instance",
+        "description": "Verwijzing naar de instantie van het object waarop de fout betrekking heeft. Bijvoorbeeld: de verwijzing naar de request.",
+        "type": "string",
+        "format": "uri"
+      },
+      "Problemdetail.status": {
+        "title": "Problemdetail.status",
+        "description": "HTTP foutcode. Zoals beschreven in <a href=\"https://www.rfc-editor.org/rfc/rfc7231\">RFC7231</a>. Bijvoorbeeld: 404 voor \"Not Found\".",
+        "type": "number",
+        "format": "int64"
+      },
+      "Problemdetail.title": {
+        "title": "Problemdetail.title",
+        "description": "Korte mensleesbare beschrijving van de fout.",
+        "type": "string"
+      },
+      "Problemdetail.type": {
+        "title": "Problemdetail.type",
+        "description": "Aard van de fout.",
+        "type": "string",
+        "format": "uri"
+      },
+      "Problemdetail": {
+        "title": "Problemdetail",
+        "type": "object",
+        "description": "Meer gedetailleerde beschrijving van de fout in een HTTP response.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Problemdetail)",
+            "pattern": "^Problemdetail$"
+          },
+          "detail": {
+            "$ref": "#/components/schemas/Problemdetail.detail"
+          },
+          "instance": {
+            "$ref": "#/components/schemas/Problemdetail.instance"
+          },
+          "status": {
+            "$ref": "#/components/schemas/Problemdetail.status"
+          },
+          "title": {
+            "$ref": "#/components/schemas/Problemdetail.title"
+          },
+          "type": {
+            "$ref": "#/components/schemas/Problemdetail.type"
+          }
+        },
+        "required": [
+          "@type",
+          "detail",
+          "title",
+          "type"
+        ]
+      },
+      "Adres": {
+        "title": "Adres",
+        "type": "object",
+        "description": "Informatie die toelaat om op een gestructureerde en unieke manier te verwijzen naar een gebouweenheid, een ligplaats, een standplaats of een perceel op basis van een gemeentenaam, een straatnaam, een huisnummer en eventueel een busnummer en een postcode.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Adres)",
+            "pattern": "^Adres$"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Organisatie.voorkeursnaam": {
+        "title": "Organisatie.voorkeursnaam",
+        "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
+        "type": "string"
+      },
+      "Organisatie": {
+        "title": "Organisatie",
+        "type": "object",
+        "description": "Een aantal mensen georganiseerd in een gemeenschap of andere sociale, commerciële of politieke structuur. De groep heeft een gemeenschappelijk doel of bestaansreden die de individuele leden ervan overstijgt en kan handelen als agent. Een Organisatie heeft dikwijls een hiërarchische structuur.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Organisatie)",
+            "pattern": "^Organisatie$"
+          },
+          "voorkeursnaam": {
+            "$ref": "#/components/schemas/Organisatie.voorkeursnaam"
+          },
+          "type": {
+            "type": "array",
+            "description": "Soort organisatie. Specialisatie van classificatie (naast activiteit & status). Lijst van OrganisatieType items.",
+            "items": {
+              "$ref": "#/components/schemas/OrganisatieType"
+            },
+            "minItems": 1
+          },
+          "contactinfo": {
+            "type": "array",
+            "description": "Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren. Lijst van Contactpunt items.",
+            "items": {
+              "$ref": "#/components/schemas/Contactpunt"
+            },
+            "minItems": 1
+          },
+          "activiteit": {
+            "type": "array",
+            "description": "Type activiteit die door de Organisatie wordt uitgeoefend. Lijst van LandbouwActiviteit items.",
+            "items": {
+              "$ref": "#/components/schemas/LandbouwActiviteit"
+            },
+            "minItems": 1
+          },
+          "lid": {
+            "type": "array",
+            "description": "Agent die lid is van een Organisatie. Lijst van Persoon items.",
+            "items": {
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/Persoon"
+                },
+                {
+                  "$ref": "#/components/schemas/GeregistreerdPersoon"
+                }
+              ],
+              "discriminator": {
+                "propertyName": "@type",
+                "mapping": {
+                  "Persoon": "#/components/schemas/Persoon",
+                  "GeregistreerdPersoon": "#/components/schemas/GeregistreerdPersoon"
+                }
+              }
+            },
+            "minItems": 1
+          },
+          "identificator": {
+            "$ref": "#/components/schemas/Identificator"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Persoon.isOverleden": {
+        "title": "Persoon.isOverleden",
+        "description": "Aanduiding of de persoon overleden is of niet. Afgeleid veld van OSLO Persoon <a href=\"https://data.vlaanderen.be/ns/persoon#heeftOverlijden\">heeftOverlijden</a>. Dit veld werd specifiek toegevoegd aan het implementatiemodel wegens de noodzakelijkheden rond gegevenscherming die het reguliere gebruik van heeftOverlijden verhinderen.",
+        "type": "boolean"
+      },
+      "Persoon.voornaam": {
+        "title": "Persoon.voornaam",
+        "description": "Naam die een Persoon bij geboorte wordt gegeven. Onderscheidt de Persoon van de andere personen in de familie.",
+        "type": "string"
+      },
+      "Persoon.alternatieveNaam": {
+        "title": "Persoon.alternatieveNaam",
+        "description": "Alternatief voor de volledige naam van de Persoon. Bijvoorbeeld pseudoniem.",
+        "type": "string"
+      },
+      "Persoon.achternaam": {
+        "title": "Persoon.achternaam",
+        "description": "Gedeelte van de volledige naam van de Persoon ontvangen van de vorige generatie. Ook wel familienaam genoemd omdat de achternaam een familiale verwantschap aanduidt.",
+        "type": "string"
+      },
+      "Persoon": {
+        "title": "Persoon",
+        "type": "object",
+        "description": "Natuurlijk persoon.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Persoon)",
+            "pattern": "^Persoon$"
+          },
+          "isOverleden": {
+            "$ref": "#/components/schemas/Persoon.isOverleden"
+          },
+          "voornaam": {
+            "type": "array",
+            "description": "Naam die een Persoon bij geboorte wordt gegeven. Onderscheidt de Persoon van de andere personen in de familie. Lijst van String items.",
+            "items": {
+              "$ref": "#/components/schemas/Persoon.voornaam"
+            },
+            "minItems": 1
+          },
+          "alternatieveNaam": {
+            "type": "array",
+            "description": "Alternatief voor de volledige naam van de Persoon. Bijvoorbeeld pseudoniem. Lijst van String items.",
+            "items": {
+              "$ref": "#/components/schemas/Persoon.alternatieveNaam"
+            },
+            "minItems": 1
+          },
+          "achternaam": {
+            "$ref": "#/components/schemas/Persoon.achternaam"
+          },
+          "heeftOverlijden": {
+            "$ref": "#/components/schemas/Overlijden"
+          },
+          "contactinfo": {
+            "$ref": "#/components/schemas/Contactpunt"
+          },
+          "identificator": {
+            "$ref": "#/components/schemas/Identificator"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "GeregistreerdPersoon.isOverleden": {
+        "title": "GeregistreerdPersoon.isOverleden",
+        "description": "Aanduiding of de persoon overleden is of niet. Afgeleid veld van OSLO Persoon <a href=\"https://data.vlaanderen.be/ns/persoon#heeftOverlijden\">heeftOverlijden</a>. Dit veld werd specifiek toegevoegd aan het implementatiemodel wegens de noodzakelijkheden rond gegevenscherming die het reguliere gebruik van heeftOverlijden verhinderen.",
+        "type": "boolean"
+      },
+      "GeregistreerdPersoon.voornaam": {
+        "title": "GeregistreerdPersoon.voornaam",
+        "description": "Naam die een Persoon bij geboorte wordt gegeven. Onderscheidt de Persoon van de andere personen in de familie.",
+        "type": "string"
+      },
+      "GeregistreerdPersoon.alternatieveNaam": {
+        "title": "GeregistreerdPersoon.alternatieveNaam",
+        "description": "Alternatief voor de volledige naam van de Persoon. Bijvoorbeeld pseudoniem.",
+        "type": "string"
+      },
+      "GeregistreerdPersoon.achternaam": {
+        "title": "GeregistreerdPersoon.achternaam",
+        "description": "Gedeelte van de volledige naam van de Persoon ontvangen van de vorige generatie. Ook wel familienaam genoemd omdat de achternaam een familiale verwantschap aanduidt.",
+        "type": "string"
+      },
+      "GeregistreerdPersoon": {
+        "title": "GeregistreerdPersoon",
+        "type": "object",
+        "description": "Persoon waarvan de gegevens zijn ingeschreven in een register.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse GeregistreerdPersoon)",
+            "pattern": "^GeregistreerdPersoon$"
+          },
+          "registratie": {
+            "$ref": "#/components/schemas/Identificator"
+          },
+          "identificator": {
+            "$ref": "#/components/schemas/Identificator"
+          },
+          "isOverleden": {
+            "$ref": "#/components/schemas/GeregistreerdPersoon.isOverleden"
+          },
+          "voornaam": {
+            "type": "array",
+            "description": "Naam die een Persoon bij geboorte wordt gegeven. Onderscheidt de Persoon van de andere personen in de familie. Lijst van String items.",
+            "items": {
+              "$ref": "#/components/schemas/GeregistreerdPersoon.voornaam"
+            },
+            "minItems": 1
+          },
+          "alternatieveNaam": {
+            "type": "array",
+            "description": "Alternatief voor de volledige naam van de Persoon. Bijvoorbeeld pseudoniem. Lijst van String items.",
+            "items": {
+              "$ref": "#/components/schemas/GeregistreerdPersoon.alternatieveNaam"
+            },
+            "minItems": 1
+          },
+          "achternaam": {
+            "$ref": "#/components/schemas/GeregistreerdPersoon.achternaam"
+          },
+          "heeftOverlijden": {
+            "$ref": "#/components/schemas/Overlijden"
+          },
+          "contactinfo": {
+            "$ref": "#/components/schemas/Contactpunt"
+          }
+        },
+        "required": [
+          "@type",
+          "registratie"
+        ]
+      },
+      "GeregistreerdeOrganisatie.voorkeursnaam": {
+        "title": "GeregistreerdeOrganisatie.voorkeursnaam",
+        "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
+        "type": "string"
+      },
+      "GeregistreerdeOrganisatie": {
+        "title": "GeregistreerdeOrganisatie",
+        "type": "object",
+        "description": "Organisatie met een juridisch statuut vastgelegd door registratie. Vergelijk met een FormeleOrganisatie waarbij dit statuut ook op een andere manier verkregen kan zijn.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse GeregistreerdeOrganisatie)",
+            "pattern": "^GeregistreerdeOrganisatie$"
+          },
+          "status": {
+            "type": "array",
+            "description": "Toestand van de Organisatie. Specialisatie van classificatie (naast type & activiteit). Lijst van OrganisatieStatus items.",
+            "items": {
+              "$ref": "#/components/schemas/OrganisatieStatus"
+            },
+            "minItems": 1
+          },
+          "rechtspersoonlijkheid": {
+            "$ref": "#/components/schemas/Rechtspersoonlijkheidtype"
+          },
+          "registratie": {
+            "$ref": "#/components/schemas/Identificator"
+          },
+          "rechtsvorm": {
+            "$ref": "#/components/schemas/Rechtsvormtype"
+          },
+          "voorkeursnaam": {
+            "$ref": "#/components/schemas/GeregistreerdeOrganisatie.voorkeursnaam"
+          },
+          "type": {
+            "type": "array",
+            "description": "Soort organisatie. Specialisatie van classificatie (naast activiteit & status). Lijst van OrganisatieType items.",
+            "items": {
+              "$ref": "#/components/schemas/OrganisatieType"
+            },
+            "minItems": 1
+          },
+          "contactinfo": {
+            "type": "array",
+            "description": "Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren. Lijst van Contactpunt items.",
+            "items": {
+              "$ref": "#/components/schemas/Contactpunt"
+            },
+            "minItems": 1
+          },
+          "activiteit": {
+            "type": "array",
+            "description": "Type activiteit die door de Organisatie wordt uitgeoefend. Lijst van LandbouwActiviteit items.",
+            "items": {
+              "$ref": "#/components/schemas/LandbouwActiviteit"
+            },
+            "minItems": 1
+          },
+          "lid": {
+            "type": "array",
+            "description": "Agent die lid is van een Organisatie. Lijst van Persoon items.",
+            "items": {
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/Persoon"
+                },
+                {
+                  "$ref": "#/components/schemas/GeregistreerdPersoon"
+                }
+              ],
+              "discriminator": {
+                "propertyName": "@type",
+                "mapping": {
+                  "Persoon": "#/components/schemas/Persoon",
+                  "GeregistreerdPersoon": "#/components/schemas/GeregistreerdPersoon"
+                }
+              }
+            },
+            "minItems": 1
+          },
+          "identificator": {
+            "$ref": "#/components/schemas/Identificator"
+          }
+        },
+        "required": [
+          "@type",
+          "registratie"
+        ]
+      },
+      "Overlijden": {
+        "title": "Overlijden",
+        "type": "object",
+        "description": "Het doodgaan van een Persoon.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Overlijden)",
+            "pattern": "^Overlijden$"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Landbouwgebruiksperceel": {
+        "title": "Landbouwgebruiksperceel",
+        "type": "object",
+        "description": "Een landbouwgebruiksperceel is een aaneengesloten stuk grond dat door een landbouwer wordt gebruikt voor landbouwactiviteiten.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Landbouwgebruiksperceel)",
+            "pattern": "^Landbouwgebruiksperceel$"
+          },
+          "identificator": {
+            "$ref": "#/components/schemas/Identificator"
+          },
+          "gebruiker": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/Organisatie"
+              },
+              {
+                "$ref": "#/components/schemas/Persoon"
+              },
+              {
+                "$ref": "#/components/schemas/GeregistreerdPersoon"
+              },
+              {
+                "$ref": "#/components/schemas/GeregistreerdeOrganisatie"
+              }
+            ],
+            "discriminator": {
+              "propertyName": "@type",
+              "mapping": {
+                "Organisatie": "#/components/schemas/Organisatie",
+                "Persoon": "#/components/schemas/Persoon",
+                "GeregistreerdPersoon": "#/components/schemas/GeregistreerdPersoon",
+                "GeregistreerdeOrganisatie": "#/components/schemas/GeregistreerdeOrganisatie"
+              }
+            }
+          }
+        },
+        "required": [
+          "@type",
+          "identificator",
+          "gebruiker"
+        ]
+      },
+      "Concept.code": {
+        "title": "Concept.code",
+        "description": "De waarde van de code van het Concept.",
+        "type": "string"
+      },
+      "Concept.voorkeursnaam": {
+        "title": "Concept.voorkeursnaam",
+        "description": "De naam van het Concept.",
+        "type": "string"
+      },
+      "Concept": {
+        "title": "Concept",
+        "type": "object",
+        "description": "Concept is een idee of code.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Concept)",
+            "pattern": "^Concept$"
+          },
+          "code": {
+            "$ref": "#/components/schemas/Concept.code"
+          },
+          "voorkeursnaam": {
+            "$ref": "#/components/schemas/Concept.voorkeursnaam"
+          }
+        },
+        "required": [
+          "@type",
+          "code"
+        ]
+      },
+      "Adresvoorstelling.gemeentecode": {
+        "title": "Adresvoorstelling.gemeentecode",
+        "description": "Alfanumerieke code die de gemeente identificeert. Bijvoorbeeld: NIS-code. Afgeleid veld van de identificator van OSLO Generiek <a href=\"https://data.vlaanderen.be/ns/generiek/#Gemeente\">Gemeente</a>.",
+        "type": "string"
+      },
+      "Adresvoorstelling.busnummer": {
+        "title": "Adresvoorstelling.busnummer",
+        "description": "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben. Specialisatie van Adresvoorstelling:locatieaanduiding ten behoeve van Belgische adressen.",
+        "type": "string"
+      },
+      "Adresvoorstelling.gemeentenaam": {
+        "title": "Adresvoorstelling.gemeentenaam",
+        "description": "Gemeentenaam van het adres.",
+        "type": "string"
+      },
+      "Adresvoorstelling.huisnummer": {
+        "title": "Adresvoorstelling.huisnummer",
+        "description": "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen. Specialisatie van Adresvoorstelling:locatieaanduiding ten behoeve van Belgische adressen.",
+        "type": "string"
+      },
+      "Adresvoorstelling.land": {
+        "title": "Adresvoorstelling.land",
+        "description": "Land waarin het adres gelegen is.",
+        "type": "string"
+      },
+      "Adresvoorstelling.postbus": {
+        "title": "Adresvoorstelling.postbus",
+        "description": "Postbusnummer in een postkantoor.",
+        "type": "string"
+      },
+      "Adresvoorstelling.postcode": {
+        "title": "Adresvoorstelling.postcode",
+        "description": "Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid.",
+        "type": "string"
+      },
+      "Adresvoorstelling.straatnaam": {
+        "title": "Adresvoorstelling.straatnaam",
+        "description": "Straatnaam van het adres.",
+        "type": "string"
+      },
+      "Adresvoorstelling.volledigAdres": {
+        "title": "Adresvoorstelling.volledigAdres",
+        "description": "Het complete adres in één string, al dan niet geformatteerd. Vermijdt fouten ten gevolge van het opsplitsen van een adres in zijn onderdelen. Geeft de voorgeschreven volgorde van de verschillende onderdelen weer.",
+        "type": "string"
+      },
+      "Adresvoorstelling": {
+        "title": "Adresvoorstelling",
+        "type": "object",
+        "description": "Meer leesbare voorstelling met enkel de basisgegevens van het adres, bedoeld voor het gebruik van een adres als attribuut van een ander object.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Adresvoorstelling)",
+            "pattern": "^Adresvoorstelling$"
+          },
+          "gemeentecode": {
+            "$ref": "#/components/schemas/Adresvoorstelling.gemeentecode"
+          },
+          "busnummer": {
+            "$ref": "#/components/schemas/Adresvoorstelling.busnummer"
+          },
+          "gemeentenaam": {
+            "$ref": "#/components/schemas/Adresvoorstelling.gemeentenaam"
+          },
+          "huisnummer": {
+            "$ref": "#/components/schemas/Adresvoorstelling.huisnummer"
+          },
+          "land": {
+            "$ref": "#/components/schemas/Adresvoorstelling.land"
+          },
+          "postbus": {
+            "$ref": "#/components/schemas/Adresvoorstelling.postbus"
+          },
+          "postcode": {
+            "$ref": "#/components/schemas/Adresvoorstelling.postcode"
+          },
+          "straatnaam": {
+            "$ref": "#/components/schemas/Adresvoorstelling.straatnaam"
+          },
+          "volledigAdres": {
+            "$ref": "#/components/schemas/Adresvoorstelling.volledigAdres"
+          },
+          "verwijstNaar": {
+            "$ref": "#/components/schemas/Adres"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Identificator.identificator": {
+        "title": "Identificator.identificator",
+        "description": "String gebruikt om het object uniek te identificeren. Type van de string slaat op het identificatiesysteem (inclusief de versie ervan), de string zelf op de eigenlijke identificator.",
+        "type": "string"
+      },
+      "Identificator": {
+        "title": "Identificator",
+        "type": "object",
+        "description": "Informatie gebruikt om een object uniek te identificeren.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Identificator)",
+            "pattern": "^Identificator$"
+          },
+          "identificator": {
+            "$ref": "#/components/schemas/Identificator.identificator"
+          },
+          "toegekendDoor": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/Organisatie"
+              },
+              {
+                "$ref": "#/components/schemas/Persoon"
+              },
+              {
+                "$ref": "#/components/schemas/GeregistreerdPersoon"
+              },
+              {
+                "$ref": "#/components/schemas/GeregistreerdeOrganisatie"
+              }
+            ],
+            "discriminator": {
+              "propertyName": "@type",
+              "mapping": {
+                "Organisatie": "#/components/schemas/Organisatie",
+                "Persoon": "#/components/schemas/Persoon",
+                "GeregistreerdPersoon": "#/components/schemas/GeregistreerdPersoon",
+                "GeregistreerdeOrganisatie": "#/components/schemas/GeregistreerdeOrganisatie"
+              }
+            }
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      },
+      "Contactpunt.email": {
+        "title": "Contactpunt.email",
+        "description": "Email-adres waarnaar men kan mailen.",
+        "type": "string"
+      },
+      "Contactpunt.telefoon": {
+        "title": "Contactpunt.telefoon",
+        "description": "Telefoonnummer waarop men kan bellen.",
+        "type": "string"
+      },
+      "Contactpunt": {
+        "title": "Contactpunt",
+        "type": "object",
+        "description": "Informatie zoals email, telefoon, adres die toelaat om iemand of iets te contacteren.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "string",
+            "description": "Object type (klasse Contactpunt)",
+            "pattern": "^Contactpunt$"
+          },
+          "email": {
+            "$ref": "#/components/schemas/Contactpunt.email"
+          },
+          "telefoon": {
+            "type": "array",
+            "description": "Telefoonnummer waarop men kan bellen. Lijst van Literal items.",
+            "items": {
+              "$ref": "#/components/schemas/Contactpunt.telefoon"
+            },
+            "minItems": 1
+          },
+          "adres": {
+            "$ref": "#/components/schemas/Adresvoorstelling"
+          }
+        },
+        "required": [
+          "@type"
+        ]
+      }
+    },
+    "links": {
+      "Organisatie.type": {
+        "operationId": "OrganisatieGET",
+        "parameters": {
+          "id": "$response.body#/Organisatie.type/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `OrganisatieType` op te halen."
+      },
+      "Organisatie.contactinfo": {
+        "operationId": "OrganisatieGET",
+        "parameters": {
+          "id": "$response.body#/Organisatie.contactinfo/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactpunt` op te halen."
+      },
+      "Organisatie.activiteit": {
+        "operationId": "OrganisatieGET",
+        "parameters": {
+          "id": "$response.body#/Organisatie.activiteit/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `LandbouwActiviteit` op te halen."
+      },
+      "Organisatie.lid": {
+        "operationId": "OrganisatieGET",
+        "parameters": {
+          "id": "$response.body#/Organisatie.lid/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+      },
+      "Organisatie.identificator": {
+        "operationId": "OrganisatieGET",
+        "parameters": {
+          "id": "$response.body#/Organisatie.identificator/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Identificator` op te halen."
+      },
+      "Persoon.heeftOverlijden": {
+        "operationId": "PersoonGET",
+        "parameters": {
+          "id": "$response.body#/Persoon.heeftOverlijden/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Overlijden` op te halen."
+      },
+      "Persoon.contactinfo": {
+        "operationId": "PersoonGET",
+        "parameters": {
+          "id": "$response.body#/Persoon.contactinfo/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactpunt` op te halen."
+      },
+      "Persoon.identificator": {
+        "operationId": "PersoonGET",
+        "parameters": {
+          "id": "$response.body#/Persoon.identificator/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Identificator` op te halen."
+      },
+      "GeregistreerdPersoon.registratie": {
+        "operationId": "GeregistreerdPersoonGET",
+        "parameters": {
+          "id": "$response.body#/GeregistreerdPersoon.registratie/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Identificator` op te halen."
+      },
+      "GeregistreerdPersoon.identificator": {
+        "operationId": "GeregistreerdPersoonGET",
+        "parameters": {
+          "id": "$response.body#/GeregistreerdPersoon.identificator/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Identificator` op te halen."
+      },
+      "GeregistreerdPersoon.heeftOverlijden": {
+        "operationId": "GeregistreerdPersoonGET",
+        "parameters": {
+          "id": "$response.body#/GeregistreerdPersoon.heeftOverlijden/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Overlijden` op te halen."
+      },
+      "GeregistreerdPersoon.contactinfo": {
+        "operationId": "GeregistreerdPersoonGET",
+        "parameters": {
+          "id": "$response.body#/GeregistreerdPersoon.contactinfo/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactpunt` op te halen."
+      },
+      "GeregistreerdeOrganisatie.status": {
+        "operationId": "GeregistreerdeOrganisatieGET",
+        "parameters": {
+          "id": "$response.body#/GeregistreerdeOrganisatie.status/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `OrganisatieStatus` op te halen."
+      },
+      "GeregistreerdeOrganisatie.rechtspersoonlijkheid": {
+        "operationId": "GeregistreerdeOrganisatieGET",
+        "parameters": {
+          "id": "$response.body#/GeregistreerdeOrganisatie.rechtspersoonlijkheid/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Rechtspersoonlijkheidtype` op te halen."
+      },
+      "GeregistreerdeOrganisatie.registratie": {
+        "operationId": "GeregistreerdeOrganisatieGET",
+        "parameters": {
+          "id": "$response.body#/GeregistreerdeOrganisatie.registratie/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Identificator` op te halen."
+      },
+      "GeregistreerdeOrganisatie.rechtsvorm": {
+        "operationId": "GeregistreerdeOrganisatieGET",
+        "parameters": {
+          "id": "$response.body#/GeregistreerdeOrganisatie.rechtsvorm/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Rechtsvormtype` op te halen."
+      },
+      "GeregistreerdeOrganisatie.type": {
+        "operationId": "GeregistreerdeOrganisatieGET",
+        "parameters": {
+          "id": "$response.body#/GeregistreerdeOrganisatie.type/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `OrganisatieType` op te halen."
+      },
+      "GeregistreerdeOrganisatie.contactinfo": {
+        "operationId": "GeregistreerdeOrganisatieGET",
+        "parameters": {
+          "id": "$response.body#/GeregistreerdeOrganisatie.contactinfo/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactpunt` op te halen."
+      },
+      "GeregistreerdeOrganisatie.activiteit": {
+        "operationId": "GeregistreerdeOrganisatieGET",
+        "parameters": {
+          "id": "$response.body#/GeregistreerdeOrganisatie.activiteit/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `LandbouwActiviteit` op te halen."
+      },
+      "GeregistreerdeOrganisatie.lid": {
+        "operationId": "GeregistreerdeOrganisatieGET",
+        "parameters": {
+          "id": "$response.body#/GeregistreerdeOrganisatie.lid/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+      },
+      "GeregistreerdeOrganisatie.identificator": {
+        "operationId": "GeregistreerdeOrganisatieGET",
+        "parameters": {
+          "id": "$response.body#/GeregistreerdeOrganisatie.identificator/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Identificator` op te halen."
+      },
+      "Landbouwgebruiksperceel.identificator": {
+        "operationId": "LandbouwgebruiksperceelGET",
+        "parameters": {
+          "id": "$response.body#/Landbouwgebruiksperceel.identificator/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Identificator` op te halen."
+      },
+      "Landbouwgebruiksperceel.gebruiker": {
+        "operationId": "LandbouwgebruiksperceelGET",
+        "parameters": {
+          "id": "$response.body#/Landbouwgebruiksperceel.gebruiker/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Agent` op te halen."
+      }
+    }
+  }
+}
