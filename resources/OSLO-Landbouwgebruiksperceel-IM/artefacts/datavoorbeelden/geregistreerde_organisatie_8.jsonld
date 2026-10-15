@@ -6,47 +6,36 @@
     "toegekendDoor": {
       "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
       "@type": "GeregistreerdeOrganisatie",
-      "voorkeursnaam": {
-        "@language": "nl",
-        "@value": "Agentschap Landbouw en Zeevisserij"
-      },
+      "voorkeursnaam": "Agentschap Landbouw en Zeevisserij",
       "registratie": {
         "@id": "_:registratie:OVO000082",
         "@type": "Identificator",
-        "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+        "identificator": "OVO000082"
       }
     },
-    "identificator": { "@value": "10260_1683973651", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/AGPAKEY" }
+    "identificator": "10260_1683973651"
   },
   "gebruiker": {
     "@type": "GeregistreerdeOrganisatie",
-    "voorkeursnaam": {
-      "@language": "nl",
-      "@value": "ZWAERT RUDY"
-    },
+    "voorkeursnaam": "ZWAERT RUDY",
     "lid": [
       {
         "@type": "GeregistreerdPersoon",
         "achternaam": "zwaert",
-        "voornaam": [
-          "rudy"
-        ],
+        "voornaam": ["rudy"],
         "registratie": {
           "@type": "Identificator",
           "toegekendDoor": {
             "@id": "http://data.vlaanderen.be/id/organisatie/OVO008218",
             "@type": "GeregistreerdeOrganisatie",
-            "voorkeursnaam": {
-              "@language": "nl",
-              "@value": "Kruispuntbank van de Sociale Zekerheid"
-            },
+            "voorkeursnaam": "Kruispuntbank van de Sociale Zekerheid",
             "registratie": {
               "@id": "_:registratie:OVO008218",
               "@type": "Identificator",
-              "identificator": { "@value": "OVO008218", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+              "identificator": "OVO008218"
             }
           },
-          "identificator": { "@value": "16579840247", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/INSZ" }
+          "identificator": "16579840247"
         }
       }
     ],
@@ -54,10 +43,7 @@
       {
         "@id": "https://data.vlaanderen.be/id/concept/LandbouwActiviteit/gerelateerd",
         "@type": "LandbouwActiviteit",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Gerelateerde landbouwactiviteit"
-        },
+        "voorkeursnaam": "Gerelateerde landbouwactiviteit",
         "code": "Gerelateerd"
       }
     ],
@@ -65,10 +51,7 @@
       {
         "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/ST",
         "@type": "OrganisatieStatus",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Stopgezet"
-        },
+        "voorkeursnaam": "Stopgezet",
         "code": "ST"
       }
     ],
@@ -77,42 +60,33 @@
       "toegekendDoor": {
         "@id": "http://data.vlaanderen.be/id/organisatie/OVO027341",
         "@type": "GeregistreerdeOrganisatie",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Kruispuntbank van Ondernemingen"
-        },
+        "voorkeursnaam": "Kruispuntbank van Ondernemingen",
         "registratie": {
           "@id": "_:registratie:OVO027341",
           "@type": "Identificator",
-          "identificator": { "@value": "OVO027341", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+          "identificator": "OVO027341"
         }
       },
-      "identificator": { "@value": "761240261", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Ondernemingsnummer" }
+      "identificator": "761240261"
     },
     "identificator": {
       "@type": "Identificator",
       "toegekendDoor": {
         "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
         "@type": "GeregistreerdeOrganisatie",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Agentschap Landbouw en Zeevisserij"
-        },
+        "voorkeursnaam": "Agentschap Landbouw en Zeevisserij",
         "registratie": {
           "@id": "_:registratie:OVO000082",
           "@type": "Identificator",
-          "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+          "identificator": "OVO000082"
         }
       },
-      "identificator": { "@value": "10301295", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer" }
+      "identificator": "10301295"
     },
     "rechtspersoonlijkheid": {
       "@id": "https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/1",
       "@type": "Rechtspersoonlijkheidtype",
-      "voorkeursnaam": {
-        "@language": "nl",
-        "@value": "Natuurlijk Persoon"
-      },
+      "voorkeursnaam": "Natuurlijk Persoon",
       "code": "1"
     },
     "contactinfo": [
@@ -120,32 +94,15 @@
         "@type": "Contactpunt",
         "adres": {
           "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "Lokstraat 10, 1234 Overal"
-          },
+          "volledigAdres": "Lokstraat 10, 1234 Overal",
           "postcode": "1234",
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "Lokstraat"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "Overal"
-          },
+          "straatnaam": "Lokstraat",
+          "gemeentenaam": "Overal",
           "huisnummer": "10",
-          "land": {
-            "@language": "nl",
-            "@value": "België"
-          }
+          "land": "België"
         },
         "email": "naamvoornaam4@mail.be",
-        "telefoon": [
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Voice",
-            "@value": "052 35 67 89"
-          }
-        ]
+        "telefoon": ["052 35 67 89"]
       }
     ]
   }

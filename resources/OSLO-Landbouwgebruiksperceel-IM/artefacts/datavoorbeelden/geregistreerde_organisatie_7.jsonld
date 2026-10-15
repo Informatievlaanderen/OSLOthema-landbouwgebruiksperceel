@@ -1,38 +1,28 @@
 {
   "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.2.0/context/landbouwgebruiksperceel.jsonld",
   "@type": "Landbouwgebruiksperceel",
-  "identificator":
-  {
+  "identificator": {
     "@type": "Identificator",
     "toegekendDoor": {
       "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
       "@type": "GeregistreerdeOrganisatie",
-      "voorkeursnaam": {
-        "@language": "nl",
-        "@value": "Agentschap Landbouw en Zeevisserij"
-      },
+      "voorkeursnaam": "Agentschap Landbouw en Zeevisserij",
       "registratie": {
         "@id": "_:registratie:OVO000082",
         "@type": "Identificator",
-        "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+        "identificator": "OVO000082"
       }
     },
-    "identificator": { "@value": "10260_1843747405", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/AGPAKEY" }
+    "identificator": "10260_1843747405"
   },
   "gebruiker": {
     "@type": "GeregistreerdeOrganisatie",
-    "voorkeursnaam": {
-      "@language": "nl",
-      "@value": "t Schaaphof vvzrl VVZRL"
-    },
+    "voorkeursnaam": "t Schaaphof vvzrl VVZRL",
     "activiteit": [
       {
         "@id": "https://data.vlaanderen.be/id/concept/LandbouwActiviteit/gerelateerd",
         "@type": "LandbouwActiviteit",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Gerelateerde landbouwactiviteit"
-        },
+        "voorkeursnaam": "Gerelateerde landbouwactiviteit",
         "code": "gerelateerd"
       }
     ],
@@ -40,10 +30,7 @@
       {
         "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/ST",
         "@type": "OrganisatieStatus",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Stopgezet"
-        },
+        "voorkeursnaam": "Stopgezet",
         "code": "ST"
       }
     ],
@@ -52,51 +39,39 @@
       "toegekendDoor": {
         "@id": "http://data.vlaanderen.be/id/organisatie/OVO027341",
         "@type": "GeregistreerdeOrganisatie",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Kruispuntbank van Ondernemingen"
-        },
+        "voorkeursnaam": "Kruispuntbank van Ondernemingen",
         "registratie": {
           "@id": "_:registratie:OVO027341",
           "@type": "Identificator",
-          "identificator": { "@value": "OVO027341", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+          "identificator": "OVO027341"
         }
       },
-      "identificator": { "@value": "675516017", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Ondernemingsnummer" }
+      "identificator": "675516017"
     },
     "identificator": {
       "@type": "Identificator",
       "toegekendDoor": {
         "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
         "@type": "GeregistreerdeOrganisatie",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Agentschap Landbouw en Zeevisserij"
-        },
+        "voorkeursnaam": "Agentschap Landbouw en Zeevisserij",
         "registratie": {
           "@id": "_:registratie:OVO000082",
           "@type": "Identificator",
-          "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+          "identificator": "OVO000082"
         }
       },
-      "identificator": { "@value": "41172052", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer" }
+      "identificator": "41172052"
     },
     "rechtspersoonlijkheid": {
       "@id": "https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/2",
       "@type": "Rechtspersoonlijkheidtype",
-      "voorkeursnaam": {
-        "@language": "nl",
-        "@value": "Rechtspersoon"
-      },
+      "voorkeursnaam": "Rechtspersoon",
       "code": "2"
     },
     "rechtsvorm": {
       "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/721",
       "@type": "Rechtsvormtype",
-      "voorkeursnaam": {
-        "@language": "nl",
-        "@value": "Vennootschap of vereniging zonder rechtspersoonlijkheid"
-      },
+      "voorkeursnaam": "Vennootschap of vereniging zonder rechtspersoonlijkheid",
       "code": "721"
     },
     "contactinfo": [
@@ -104,38 +79,15 @@
         "@type": "Contactpunt",
         "adres": {
           "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "Mokstraat 10, 1234 Overal"
-          },
-          "postcode": {
-            "@value": "1234"
-          },
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "Mokstraat"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "Overal"
-          },
-          "huisnummer": {
-            "@value": "10"
-          },
-          "land": {
-            "@language": "nl",
-            "@value": "België"
-          }
+          "volledigAdres": "Mokstraat 10, 1234 Overal",
+          "postcode": "1234",
+          "straatnaam": "Mokstraat",
+          "gemeentenaam": "Overal",
+          "huisnummer": "10",
+          "land": "België"
         },
-        "email": {
-          "@value": "naamvoornaam3@mail.be"
-        },
-        "telefoon": [
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Cell",
-            "@value": "0458 78 91 23"
-          }
-        ]
+        "email": "naamvoornaam3@mail.be",
+        "telefoon": ["0458 78 91 23"]
       }
     ]
   }

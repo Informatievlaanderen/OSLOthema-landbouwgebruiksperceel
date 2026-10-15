@@ -6,17 +6,14 @@
     "toegekendDoor": {
       "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
       "@type": "Organisatie",
-      "voorkeursnaam": {
-        "@language": "nl",
-        "@value": "Agentschap Landbouw en Zeevisserij"
-      },
+      "voorkeursnaam": "Agentschap Landbouw en Zeevisserij",
       "registratie": {
         "@id": "_:registratie:OVO000082",
         "@type": "Identificator",
-        "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+        "identificator": "OVO000082"
       }
     },
-    "identificator": { "@value": "10260_1770789964", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/AGPAKEY" }
+    "identificator": "10260_1770789964"
   },
   "gebruiker": {
     "@type": "Persoon",
@@ -25,55 +22,31 @@
       "toegekendDoor": {
         "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
         "@type": "Organisatie",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Agentschap Landbouw en Zeevisserij"
-        },
+        "voorkeursnaam": "Agentschap Landbouw en Zeevisserij",
         "registratie": {
           "@id": "_:registratie:OVO000082",
           "@type": "Identificator",
-          "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+          "identificator": "OVO000082"
         }
       },
-      "identificator": { "@value": "34000621", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer" }
+      "identificator": "34000621"
     },
     "achternaam": "DOMS",
-    "voornaam": [
-      "AGNES"
-    ],
-    "contactinfo": [
-      {
-        "@type": "Contactpunt",
-        "adres": {
-          "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "ACHWEG 121 bus B, 4661 AZ ZUNDERT, NEDERLAND"
-          },
-          "postbus": "B",
-          "postcode": "4661",
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "ACHWEG"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "AZ ZUNDERT"
-          },
-          "huisnummer": "121",
-          "land": {
-            "@language": "nl",
-            "@value": "Nederland"
-          }
-        },
-        "email": "ervoor@boomkwekdams.nl",
-        "telefoon": [
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Voice",
-            "@value": "+31765972123"
-          }
-        ]
-      }
-    ]
+    "voornaam": ["AGNES"],
+    "contactinfo": {
+      "@type": "Contactpunt",
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "volledigAdres": "ACHWEG 121 bus B, 4661 AZ ZUNDERT, NEDERLAND",
+        "postbus": "B",
+        "postcode": "4661",
+        "straatnaam": "ACHWEG",
+        "gemeentenaam": "AZ ZUNDERT",
+        "huisnummer": "121",
+        "land": "Nederland"
+      },
+      "email": "ervoor@boomkwekdams.nl",
+      "telefoon": ["+31765972123"]
+    }
   }
 }

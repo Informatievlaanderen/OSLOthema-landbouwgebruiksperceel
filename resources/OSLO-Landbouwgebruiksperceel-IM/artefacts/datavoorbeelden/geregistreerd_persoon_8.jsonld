@@ -6,17 +6,14 @@
     "toegekendDoor": {
       "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
       "@type": "GeregistreerdeOrganisatie",
-      "voorkeursnaam": {
-        "@language": "nl",
-        "@value": "Agentschap Landbouw en Zeevisserij"
-      },
+      "voorkeursnaam": "Agentschap Landbouw en Zeevisserij",
       "registratie": {
         "@id": "_:registratie:OVO000082",
         "@type": "Identificator",
-        "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+        "identificator": "OVO000082"
       }
     },
-    "identificator": { "@value": "10262_1791336180", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/AGPAKEY" }
+    "identificator": "10262_1791336180"
   },
   "gebruiker": {
     "@type": "GeregistreerdPersoon",
@@ -25,69 +22,38 @@
       "toegekendDoor": {
         "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
         "@type": "GeregistreerdeOrganisatie",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Agentschap Landbouw en Zeevisserij"
-        },
+        "voorkeursnaam": "Agentschap Landbouw en Zeevisserij",
         "registratie": {
           "@id": "_:registratie:OVO000082",
           "@type": "Identificator",
-          "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+          "identificator": "OVO000082"
         }
       },
-      "identificator": { "@value": "38804949", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer" }
+      "identificator": "38804949"
     },
-    "achternaam": "Spring" ,
-    "voornaam": [
-      "Schans"
-    ],
+    "achternaam": "Spring",
+    "voornaam": ["Schans"],
     "registratie": {
       "@type": "Identificator",
       "toegekendDoor": {
         "@type": "Organisatie",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Rijksdienst voor Identiteitsgegevens"
-        }
+        "voorkeursnaam": "Rijksdienst voor Identiteitsgegevens"
       },
-      "identificator": { "@value": "16579840241", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/INSZ" }
+      "identificator": "16579840241"
     },
-    "contactinfo": [
-      {
-        "@type": "Contactpunt",
-        "adres": {
-          "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "Broekstraat 4, 1111 Nergens"
-          },
-          "postcode": "1111",
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "BROEKSTRAAT"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "Nergens"
-          },
-          "huisnummer": "4",
-          "land": {
-            "@language": "nl",
-            "@value": "Nederland"
-          }
-        },
-        "email": "Springschans@mail.be",
-        "telefoon": [
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Voice",
-            "@value": "+21 45 78 89 3"
-          },
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Cell",
-            "@value": "+21 31 54 97 2"
-          }
-        ]
-      }
-    ]
+    "contactinfo": {
+      "@type": "Contactpunt",
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "volledigAdres": "Broekstraat 4, 1111 Nergens",
+        "postcode": "1111",
+        "straatnaam": "BROEKSTRAAT",
+        "gemeentenaam": "Nergens",
+        "huisnummer": "4",
+        "land": "Nederland"
+      },
+      "email": "Springschans@mail.be",
+      "telefoon": ["+21 45 78 89 3", "+21 31 54 97 2"]
+    }
   }
 }

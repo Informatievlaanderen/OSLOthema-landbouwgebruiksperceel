@@ -6,32 +6,23 @@
     "toegekendDoor": {
       "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
       "@type": "GeregistreerdeOrganisatie",
-      "voorkeursnaam": {
-        "@language": "nl",
-        "@value": "Agentschap Landbouw en Zeevisserij"
-      },
+      "voorkeursnaam": "Agentschap Landbouw en Zeevisserij",
       "registratie": {
         "@id": "_:registratie:OVO000082",
         "@type": "Identificator",
-        "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+        "identificator": "OVO000082"
       }
     },
-    "identificator": { "@value": "10260_1770790772", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/AGPAKEY" }
+    "identificator": "10260_1770790772"
   },
   "gebruiker": {
     "@type": "GeregistreerdeOrganisatie",
-    "voorkeursnaam": {
-      "@language": "nl",
-      "@value": "AGENTSCHAP VOOR NATUUR EN BOS (ANB) -HOOFDZETEL"
-    },
+    "voorkeursnaam": "AGENTSCHAP VOOR NATUUR EN BOS (ANB) -HOOFDZETEL",
     "status": [
       {
         "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/AC",
         "@type": "OrganisatieStatus",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Actief"
-        },
+        "voorkeursnaam": "Actief",
         "code": "AC"
       }
     ],
@@ -40,59 +31,41 @@
       "toegekendDoor": {
         "@id": "http://data.vlaanderen.be/id/organisatie/OVO027341",
         "@type": "GeregistreerdeOrganisatie",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Kruispuntbank van Ondernemingen"
-        },
+        "voorkeursnaam": "Kruispuntbank van Ondernemingen",
         "registratie": {
           "@id": "_:registratie:OVO027341",
           "@type": "Identificator",
-          "identificator": { "@value": "OVO027341", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+          "identificator": "OVO027341"
         }
       },
-      "identificator": { "@value": "2199335537", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Vestigingseenheidnummer" }
+      "identificator": "2199335537"
     },
     "identificator": {
       "@type": "Identificator",
       "toegekendDoor": {
         "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
         "@type": "GeregistreerdeOrganisatie",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Agentschap Landbouw en Zeevisserij"
-        },
+        "voorkeursnaam": "Agentschap Landbouw en Zeevisserij",
         "registratie": {
           "@id": "_:registratie:OVO000082",
           "@type": "Identificator",
-          "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+          "identificator": "OVO000082"
         }
       },
-      "identificator": { "@value": "00015614774", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer" }
+      "identificator": "00015614774"
     },
     "contactinfo": [
       {
         "@type": "Contactpunt",
         "adres": {
           "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "HAVENLAAN 88 bus 75, 1000 BRUSSEL"
-          },
+          "volledigAdres": "HAVENLAAN 88 bus 75, 1000 BRUSSEL",
           "postbus": "75",
           "postcode": "1000",
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "Havenlaan"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "Brussel"
-          },
+          "straatnaam": "Havenlaan",
+          "gemeentenaam": "Brussel",
           "huisnummer": "88",
-          "land": {
-            "@language": "nl",
-            "@value": "België"
-          }
+          "land": "België"
         },
         "email": "anb@vlaanderen.be"
       }

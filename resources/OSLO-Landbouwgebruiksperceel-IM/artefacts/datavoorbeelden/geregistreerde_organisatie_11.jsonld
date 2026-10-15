@@ -6,32 +6,23 @@
     "toegekendDoor": {
       "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
       "@type": "GeregistreerdeOrganisatie",
-      "voorkeursnaam": {
-        "@language": "nl",
-        "@value": "Agentschap Landbouw en Zeevisserij"
-      },
+      "voorkeursnaam": "Agentschap Landbouw en Zeevisserij",
       "registratie": {
         "@id": "_:registratie:OVO000082",
         "@type": "Identificator",
-        "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+        "identificator": "OVO000082"
       }
     },
-    "identificator": { "@value": "10260_1847480689", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/AGPAKEY" }
+    "identificator": "10260_1847480689"
   },
   "gebruiker": {
     "@type": "GeregistreerdeOrganisatie",
-    "voorkeursnaam": {
-      "@language": "nl",
-      "@value": "MICHELS X-MICHELS D FV"
-    },
+    "voorkeursnaam": "MICHELS X-MICHELS D FV",
     "activiteit": [
       {
         "@id": "https://data.vlaanderen.be/id/concept/LandbouwActiviteit/gerelateerd",
         "@type": "LandbouwActiviteit",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Gerelateerde landbouwactiviteit"
-        },
+        "voorkeursnaam": "Gerelateerde landbouwactiviteit",
         "code": "gerelateerd"
       }
     ],
@@ -39,10 +30,7 @@
       {
         "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/ST",
         "@type": "OrganisatieStatus",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Stopgezet"
-        },
+        "voorkeursnaam": "Stopgezet",
         "code": "ST"
       }
     ],
@@ -51,51 +39,39 @@
       "toegekendDoor": {
         "@id": "http://data.vlaanderen.be/id/organisatie/OVO027341",
         "@type": "GeregistreerdeOrganisatie",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Kruispuntbank van Ondernemingen"
-        },
+        "voorkeursnaam": "Kruispuntbank van Ondernemingen",
         "registratie": {
           "@id": "_:registratie:OVO027341",
           "@type": "Identificator",
-          "identificator": { "@value": "OVO027341", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+          "identificator": "OVO027341"
         }
       },
-      "identificator": { "@value": "836014294", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Ondernemingsnummer" }
+      "identificator": "836014294"
     },
     "identificator": {
       "@type": "Identificator",
       "toegekendDoor": {
         "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
         "@type": "GeregistreerdeOrganisatie",
-        "voorkeursnaam": {
-          "@language": "nl",
-          "@value": "Agentschap Landbouw en Zeevisserij"
-        },
+        "voorkeursnaam": "Agentschap Landbouw en Zeevisserij",
         "registratie": {
           "@id": "_:registratie:OVO000082",
           "@type": "Identificator",
-          "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+          "identificator": "OVO000082"
         }
       },
-      "identificator": { "@value": "33414880", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer" }
+      "identificator": "33414880"
     },
     "rechtspersoonlijkheid": {
       "@id": "https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/2",
       "@type": "Rechtspersoonlijkheidtype",
-      "voorkeursnaam": {
-        "@language": "nl",
-        "@value": "Rechtspersoon"
-      },
+      "voorkeursnaam": "Rechtspersoon",
       "code": "2"
     },
     "rechtsvorm": {
       "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/030",
       "@type": "Rechtsvormtype",
-      "voorkeursnaam": {
-        "@language": "nl",
-        "@value": "Buitenlandse entiteit"
-      },
+      "voorkeursnaam": "Buitenlandse entiteit",
       "code": "030"
     },
     "contactinfo": [
@@ -103,38 +79,15 @@
         "@type": "Contactpunt",
         "adres": {
           "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "FERME DE BRONFAY - ROUTE DE PARICOURT 0, 80340 BRAY SUR Lesse, FRANKRIJK"
-          },
-          "postcode": {
-            "@value": "80340"
-          },
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "ROUTE DE PARICOURT"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "BRAY SUR Lesse"
-          },
+          "volledigAdres": "FERME DE BRONFAY - ROUTE DE PARICOURT 0, 80340 BRAY SUR Lesse, FRANKRIJK",
+          "postcode": "80340",
+          "straatnaam": "ROUTE DE PARICOURT",
+          "gemeentenaam": "BRAY SUR Lesse",
           "huisnummer": "0",
-          "land": {
-            "@language": "nl",
-            "@value": "Frankrijk"
-          }
+          "land": "Frankrijk"
         },
         "email": "naamvoornaam5@mail.be",
-        "telefoon": [
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Voice",
-            "@value": "+37 89 12 45 78 11"
-          },
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Cell",
-            "@value": "+34 65 13 97 53 4"
-          }
-        ]
+        "telefoon": ["+37 89 12 45 78 11", "+34 65 13 97 53 4"]
       }
     ]
   }
