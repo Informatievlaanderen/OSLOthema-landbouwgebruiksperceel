@@ -33,21 +33,21 @@
 
 {% block summary %}
 <p>
-    Landbouwgebruikspercelen geven aan wie de uitbater is van een bepaald perceel voor landbouwactiviteiten en welke activiteiten er mogen plaatsvinden.
-    Het Implementatiemodel LV-Landbouwgebruiksperceel koppelt de uitbater aan een landbouwgebruiksperceel via de AGPAKEY.
+    Landbouwgebruikspercelen geven aan wie de gebruiker is van een bepaald perceel voor landbouwactiviteiten en welke activiteiten er mogen plaatsvinden.
+    Het Implementatiemodel LV-Landbouwgebruiksperceel koppelt de gebruiker aan een landbouwgebruiksperceel via de AGPAKEY.
     De <a href="https://landbouwcijfers.vlaanderen.be/open-geodata-landbouwgebruikspercelen" target="_blank">open geodata Landbouwgebruikspercelen</a>
     van <a href="https://lv.vlaanderen.be/", target="_blank">Agentschap Landbouw en Visserij</a> bevat voor elk gebruiksperceel een AGPAKEY.
     Deze AGPAKEY is uniek voor elke uitbater, de uitbatingsperiode, en het landbouwgebruiksperceel.
-    Afnemers bij <a href="https://www.vlaanderen.be/magda" target="_blank">MAGDA</a> die de uitbater wensen te kennen
-    in het kader van calamiteiten, handhaving, subsidies, of belastingreglementen van het gebruiksperceel kunnen de uitbatersinformatie,
-    omsloten door dit implementatiemodel, gebruiken om uitbaters te koppelen aan de landbouwgebruikspercelen.
+    Afnemers bij <a href="https://www.vlaanderen.be/magda" target="_blank">MAGDA</a> die de gebruiker wensen te kennen
+    in het kader van calamiteiten, handhaving, subsidies, of belastingreglementen van het gebruiksperceel kunnen de gebruikersinformatie,
+    omsloten door dit implementatiemodel, gebruiken om gebruikers te koppelen aan de landbouwgebruikspercelen.
 </p>
 <p>
-    De uitbater is volledig gebaseerd op het
+    De gebruiker is volledig gebaseerd op het
     <a href="https://data.vlaanderen.be/doc/applicatieprofiel/landbouwgebruiksperceel-basis/" target="_blank">Applicatieprofiel OSLO-Persoon</a>
     en
     <a href="https://data.vlaanderen.be/doc/applicatieprofiel/organisatie-basis/" target="_blank">OSLO-Organisatie</a>,
-    waarbij een uitbater aanzien als een Agent die kan optreden als een (Geregistreerd) Persoon of (Geregistreerde) Organisatie.
+    waarbij een gebruiker aanzien als een Agent die kan optreden als een (Geregistreerd) Persoon of (Geregistreerde) Organisatie.
     Indien meerdere organisaties of personen een landbouwgebruiksperceel uitbaten,
     kunnen deze ook gekoppeld worden door Personen te relateren met een Organisatie, of meerdere Organisaties met elkaar.
 </p>
@@ -59,7 +59,7 @@ Een set van herbruikbare Swagger OpenAPI componenten voor dit implementatiemodel
 <a href="{{ data.metadata.documentroot }}/resources/swagger/components.json" target="_blank">{{ data.metadata.documentroot }}/resources/swagger/components.json</a>
 </p>
 <p>
-Deze componenten zijn gebruikt in de LV en MAGDA OpenAPI beschrijvingen van de landbouw.uitbaters REST dienst, die hier terug te vinden is:
-<a href="{{ data.metadata.documentroot }}/resources/swagger/LV-REST-landbouw-uitbaters-Swagger.json" target="_blank">{{ data.metadata.documentroot }}/resources/swagger/LV-REST-landbouw-uitbaters-Swagger.json</a>
+Deze componenten zijn gebruikt in de LV en MAGDA OpenAPI beschrijvingen van de landbouw.gebruikers REST dienst, die hier terug te vinden is:
+<a href="{{ data.metadata.documentroot }}/resources/swagger/LV-REST-landbouw-gebruikers-Swagger.json" target="_blank">{{ data.metadata.documentroot }}/resources/swagger/LV-REST-landbouw-uitbaters-Swagger.json</a>
 </p>
 {% endblock %}
