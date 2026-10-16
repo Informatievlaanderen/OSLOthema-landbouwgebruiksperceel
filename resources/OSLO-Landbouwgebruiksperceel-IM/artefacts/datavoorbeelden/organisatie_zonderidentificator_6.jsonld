@@ -44,7 +44,7 @@
     "type": [
       {
         "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/610",
-        "@type": "Concept",
+        "@type": "Rechtsvormtype",
         "voorkeursnaam": {
           "@language": "nl",
           "@value": "Besloten Vennootschap"
@@ -52,37 +52,35 @@
         "code": "610"
       }
     ],
-    "contactinfo": [
-      {
-        "@type": "Contactpunt",
-        "adres": {
-          "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "SLECHTLEVEN 12, 4508 PE LANDKERKJE, NEDERLAND"
-          },
-          "postcode": "4508",
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "SLECHTLEVEN"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "PE Landkerkje"
-          },
-          "huisnummer": "12",
-          "land": {
-            "@language": "nl",
-            "@value": "Nederland"
-          }
+    "contactinfo": {
+      "@type": "Contactpunt",
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "volledigAdres": {
+          "@language": "nl",
+          "@value": "SLECHTLEVEN 12, 4508 PE LANDKERKJE, NEDERLAND"
         },
-        "telefoon": [
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Voice",
-            "@value": "09 222 33 44"
-          }
-        ]
-      }
-    ]
+        "postcode": "4508",
+        "straatnaam": {
+          "@language": "nl",
+          "@value": "SLECHTLEVEN"
+        },
+        "gemeentenaam": {
+          "@language": "nl",
+          "@value": "PE Landkerkje"
+        },
+        "huisnummer": "12",
+        "land": {
+          "@language": "nl",
+          "@value": "Nederland"
+        }
+      },
+      "telefoon": [
+        {
+          "@type": "http://www.w3.org/2006/vcard/ns#Voice",
+          "@value": "09 222 33 44"
+        }
+      ]
+    }
   }
 }

@@ -98,44 +98,40 @@
       },
       "code": "030"
     },
-    "contactinfo": [
-      {
-        "@type": "Contactpunt",
-        "adres": {
-          "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "FERME DE BRONFAY - ROUTE DE PARICOURT 0, 80340 BRAY SUR Lesse, FRANKRIJK"
-          },
-          "postcode": {
-            "@value": "80340"
-          },
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "ROUTE DE PARICOURT"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "BRAY SUR Lesse"
-          },
-          "huisnummer": "0",
-          "land": {
-            "@language": "nl",
-            "@value": "Frankrijk"
-          }
+    "contactinfo": {
+      "@type": "Contactpunt",
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "volledigAdres": {
+          "@language": "nl",
+          "@value": "FERME DE BRONFAY - ROUTE DE PARICOURT 0, 80340 BRAY SUR Lesse, FRANKRIJK"
         },
-        "email": "naamvoornaam5@mail.be",
-        "telefoon": [
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Voice",
-            "@value": "+37 89 12 45 78 11"
-          },
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Cell",
-            "@value": "+34 65 13 97 53 4"
-          }
-        ]
-      }
-    ]
+        "postcode": "80340",
+        "straatnaam": {
+          "@language": "nl",
+          "@value": "ROUTE DE PARICOURT"
+        },
+        "gemeentenaam": {
+          "@language": "nl",
+          "@value": "BRAY SUR Lesse"
+        },
+        "huisnummer": "0",
+        "land": {
+          "@language": "nl",
+          "@value": "Frankrijk"
+        }
+      },
+      "email": "naamvoornaam5@mail.be",
+      "telefoon": [
+        {
+          "@type": "http://www.w3.org/2006/vcard/ns#Voice",
+          "@value": "+37 89 12 45 78 11"
+        },
+        {
+          "@type": "http://www.w3.org/2006/vcard/ns#Cell",
+          "@value": "+34 65 13 97 53 4"
+        }
+      ]
+    }
   }
 }

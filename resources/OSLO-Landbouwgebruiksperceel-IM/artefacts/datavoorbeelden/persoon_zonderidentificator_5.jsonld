@@ -41,37 +41,35 @@
     "voornaam": [
       "JOHANA"
     ],
-    "contactinfo": [
-      {
-        "@type": "Contactpunt",
-        "adres": {
-          "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "WEIDE 42, 6561 NZ ELSLOO, NEDERLAND"
-          },
-          "postcode": "6561",
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "WEIDE"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "NZ ELSLOO"
-          },
-          "huisnummer": "42",
-          "land": {
-            "@language": "nl",
-            "@value": "Nederland"
-          }
+    "contactinfo": {
+      "@type": "Contactpunt",
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "volledigAdres": {
+          "@language": "nl",
+          "@value": "WEIDE 42, 6561 NZ ELSLOO, NEDERLAND"
         },
-        "telefoon": [
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Cell",
-            "@value": "+25 67 89 12 56 7"
-          }
-        ]
-      }
-    ]
+        "postcode": "6561",
+        "straatnaam": {
+          "@language": "nl",
+          "@value": "WEIDE"
+        },
+        "gemeentenaam": {
+          "@language": "nl",
+          "@value": "NZ ELSLOO"
+        },
+        "huisnummer": "42",
+        "land": {
+          "@language": "nl",
+          "@value": "Nederland"
+        }
+      },
+      "telefoon": [
+        {
+          "@type": "http://www.w3.org/2006/vcard/ns#Cell",
+          "@value": "+25 67 89 12 56 7"
+        }
+      ]
+    }
   }
 }
