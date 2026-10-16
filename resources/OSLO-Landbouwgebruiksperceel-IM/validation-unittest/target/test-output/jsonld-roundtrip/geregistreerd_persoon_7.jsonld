@@ -1,0 +1,106 @@
+{
+  "@context" : "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.2.0/context/landbouwgebruiksperceel.jsonld",
+  "@type" : "Landbouwgebruiksperceel",
+  "identificator" : {
+    "@type" : "Identificator",
+    "identificator" : {
+      "@value" : "10262_1853210864",
+      "@type" : "https://data.vlaanderen.be/id/concept/Identificatortype/AGPAKEY"
+    },
+    "toegekendDoor" : {
+      "@type" : "GeregistreerdeOrganisatie",
+      "@id" : "http://data.vlaanderen.be/id/organisatie/OVO000082",
+      "registratie" : {
+        "@id" : "_:registratie:OVO000082",
+        "@type" : "Identificator",
+        "identificator" : {
+          "@value" : "OVO000082",
+          "@type" : "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode"
+        }
+      },
+      "voorkeursnaam" : {
+        "@value" : "Agentschap Landbouw en Zeevisserij",
+        "@language" : "nl"
+      }
+    }
+  },
+  "gebruiker" : {
+    "@type" : "GeregistreerdPersoon",
+    "registratie" : {
+      "@type" : "Identificator",
+      "identificator" : {
+        "@value" : "16579840240",
+        "@type" : "https://data.vlaanderen.be/id/concept/Identificatortype/INSZ"
+      },
+      "toegekendDoor" : {
+        "@type" : "GeregistreerdeOrganisatie",
+        "@id" : "http://data.vlaanderen.be/id/organisatie/OVO008218",
+        "registratie" : {
+          "@id" : "_:registratie:OVO008218",
+          "@type" : "Identificator",
+          "identificator" : {
+            "@value" : "OVO008218",
+            "@type" : "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode"
+          }
+        },
+        "voorkeursnaam" : {
+          "@value" : "Kruispuntbank van de Sociale Zekerheid",
+          "@language" : "nl"
+        }
+      }
+    },
+    "identificator" : {
+      "@type" : "Identificator",
+      "identificator" : {
+        "@value" : "33793382",
+        "@type" : "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer"
+      },
+      "toegekendDoor" : {
+        "@type" : "GeregistreerdeOrganisatie",
+        "@id" : "http://data.vlaanderen.be/id/organisatie/OVO000082",
+        "registratie" : {
+          "@id" : "_:registratie:OVO000082",
+          "@type" : "Identificator",
+          "identificator" : {
+            "@value" : "OVO000082",
+            "@type" : "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode"
+          }
+        },
+        "voorkeursnaam" : {
+          "@value" : "Agentschap Landbouw en Zeevisserij",
+          "@language" : "nl"
+        }
+      }
+    },
+    "voornaam" : [ "Swans" ],
+    "achternaam" : "Keilen",
+    "contactinfo" : {
+      "@type" : "Contactpunt",
+      "telefoon" : [ {
+        "@value" : "010 11 12 17",
+        "@type" : "http://www.w3.org/2006/vcard/ns#Voice"
+      } ],
+      "adres" : {
+        "@type" : "Adresvoorstelling",
+        "gemeentenaam" : {
+          "@value" : "Nergens",
+          "@language" : "nl"
+        },
+        "huisnummer" : "3",
+        "land" : {
+          "@value" : "België",
+          "@language" : "nl"
+        },
+        "postcode" : "1111",
+        "straatnaam" : {
+          "@value" : "BROEKSTRAAT",
+          "@language" : "nl"
+        },
+        "volledigAdres" : {
+          "@value" : "Broekstraat 3, 1111 Nergens",
+          "@language" : "nl"
+        }
+      }
+    }
+  }
+}

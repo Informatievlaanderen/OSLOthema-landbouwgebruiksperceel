@@ -1,3 +1,5 @@
+be/vlaanderen/pocs/oslopersoon/model/ContactpuntTelefoon.class
+be/vlaanderen/pocs/oslopersoon/model/GeregistreerdeOrganisatieVoorkeursnaam.class
 be/vlaanderen/pocs/oslopersoon/model/OrganisatieLidInner.class
 be/vlaanderen/pocs/oslopersoon/model/Landbouwgebruiksperceel.class
 be/vlaanderen/pocs/oslopersoon/model/Rechtsvormtype.class
@@ -6,12 +8,18 @@ be/vlaanderen/pocs/oslopersoon/jackson/BlankNodeUriDeserializer.class
 be/vlaanderen/pocs/oslopersoon/jackson/BlankNodeUriSerializer.class
 be/vlaanderen/pocs/oslopersoon/model/Contactpunt.class
 be/vlaanderen/pocs/oslopersoon/model/Problemdetail.class
+be/vlaanderen/pocs/oslopersoon/model/IdentificatorIdentificator.class
 be/vlaanderen/pocs/oslopersoon/model/Adres.class
 be/vlaanderen/pocs/oslopersoon/model/Concept.class
 be/vlaanderen/pocs/oslopersoon/model/OrganisatieStatus.class
 be/vlaanderen/pocs/oslopersoon/model/LandbouwActiviteit.class
+be/vlaanderen/pocs/oslopersoon/model/OrganisatieVoorkeursnaam.class
+be/vlaanderen/pocs/oslopersoon/model/AdresvoorstellingGemeentenaam.class
+be/vlaanderen/pocs/oslopersoon/model/AdresvoorstellingStraatnaam.class
 be/vlaanderen/pocs/oslopersoon/model/LandbouwgebruiksperceelGebruiker.class
 be/vlaanderen/pocs/oslopersoon/model/Persoon.class
+be/vlaanderen/pocs/oslopersoon/model/ConceptVoorkeursnaam.class
+be/vlaanderen/pocs/oslopersoon/model/AdresvoorstellingLand.class
 be/vlaanderen/pocs/oslopersoon/model/OrganisatieType.class
 be/vlaanderen/pocs/oslopersoon/model/Overlijden.class
 be/vlaanderen/pocs/oslopersoon/api/ApiUtil.class
@@ -22,4 +30,5 @@ be/vlaanderen/pocs/oslopersoon/model/GeregistreerdPersoon.class
 be/vlaanderen/pocs/oslopersoon/OslopersoonApplication.class
 be/vlaanderen/pocs/oslopersoon/model/Identificatortype.class
 be/vlaanderen/pocs/oslopersoon/model/Organisatie.class
+be/vlaanderen/pocs/oslopersoon/model/AdresvoorstellingVolledigAdres.class
 be/vlaanderen/pocs/oslopersoon/api/DefaultApi.class

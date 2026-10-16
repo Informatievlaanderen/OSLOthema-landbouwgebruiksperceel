@@ -3,6 +3,10 @@ package be.vlaanderen.pocs.oslopersoon.model;
 import java.net.URI;
 import java.util.Objects;
 import be.vlaanderen.pocs.oslopersoon.model.Adres;
+import be.vlaanderen.pocs.oslopersoon.model.AdresvoorstellingGemeentenaam;
+import be.vlaanderen.pocs.oslopersoon.model.AdresvoorstellingLand;
+import be.vlaanderen.pocs.oslopersoon.model.AdresvoorstellingStraatnaam;
+import be.vlaanderen.pocs.oslopersoon.model.AdresvoorstellingVolledigAdres;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import java.net.URI;
@@ -22,7 +26,7 @@ import jakarta.annotation.Generated;
  */
 
 @Schema(name = "Adresvoorstelling", description = "Meer leesbare voorstelling met enkel de basisgegevens van het adres, bedoeld voor het gebruik van een adres als attribuut van een ander object.")
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-10-15T14:56:46.547161501+02:00[Europe/Brussels]", comments = "Generator version: 7.20.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-10-16T11:39:17.103739945+02:00[Europe/Brussels]", comments = "Generator version: 7.20.0")
 public class Adresvoorstelling {
 
   private @Nullable URI atId;
@@ -33,19 +37,19 @@ public class Adresvoorstelling {
 
   private @Nullable String busnummer;
 
-  private @Nullable String gemeentenaam;
+  private @Nullable AdresvoorstellingGemeentenaam gemeentenaam;
 
   private @Nullable String huisnummer;
 
-  private @Nullable String land;
+  private @Nullable AdresvoorstellingLand land;
 
   private @Nullable String postbus;
 
   private @Nullable String postcode;
 
-  private @Nullable String straatnaam;
+  private @Nullable AdresvoorstellingStraatnaam straatnaam;
 
-  private @Nullable String volledigAdres;
+  private @Nullable AdresvoorstellingVolledigAdres volledigAdres;
 
   private @Nullable Adres verwijstNaar;
 
@@ -140,23 +144,23 @@ public class Adresvoorstelling {
     this.busnummer = busnummer;
   }
 
-  public Adresvoorstelling gemeentenaam(@Nullable String gemeentenaam) {
+  public Adresvoorstelling gemeentenaam(@Nullable AdresvoorstellingGemeentenaam gemeentenaam) {
     this.gemeentenaam = gemeentenaam;
     return this;
   }
 
   /**
-   * Gemeentenaam van het adres.
+   * Get gemeentenaam
    * @return gemeentenaam
    */
-  
-  @Schema(name = "gemeentenaam", description = "Gemeentenaam van het adres.", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
+  @Valid 
+  @Schema(name = "gemeentenaam", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
   @JsonProperty("gemeentenaam")
-  public @Nullable String getGemeentenaam() {
+  public @Nullable AdresvoorstellingGemeentenaam getGemeentenaam() {
     return gemeentenaam;
   }
 
-  public void setGemeentenaam(@Nullable String gemeentenaam) {
+  public void setGemeentenaam(@Nullable AdresvoorstellingGemeentenaam gemeentenaam) {
     this.gemeentenaam = gemeentenaam;
   }
 
@@ -180,23 +184,23 @@ public class Adresvoorstelling {
     this.huisnummer = huisnummer;
   }
 
-  public Adresvoorstelling land(@Nullable String land) {
+  public Adresvoorstelling land(@Nullable AdresvoorstellingLand land) {
     this.land = land;
     return this;
   }
 
   /**
-   * Land waarin het adres gelegen is.
+   * Get land
    * @return land
    */
-  
-  @Schema(name = "land", description = "Land waarin het adres gelegen is.", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
+  @Valid 
+  @Schema(name = "land", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
   @JsonProperty("land")
-  public @Nullable String getLand() {
+  public @Nullable AdresvoorstellingLand getLand() {
     return land;
   }
 
-  public void setLand(@Nullable String land) {
+  public void setLand(@Nullable AdresvoorstellingLand land) {
     this.land = land;
   }
 
@@ -240,43 +244,43 @@ public class Adresvoorstelling {
     this.postcode = postcode;
   }
 
-  public Adresvoorstelling straatnaam(@Nullable String straatnaam) {
+  public Adresvoorstelling straatnaam(@Nullable AdresvoorstellingStraatnaam straatnaam) {
     this.straatnaam = straatnaam;
     return this;
   }
 
   /**
-   * Straatnaam van het adres.
+   * Get straatnaam
    * @return straatnaam
    */
-  
-  @Schema(name = "straatnaam", description = "Straatnaam van het adres.", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
+  @Valid 
+  @Schema(name = "straatnaam", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
   @JsonProperty("straatnaam")
-  public @Nullable String getStraatnaam() {
+  public @Nullable AdresvoorstellingStraatnaam getStraatnaam() {
     return straatnaam;
   }
 
-  public void setStraatnaam(@Nullable String straatnaam) {
+  public void setStraatnaam(@Nullable AdresvoorstellingStraatnaam straatnaam) {
     this.straatnaam = straatnaam;
   }
 
-  public Adresvoorstelling volledigAdres(@Nullable String volledigAdres) {
+  public Adresvoorstelling volledigAdres(@Nullable AdresvoorstellingVolledigAdres volledigAdres) {
     this.volledigAdres = volledigAdres;
     return this;
   }
 
   /**
-   * Het complete adres in één string, al dan niet geformatteerd. Vermijdt fouten ten gevolge van het opsplitsen van een adres in zijn onderdelen. Geeft de voorgeschreven volgorde van de verschillende onderdelen weer.
+   * Get volledigAdres
    * @return volledigAdres
    */
-  
-  @Schema(name = "volledigAdres", description = "Het complete adres in één string, al dan niet geformatteerd. Vermijdt fouten ten gevolge van het opsplitsen van een adres in zijn onderdelen. Geeft de voorgeschreven volgorde van de verschillende onderdelen weer.", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
+  @Valid 
+  @Schema(name = "volledigAdres", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
   @JsonProperty("volledigAdres")
-  public @Nullable String getVolledigAdres() {
+  public @Nullable AdresvoorstellingVolledigAdres getVolledigAdres() {
     return volledigAdres;
   }
 
-  public void setVolledigAdres(@Nullable String volledigAdres) {
+  public void setVolledigAdres(@Nullable AdresvoorstellingVolledigAdres volledigAdres) {
     this.volledigAdres = volledigAdres;
   }
 

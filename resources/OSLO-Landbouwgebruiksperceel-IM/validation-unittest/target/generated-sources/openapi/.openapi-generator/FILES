@@ -5,11 +5,19 @@ src/main/java/be/vlaanderen/pocs/oslopersoon/api/ApiUtil.java
 src/main/java/be/vlaanderen/pocs/oslopersoon/api/DefaultApi.java
 src/main/java/be/vlaanderen/pocs/oslopersoon/model/Adres.java
 src/main/java/be/vlaanderen/pocs/oslopersoon/model/Adresvoorstelling.java
+src/main/java/be/vlaanderen/pocs/oslopersoon/model/AdresvoorstellingGemeentenaam.java
+src/main/java/be/vlaanderen/pocs/oslopersoon/model/AdresvoorstellingLand.java
+src/main/java/be/vlaanderen/pocs/oslopersoon/model/AdresvoorstellingStraatnaam.java
+src/main/java/be/vlaanderen/pocs/oslopersoon/model/AdresvoorstellingVolledigAdres.java
 src/main/java/be/vlaanderen/pocs/oslopersoon/model/Concept.java
+src/main/java/be/vlaanderen/pocs/oslopersoon/model/ConceptVoorkeursnaam.java
 src/main/java/be/vlaanderen/pocs/oslopersoon/model/Contactpunt.java
+src/main/java/be/vlaanderen/pocs/oslopersoon/model/ContactpuntTelefoon.java
 src/main/java/be/vlaanderen/pocs/oslopersoon/model/GeregistreerdPersoon.java
 src/main/java/be/vlaanderen/pocs/oslopersoon/model/GeregistreerdeOrganisatie.java
+src/main/java/be/vlaanderen/pocs/oslopersoon/model/GeregistreerdeOrganisatieVoorkeursnaam.java
 src/main/java/be/vlaanderen/pocs/oslopersoon/model/Identificator.java
+src/main/java/be/vlaanderen/pocs/oslopersoon/model/IdentificatorIdentificator.java
 src/main/java/be/vlaanderen/pocs/oslopersoon/model/Identificatortype.java
 src/main/java/be/vlaanderen/pocs/oslopersoon/model/LandbouwActiviteit.java
 src/main/java/be/vlaanderen/pocs/oslopersoon/model/Landbouwgebruiksperceel.java
@@ -18,6 +26,7 @@ src/main/java/be/vlaanderen/pocs/oslopersoon/model/Organisatie.java
 src/main/java/be/vlaanderen/pocs/oslopersoon/model/OrganisatieLidInner.java
 src/main/java/be/vlaanderen/pocs/oslopersoon/model/OrganisatieStatus.java
 src/main/java/be/vlaanderen/pocs/oslopersoon/model/OrganisatieType.java
+src/main/java/be/vlaanderen/pocs/oslopersoon/model/OrganisatieVoorkeursnaam.java
 src/main/java/be/vlaanderen/pocs/oslopersoon/model/Overlijden.java
 src/main/java/be/vlaanderen/pocs/oslopersoon/model/Persoon.java
 src/main/java/be/vlaanderen/pocs/oslopersoon/model/Problemdetail.java

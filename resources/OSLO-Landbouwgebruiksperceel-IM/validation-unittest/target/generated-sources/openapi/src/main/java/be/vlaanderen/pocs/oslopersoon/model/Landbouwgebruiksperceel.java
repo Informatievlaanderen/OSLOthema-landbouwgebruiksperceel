@@ -23,8 +23,10 @@ import jakarta.annotation.Generated;
  */
 
 @Schema(name = "Landbouwgebruiksperceel", description = "Een landbouwgebruiksperceel is een aaneengesloten stuk grond dat door een landbouwer wordt gebruikt voor landbouwactiviteiten.")
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-10-15T14:56:46.547161501+02:00[Europe/Brussels]", comments = "Generator version: 7.20.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-10-16T11:39:17.103739945+02:00[Europe/Brussels]", comments = "Generator version: 7.20.0")
 public class Landbouwgebruiksperceel {
+
+  private @Nullable URI atContext;
 
   private @Nullable URI atId;
 
@@ -45,6 +47,26 @@ public class Landbouwgebruiksperceel {
     this.atType = atType;
     this.identificator = identificator;
     this.gebruiker = gebruiker;
+  }
+
+  public Landbouwgebruiksperceel atContext(@Nullable URI atContext) {
+    this.atContext = atContext;
+    return this;
+  }
+
+  /**
+   * Get atContext
+   * @return atContext
+   */
+  @Valid 
+  @Schema(name = "@context", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
+  @JsonProperty("@context")
+  public @Nullable URI getAtContext() {
+    return atContext;
+  }
+
+  public void setAtContext(@Nullable URI atContext) {
+    this.atContext = atContext;
   }
 
   public Landbouwgebruiksperceel atId(@Nullable URI atId) {
@@ -136,7 +158,8 @@ public class Landbouwgebruiksperceel {
       return false;
     }
     Landbouwgebruiksperceel landbouwgebruiksperceel = (Landbouwgebruiksperceel) o;
-    return Objects.equals(this.atId, landbouwgebruiksperceel.atId) &&
+    return Objects.equals(this.atContext, landbouwgebruiksperceel.atContext) &&
+        Objects.equals(this.atId, landbouwgebruiksperceel.atId) &&
         Objects.equals(this.atType, landbouwgebruiksperceel.atType) &&
         Objects.equals(this.identificator, landbouwgebruiksperceel.identificator) &&
         Objects.equals(this.gebruiker, landbouwgebruiksperceel.gebruiker);
@@ -144,13 +167,14 @@ public class Landbouwgebruiksperceel {
 
   @Override
   public int hashCode() {
-    return Objects.hash(atId, atType, identificator, gebruiker);
+    return Objects.hash(atContext, atId, atType, identificator, gebruiker);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Landbouwgebruiksperceel {\n");
+    sb.append("    atContext: ").append(toIndentedString(atContext)).append("\n");
     sb.append("    atId: ").append(toIndentedString(atId)).append("\n");
     sb.append("    atType: ").append(toIndentedString(atType)).append("\n");
     sb.append("    identificator: ").append(toIndentedString(identificator)).append("\n");

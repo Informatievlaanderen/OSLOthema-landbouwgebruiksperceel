@@ -27,13 +27,9 @@
     "lid": [
       {
         "@type": "GeregistreerdPersoon",
-        "achternaam": {
-          "@value": "Bernouts"
-        },
+        "achternaam": "Bernouts",
         "voornaam": [
-          {
-            "@value": "Frans"
-          }
+          "Frans"
         ],
         "registratie": {
           "@type": "Identificator",
@@ -62,7 +58,7 @@
           "@language": "nl",
           "@value": "Gerelateerde landbouwactiviteit"
         },
-        "code": "Gerelateerd"
+        "code": "gerelateerd"
       }
     ],
     "status": [
@@ -119,38 +115,36 @@
       },
       "code": "1"
     },
-    "contactinfo": [
-      {
-        "@type": "Contactpunt",
-        "adres": {
-          "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "Rokstraat 10, 1234 Overal"
-          },
-          "postcode": "1234",
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "Rokstraat"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "Overal"
-          },
-          "huisnummer": "10",
-          "land": {
-            "@language": "nl",
-            "@value": "België"
-          }
+    "contactinfo": {
+      "@type": "Contactpunt",
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "volledigAdres": {
+          "@language": "nl",
+          "@value": "Rokstraat 10, 1234 Overal"
         },
-        "email": "naamvoornaam@mail.be",
-        "telefoon": [
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Cell",
-            "@value": "0456 78 91 23"
-          }
-        ]
-      }
-    ]
+        "postcode": "1234",
+        "straatnaam": {
+          "@language": "nl",
+          "@value": "Rokstraat"
+        },
+        "gemeentenaam": {
+          "@language": "nl",
+          "@value": "Overal"
+        },
+        "huisnummer": "10",
+        "land": {
+          "@language": "nl",
+          "@value": "België"
+        }
+      },
+      "email": "naamvoornaam@mail.be",
+      "telefoon": [
+        {
+          "@type": "http://www.w3.org/2006/vcard/ns#Cell",
+          "@value": "0456 78 91 23"
+        }
+      ]
+    }
   }
 }

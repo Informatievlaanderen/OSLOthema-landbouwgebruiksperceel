@@ -58,7 +58,7 @@
           "@language": "nl",
           "@value": "Gerelateerde landbouwactiviteit"
         },
-        "code": "Gerelateerd"
+        "code": "gerelateerd"
       }
     ],
     "status": [
@@ -115,38 +115,36 @@
       },
       "code": "1"
     },
-    "contactinfo": [
-      {
-        "@type": "Contactpunt",
-        "adres": {
-          "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "Lokstraat 10, 1234 Overal"
-          },
-          "postcode": "1234",
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "Lokstraat"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "Overal"
-          },
-          "huisnummer": "10",
-          "land": {
-            "@language": "nl",
-            "@value": "België"
-          }
+    "contactinfo": {
+      "@type": "Contactpunt",
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "volledigAdres": {
+          "@language": "nl",
+          "@value": "Lokstraat 10, 1234 Overal"
         },
-        "email": "naamvoornaam4@mail.be",
-        "telefoon": [
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Voice",
-            "@value": "052 35 67 89"
-          }
-        ]
-      }
-    ]
+        "postcode": "1234",
+        "straatnaam": {
+          "@language": "nl",
+          "@value": "Lokstraat"
+        },
+        "gemeentenaam": {
+          "@language": "nl",
+          "@value": "Overal"
+        },
+        "huisnummer": "10",
+        "land": {
+          "@language": "nl",
+          "@value": "België"
+        }
+      },
+      "email": "naamvoornaam4@mail.be",
+      "telefoon": [
+        {
+          "@type": "http://www.w3.org/2006/vcard/ns#Voice",
+          "@value": "052 35 67 89"
+        }
+      ]
+    }
   }
 }

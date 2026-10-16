@@ -5,6 +5,7 @@ import java.util.Objects;
 import be.vlaanderen.pocs.oslopersoon.model.Contactpunt;
 import be.vlaanderen.pocs.oslopersoon.model.GeregistreerdPersoon;
 import be.vlaanderen.pocs.oslopersoon.model.GeregistreerdeOrganisatie;
+import be.vlaanderen.pocs.oslopersoon.model.GeregistreerdeOrganisatieVoorkeursnaam;
 import be.vlaanderen.pocs.oslopersoon.model.Identificator;
 import be.vlaanderen.pocs.oslopersoon.model.LandbouwActiviteit;
 import be.vlaanderen.pocs.oslopersoon.model.Organisatie;
@@ -49,7 +50,7 @@ import jakarta.annotation.Generated;
   @JsonSubTypes.Type(value = Persoon.class, name = "Persoon")
 })
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-10-15T14:56:46.547161501+02:00[Europe/Brussels]", comments = "Generator version: 7.20.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-10-16T11:39:17.103739945+02:00[Europe/Brussels]", comments = "Generator version: 7.20.0")
 public interface LandbouwgebruiksperceelGebruiker {
     public String getAtType();
 }

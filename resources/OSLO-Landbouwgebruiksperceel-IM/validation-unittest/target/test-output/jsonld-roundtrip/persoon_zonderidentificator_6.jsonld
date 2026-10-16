@@ -1,0 +1,85 @@
+{
+  "@context" : "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.2.0/context/landbouwgebruiksperceel.jsonld",
+  "@type" : "Landbouwgebruiksperceel",
+  "identificator" : {
+    "@type" : "Identificator",
+    "identificator" : {
+      "@value" : "10260_1770789964",
+      "@type" : "https://data.vlaanderen.be/id/concept/Identificatortype/AGPAKEY"
+    },
+    "toegekendDoor" : {
+      "@type" : "GeregistreerdeOrganisatie",
+      "@id" : "http://data.vlaanderen.be/id/organisatie/OVO000082",
+      "registratie" : {
+        "@id" : "_:registratie:OVO000082",
+        "@type" : "Identificator",
+        "identificator" : {
+          "@value" : "OVO000082",
+          "@type" : "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode"
+        }
+      },
+      "voorkeursnaam" : {
+        "@value" : "Agentschap Landbouw en Zeevisserij",
+        "@language" : "nl"
+      }
+    }
+  },
+  "gebruiker" : {
+    "@type" : "Persoon",
+    "voornaam" : [ "AGNES" ],
+    "achternaam" : "DOMS",
+    "contactinfo" : {
+      "@type" : "Contactpunt",
+      "email" : "ervoor@boomkwekdams.nl",
+      "telefoon" : [ {
+        "@value" : "+31765972123",
+        "@type" : "http://www.w3.org/2006/vcard/ns#Voice"
+      } ],
+      "adres" : {
+        "@type" : "Adresvoorstelling",
+        "gemeentenaam" : {
+          "@value" : "AZ ZUNDERT",
+          "@language" : "nl"
+        },
+        "huisnummer" : "121",
+        "land" : {
+          "@value" : "Nederland",
+          "@language" : "nl"
+        },
+        "postbus" : "B",
+        "postcode" : "4661",
+        "straatnaam" : {
+          "@value" : "ACHWEG",
+          "@language" : "nl"
+        },
+        "volledigAdres" : {
+          "@value" : "ACHWEG 121 bus B, 4661 AZ ZUNDERT, NEDERLAND",
+          "@language" : "nl"
+        }
+      }
+    },
+    "identificator" : {
+      "@type" : "Identificator",
+      "identificator" : {
+        "@value" : "34000621",
+        "@type" : "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer"
+      },
+      "toegekendDoor" : {
+        "@type" : "GeregistreerdeOrganisatie",
+        "@id" : "http://data.vlaanderen.be/id/organisatie/OVO000082",
+        "registratie" : {
+          "@id" : "_:registratie:OVO000082",
+          "@type" : "Identificator",
+          "identificator" : {
+            "@value" : "OVO000082",
+            "@type" : "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode"
+          }
+        },
+        "voorkeursnaam" : {
+          "@value" : "Agentschap Landbouw en Zeevisserij",
+          "@language" : "nl"
+        }
+      }
+    }
+  }
+}

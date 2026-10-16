@@ -5,7 +5,7 @@
     "@type": "Identificator",
     "toegekendDoor": {
       "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-      "@type": "Organisatie",
+      "@type": "GeregistreerdeOrganisatie",
       "voorkeursnaam": {
         "@language": "nl",
         "@value": "Agentschap Landbouw en Zeevisserij"
@@ -24,7 +24,7 @@
       "@type": "Identificator",
       "toegekendDoor": {
         "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-        "@type": "Organisatie",
+        "@type": "GeregistreerdeOrganisatie",
         "voorkeursnaam": {
           "@language": "nl",
           "@value": "Agentschap Landbouw en Zeevisserij"
@@ -41,39 +41,37 @@
     "voornaam": [
       "AGNES"
     ],
-    "contactinfo": [
-      {
-        "@type": "Contactpunt",
-        "adres": {
-          "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "ACHWEG 121 bus B, 4661 AZ ZUNDERT, NEDERLAND"
-          },
-          "postbus": "B",
-          "postcode": "4661",
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "ACHWEG"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "AZ ZUNDERT"
-          },
-          "huisnummer": "121",
-          "land": {
-            "@language": "nl",
-            "@value": "Nederland"
-          }
+    "contactinfo": {
+      "@type": "Contactpunt",
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "volledigAdres": {
+          "@language": "nl",
+          "@value": "ACHWEG 121 bus B, 4661 AZ ZUNDERT, NEDERLAND"
         },
-        "email": "ervoor@boomkwekdams.nl",
-        "telefoon": [
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Voice",
-            "@value": "+31765972123"
-          }
-        ]
-      }
-    ]
+        "postbus": "B",
+        "postcode": "4661",
+        "straatnaam": {
+          "@language": "nl",
+          "@value": "ACHWEG"
+        },
+        "gemeentenaam": {
+          "@language": "nl",
+          "@value": "AZ ZUNDERT"
+        },
+        "huisnummer": "121",
+        "land": {
+          "@language": "nl",
+          "@value": "Nederland"
+        }
+      },
+      "email": "ervoor@boomkwekdams.nl",
+      "telefoon": [
+        {
+          "@type": "http://www.w3.org/2006/vcard/ns#Voice",
+          "@value": "+31765972123"
+        }
+      ]
+    }
   }
 }

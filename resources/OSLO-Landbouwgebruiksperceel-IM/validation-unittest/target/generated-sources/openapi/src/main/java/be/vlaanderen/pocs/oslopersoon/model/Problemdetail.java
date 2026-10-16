@@ -4,7 +4,6 @@ import java.net.URI;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import java.math.BigDecimal;
 import java.net.URI;
 import org.springframework.lang.Nullable;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -22,7 +21,7 @@ import jakarta.annotation.Generated;
  */
 
 @Schema(name = "Problemdetail", description = "Meer gedetailleerde beschrijving van de fout in een HTTP response.")
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-10-15T14:56:46.547161501+02:00[Europe/Brussels]", comments = "Generator version: 7.20.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-10-16T11:39:17.103739945+02:00[Europe/Brussels]", comments = "Generator version: 7.20.0")
 public class Problemdetail {
 
   private @Nullable URI atId;
@@ -33,7 +32,7 @@ public class Problemdetail {
 
   private @Nullable URI instance;
 
-  private @Nullable BigDecimal status;
+  private @Nullable Long status;
 
   private String title;
 
@@ -133,7 +132,7 @@ public class Problemdetail {
     this.instance = instance;
   }
 
-  public Problemdetail status(@Nullable BigDecimal status) {
+  public Problemdetail status(@Nullable Long status) {
     this.status = status;
     return this;
   }
@@ -142,14 +141,14 @@ public class Problemdetail {
    * HTTP foutcode. Zoals beschreven in <a href=\"https://www.rfc-editor.org/rfc/rfc7231\">RFC7231</a>. Bijvoorbeeld: 404 voor \"Not Found\".
    * @return status
    */
-  @Valid 
+  
   @Schema(name = "status", description = "HTTP foutcode. Zoals beschreven in <a href=\"https://www.rfc-editor.org/rfc/rfc7231\">RFC7231</a>. Bijvoorbeeld: 404 voor \"Not Found\".", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
   @JsonProperty("status")
-  public @Nullable BigDecimal getStatus() {
+  public @Nullable Long getStatus() {
     return status;
   }
 
-  public void setStatus(@Nullable BigDecimal status) {
+  public void setStatus(@Nullable Long status) {
     this.status = status;
   }
 

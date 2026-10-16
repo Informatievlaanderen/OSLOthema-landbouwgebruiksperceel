@@ -146,7 +146,7 @@
   },
   "components": {
       "schemas": {
-      "OrganisatieType": {
+        "OrganisatieType": {
         "title": "OrganisatieType",
         "type": "object",
         "description": "Enumeratie van OrganisatieType",
@@ -154,6 +154,15 @@
           "@id": {
             "type": "string",
             "format": "uri"
+          },
+          "@type": {
+            "type": "string"
+          },
+          "code": {
+            "$ref": "#/components/schemas/Concept.code"
+          },
+          "voorkeursnaam": {
+            "$ref": "#/components/schemas/Concept.voorkeursnaam"
           }
         },
         "required": [
@@ -168,6 +177,15 @@
           "@id": {
             "type": "string",
             "format": "uri"
+          },
+          "@type": {
+            "type": "string"
+          },
+          "code": {
+            "$ref": "#/components/schemas/Concept.code"
+          },
+          "voorkeursnaam": {
+            "$ref": "#/components/schemas/Concept.voorkeursnaam"
           }
         },
         "required": [
@@ -182,6 +200,15 @@
           "@id": {
             "type": "string",
             "format": "uri"
+          },
+          "@type": {
+            "type": "string"
+          },
+          "code": {
+            "$ref": "#/components/schemas/Concept.code"
+          },
+          "voorkeursnaam": {
+            "$ref": "#/components/schemas/Concept.voorkeursnaam"
           }
         },
         "required": [
@@ -196,6 +223,15 @@
           "@id": {
             "type": "string",
             "format": "uri"
+          },
+          "@type": {
+            "type": "string"
+          },
+          "code": {
+            "$ref": "#/components/schemas/Concept.code"
+          },
+          "voorkeursnaam": {
+            "$ref": "#/components/schemas/Concept.voorkeursnaam"
           }
         },
         "required": [
@@ -210,6 +246,15 @@
           "@id": {
             "type": "string",
             "format": "uri"
+          },
+          "@type": {
+            "type": "string"
+          },
+          "code": {
+            "$ref": "#/components/schemas/Concept.code"
+          },
+          "voorkeursnaam": {
+            "$ref": "#/components/schemas/Concept.voorkeursnaam"
           }
         },
         "required": [
@@ -224,6 +269,15 @@
           "@id": {
             "type": "string",
             "format": "uri"
+          },
+          "@type": {
+            "type": "string"
+          },
+          "code": {
+            "$ref": "#/components/schemas/Concept.code"
+          },
+          "voorkeursnaam": {
+            "$ref": "#/components/schemas/Concept.voorkeursnaam"
           }
         },
         "required": [
@@ -244,7 +298,7 @@
       "Problemdetail.status": {
         "title": "Problemdetail.status",
         "description": "HTTP foutcode. Zoals beschreven in <a href=\"https://www.rfc-editor.org/rfc/rfc7231\">RFC7231</a>. Bijvoorbeeld: 404 voor \"Not Found\".",
-        "type": "number",
+        "type": "integer",
         "format": "int64"
       },
       "Problemdetail.title": {
@@ -317,7 +371,20 @@
       "Organisatie.voorkeursnaam": {
         "title": "Organisatie.voorkeursnaam",
         "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "@value": {
+            "type": "string"
+          },
+          "@language": {
+            "type": "string",
+            "pattern": "^nl$"
+          }
+        },
+        "required": [
+          "@value",
+          "@language"
+        ]
       },
       "Organisatie": {
         "title": "Organisatie",
@@ -345,12 +412,7 @@
             "minItems": 1
           },
           "contactinfo": {
-            "type": "array",
-            "description": "Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren. Lijst van Contactpunt items.",
-            "items": {
               "$ref": "#/components/schemas/Contactpunt"
-            },
-            "minItems": 1
           },
           "activiteit": {
             "type": "array",
@@ -537,7 +599,20 @@
       "GeregistreerdeOrganisatie.voorkeursnaam": {
         "title": "GeregistreerdeOrganisatie.voorkeursnaam",
         "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "@value": {
+            "type": "string"
+          },
+          "@language": {
+            "type": "string",
+            "pattern": "^nl$"
+          }
+        },
+        "required": [
+          "@value",
+          "@language"
+        ]
       },
       "GeregistreerdeOrganisatie": {
         "title": "GeregistreerdeOrganisatie",
@@ -582,12 +657,7 @@
             "minItems": 1
           },
           "contactinfo": {
-            "type": "array",
-            "description": "Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren. Lijst van Contactpunt items.",
-            "items": {
-              "$ref": "#/components/schemas/Contactpunt"
-            },
-            "minItems": 1
+            "$ref": "#/components/schemas/Contactpunt"
           },
           "activiteit": {
             "type": "array",
@@ -652,6 +722,10 @@
         "type": "object",
         "description": "Een landbouwgebruiksperceel is een aaneengesloten stuk grond dat door een landbouwer wordt gebruikt voor landbouwactiviteiten.",
         "properties": {
+          "@context": {
+            "type": "string",
+            "format": "uri"
+          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -704,7 +778,20 @@
       "Concept.voorkeursnaam": {
         "title": "Concept.voorkeursnaam",
         "description": "De naam van het Concept.",
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "@value": {
+            "type": "string"
+          },
+          "@language": {
+            "type": "string",
+            "pattern": "^nl$"
+          }
+        },
+        "required": [
+          "@value",
+          "@language"
+        ]
       },
       "Concept": {
         "title": "Concept",
@@ -745,7 +832,20 @@
       "Adresvoorstelling.gemeentenaam": {
         "title": "Adresvoorstelling.gemeentenaam",
         "description": "Gemeentenaam van het adres.",
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "@value": {
+            "type": "string"
+          },
+          "@language": {
+            "type": "string",
+            "pattern": "^nl$"
+          }
+        },
+        "required": [
+          "@value",
+          "@language"
+        ]
       },
       "Adresvoorstelling.huisnummer": {
         "title": "Adresvoorstelling.huisnummer",
@@ -755,7 +855,20 @@
       "Adresvoorstelling.land": {
         "title": "Adresvoorstelling.land",
         "description": "Land waarin het adres gelegen is.",
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "@value": {
+            "type": "string"
+          },
+          "@language": {
+            "type": "string",
+            "pattern": "^nl$"
+          }
+        },
+        "required": [
+          "@value",
+          "@language"
+        ]
       },
       "Adresvoorstelling.postbus": {
         "title": "Adresvoorstelling.postbus",
@@ -770,12 +883,38 @@
       "Adresvoorstelling.straatnaam": {
         "title": "Adresvoorstelling.straatnaam",
         "description": "Straatnaam van het adres.",
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "@value": {
+            "type": "string"
+          },
+          "@language": {
+            "type": "string",
+            "pattern": "^nl$"
+          }
+        },
+        "required": [
+          "@value",
+          "@language"
+        ]
       },
       "Adresvoorstelling.volledigAdres": {
         "title": "Adresvoorstelling.volledigAdres",
         "description": "Het complete adres in één string, al dan niet geformatteerd. Vermijdt fouten ten gevolge van het opsplitsen van een adres in zijn onderdelen. Geeft de voorgeschreven volgorde van de verschillende onderdelen weer.",
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "@value": {
+            "type": "string"
+          },
+          "@language": {
+            "type": "string",
+            "pattern": "^nl$"
+          }
+        },
+        "required": [
+          "@value",
+          "@language"
+        ]
       },
       "Adresvoorstelling": {
         "title": "Adresvoorstelling",
@@ -829,7 +968,18 @@
       "Identificator.identificator": {
         "title": "Identificator.identificator",
         "description": "String gebruikt om het object uniek te identificeren. Type van de string slaat op het identificatiesysteem (inclusief de versie ervan), de string zelf op de eigenlijke identificator.",
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "@value": {
+            "type": "string"
+          },
+          "@type": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "@value"
+        ]
       },
       "Identificator": {
         "title": "Identificator",
@@ -886,7 +1036,18 @@
       "Contactpunt.telefoon": {
         "title": "Contactpunt.telefoon",
         "description": "Telefoonnummer waarop men kan bellen.",
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "@value": {
+            "type": "string"
+          },
+          "@type": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "@value"
+        ]
       },
       "Contactpunt": {
         "title": "Contactpunt",

@@ -69,38 +69,36 @@
       },
       "identificator": { "@value": "00038102610", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer" }
     },
-    "contactinfo": [
-      {
-        "@type": "Contactpunt",
-        "adres": {
-          "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "DALBROKSTRAAT 112, 3631 PANAKEN"
-          },
-          "postcode": "3621",
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "DALBROKSTRAAT"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "Panaken"
-          },
-          "huisnummer": "112",
-          "land": {
-            "@language": "nl",
-            "@value": "België"
-          }
+    "contactinfo": {
+      "@type": "Contactpunt",
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "volledigAdres": {
+          "@language": "nl",
+          "@value": "DALBROKSTRAAT 112, 3631 PANAKEN"
         },
-        "email": "naamvoornaam6@mail.be",
-        "telefoon": [
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Voice",
-            "@value": "012 23 45 67"
-          }
-        ]
-      }
-    ]
+        "postcode": "3621",
+        "straatnaam": {
+          "@language": "nl",
+          "@value": "DALBROKSTRAAT"
+        },
+        "gemeentenaam": {
+          "@language": "nl",
+          "@value": "Panaken"
+        },
+        "huisnummer": "112",
+        "land": {
+          "@language": "nl",
+          "@value": "België"
+        }
+      },
+      "email": "naamvoornaam6@mail.be",
+      "telefoon": [
+        {
+          "@type": "http://www.w3.org/2006/vcard/ns#Voice",
+          "@value": "012 23 45 67"
+        }
+      ]
+    }
   }
 }

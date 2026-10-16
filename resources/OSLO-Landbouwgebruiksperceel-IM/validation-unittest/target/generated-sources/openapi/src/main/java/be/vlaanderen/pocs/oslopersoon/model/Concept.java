@@ -2,6 +2,7 @@ package be.vlaanderen.pocs.oslopersoon.model;
 
 import java.net.URI;
 import java.util.Objects;
+import be.vlaanderen.pocs.oslopersoon.model.ConceptVoorkeursnaam;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import java.net.URI;
@@ -21,7 +22,7 @@ import jakarta.annotation.Generated;
  */
 
 @Schema(name = "Concept", description = "Concept is een idee of code.")
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-10-15T14:56:46.547161501+02:00[Europe/Brussels]", comments = "Generator version: 7.20.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-10-16T11:39:17.103739945+02:00[Europe/Brussels]", comments = "Generator version: 7.20.0")
 public class Concept {
 
   private @Nullable URI atId;
@@ -30,7 +31,7 @@ public class Concept {
 
   private String code;
 
-  private @Nullable String voorkeursnaam;
+  private @Nullable ConceptVoorkeursnaam voorkeursnaam;
 
   public Concept() {
     super();
@@ -104,23 +105,23 @@ public class Concept {
     this.code = code;
   }
 
-  public Concept voorkeursnaam(@Nullable String voorkeursnaam) {
+  public Concept voorkeursnaam(@Nullable ConceptVoorkeursnaam voorkeursnaam) {
     this.voorkeursnaam = voorkeursnaam;
     return this;
   }
 
   /**
-   * De naam van het Concept.
+   * Get voorkeursnaam
    * @return voorkeursnaam
    */
-  
-  @Schema(name = "voorkeursnaam", description = "De naam van het Concept.", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
+  @Valid 
+  @Schema(name = "voorkeursnaam", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
   @JsonProperty("voorkeursnaam")
-  public @Nullable String getVoorkeursnaam() {
+  public @Nullable ConceptVoorkeursnaam getVoorkeursnaam() {
     return voorkeursnaam;
   }
 
-  public void setVoorkeursnaam(@Nullable String voorkeursnaam) {
+  public void setVoorkeursnaam(@Nullable ConceptVoorkeursnaam voorkeursnaam) {
     this.voorkeursnaam = voorkeursnaam;
   }
 

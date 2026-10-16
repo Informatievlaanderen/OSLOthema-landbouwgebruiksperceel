@@ -3,6 +3,7 @@ package be.vlaanderen.pocs.oslopersoon.model;
 import java.net.URI;
 import java.util.Objects;
 import be.vlaanderen.pocs.oslopersoon.model.Adresvoorstelling;
+import be.vlaanderen.pocs.oslopersoon.model.ContactpuntTelefoon;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import java.net.URI;
@@ -25,7 +26,7 @@ import jakarta.annotation.Generated;
  */
 
 @Schema(name = "Contactpunt", description = "Informatie zoals email, telefoon, adres die toelaat om iemand of iets te contacteren.")
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-10-15T14:56:46.547161501+02:00[Europe/Brussels]", comments = "Generator version: 7.20.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-10-16T11:39:17.103739945+02:00[Europe/Brussels]", comments = "Generator version: 7.20.0")
 public class Contactpunt {
 
   private @Nullable URI atId;
@@ -35,7 +36,7 @@ public class Contactpunt {
   private @Nullable String email;
 
   @Valid
-  private @Nullable List<String> telefoon;
+  private @Nullable List<@Valid ContactpuntTelefoon> telefoon;
 
   private @Nullable Adresvoorstelling adres;
 
@@ -110,12 +111,12 @@ public class Contactpunt {
     this.email = email;
   }
 
-  public Contactpunt telefoon(@Nullable List<String> telefoon) {
+  public Contactpunt telefoon(@Nullable List<@Valid ContactpuntTelefoon> telefoon) {
     this.telefoon = telefoon;
     return this;
   }
 
-  public Contactpunt addTelefoonItem(String telefoonItem) {
+  public Contactpunt addTelefoonItem(ContactpuntTelefoon telefoonItem) {
     if (this.telefoon == null) {
       this.telefoon = new ArrayList<>();
     }
@@ -127,14 +128,14 @@ public class Contactpunt {
    * Telefoonnummer waarop men kan bellen. Lijst van Literal items.
    * @return telefoon
    */
-  @Size(min = 1) 
+  @Valid @Size(min = 1) 
   @Schema(name = "telefoon", description = "Telefoonnummer waarop men kan bellen. Lijst van Literal items.", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
   @JsonProperty("telefoon")
-  public @Nullable List<String> getTelefoon() {
+  public @Nullable List<@Valid ContactpuntTelefoon> getTelefoon() {
     return telefoon;
   }
 
-  public void setTelefoon(@Nullable List<String> telefoon) {
+  public void setTelefoon(@Nullable List<@Valid ContactpuntTelefoon> telefoon) {
     this.telefoon = telefoon;
   }
 

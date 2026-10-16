@@ -58,38 +58,36 @@
         },
         "identificator": { "@value": "16579840243", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/INSZ" }
     },
-    "contactinfo": [
-      {
-        "@type": "Contactpunt",
-        "adres": {
-          "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "Broekstraat 5, 11123 DAAR"
-          },
-          "postcode": "11123",
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "BROEKSTRAAT"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "DAAR"
-          },
-          "huisnummer": "5",
-          "land": {
-            "@language": "nl",
-            "@value": "Nederland"
-          }
+    "contactinfo": {
+      "@type": "Contactpunt",
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "volledigAdres": {
+          "@language": "nl",
+          "@value": "Broekstraat 5, 11123 DAAR"
         },
-        "email": "Maria@hemel.nl",
-        "telefoon": [
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Voice",
-            "@value": "+21 45 78 89 4"
-          }
-        ]
-      }
-    ]
+        "postcode": "11123",
+        "straatnaam": {
+          "@language": "nl",
+          "@value": "BROEKSTRAAT"
+        },
+        "gemeentenaam": {
+          "@language": "nl",
+          "@value": "DAAR"
+        },
+        "huisnummer": "5",
+        "land": {
+          "@language": "nl",
+          "@value": "Nederland"
+        }
+      },
+      "email": "Maria@hemel.nl",
+      "telefoon": [
+        {
+          "@type": "http://www.w3.org/2006/vcard/ns#Voice",
+          "@value": "+21 45 78 89 4"
+        }
+      ]
+    }
   }
 }

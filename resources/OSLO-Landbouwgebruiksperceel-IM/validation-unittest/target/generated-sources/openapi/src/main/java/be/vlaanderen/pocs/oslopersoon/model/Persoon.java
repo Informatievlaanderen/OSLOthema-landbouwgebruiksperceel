@@ -31,7 +31,7 @@ import jakarta.annotation.Generated;
  */
 
 @Schema(name = "Persoon", description = "Natuurlijk persoon.")
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-10-15T14:56:46.547161501+02:00[Europe/Brussels]", comments = "Generator version: 7.20.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-10-16T11:39:17.103739945+02:00[Europe/Brussels]", comments = "Generator version: 7.20.0")
 public class Persoon implements LandbouwgebruiksperceelGebruiker, OrganisatieLidInner {
 
   private @Nullable URI atId;

@@ -3,6 +3,7 @@ package be.vlaanderen.pocs.oslopersoon.model;
 import java.net.URI;
 import java.util.Objects;
 import be.vlaanderen.pocs.oslopersoon.model.Contactpunt;
+import be.vlaanderen.pocs.oslopersoon.model.GeregistreerdeOrganisatieVoorkeursnaam;
 import be.vlaanderen.pocs.oslopersoon.model.Identificator;
 import be.vlaanderen.pocs.oslopersoon.model.LandbouwActiviteit;
 import be.vlaanderen.pocs.oslopersoon.model.OrganisatieLidInner;
@@ -36,7 +37,7 @@ import jakarta.annotation.Generated;
  */
 
 @Schema(name = "GeregistreerdeOrganisatie", description = "Organisatie met een juridisch statuut vastgelegd door registratie. Vergelijk met een FormeleOrganisatie waarbij dit statuut ook op een andere manier verkregen kan zijn.")
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-10-15T14:56:46.547161501+02:00[Europe/Brussels]", comments = "Generator version: 7.20.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-10-16T11:39:17.103739945+02:00[Europe/Brussels]", comments = "Generator version: 7.20.0")
 public class GeregistreerdeOrganisatie implements LandbouwgebruiksperceelGebruiker {
 
   private @Nullable URI atId;
@@ -52,13 +53,12 @@ public class GeregistreerdeOrganisatie implements LandbouwgebruiksperceelGebruik
 
   private @Nullable Rechtsvormtype rechtsvorm;
 
-  private @Nullable String voorkeursnaam;
+  private @Nullable GeregistreerdeOrganisatieVoorkeursnaam voorkeursnaam;
 
   @Valid
   private @Nullable List<@Valid OrganisatieType> type;
 
-  @Valid
-  private @Nullable List<@Valid Contactpunt> contactinfo;
+  private @Nullable Contactpunt contactinfo;
 
   @Valid
   private @Nullable List<@Valid LandbouwActiviteit> activiteit;
@@ -208,23 +208,23 @@ public class GeregistreerdeOrganisatie implements LandbouwgebruiksperceelGebruik
     this.rechtsvorm = rechtsvorm;
   }
 
-  public GeregistreerdeOrganisatie voorkeursnaam(@Nullable String voorkeursnaam) {
+  public GeregistreerdeOrganisatie voorkeursnaam(@Nullable GeregistreerdeOrganisatieVoorkeursnaam voorkeursnaam) {
     this.voorkeursnaam = voorkeursnaam;
     return this;
   }
 
   /**
-   * Naam waarmee de Organisatie bij voorkeur wordt aangeduid.
+   * Get voorkeursnaam
    * @return voorkeursnaam
    */
-  
-  @Schema(name = "voorkeursnaam", description = "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
+  @Valid 
+  @Schema(name = "voorkeursnaam", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
   @JsonProperty("voorkeursnaam")
-  public @Nullable String getVoorkeursnaam() {
+  public @Nullable GeregistreerdeOrganisatieVoorkeursnaam getVoorkeursnaam() {
     return voorkeursnaam;
   }
 
-  public void setVoorkeursnaam(@Nullable String voorkeursnaam) {
+  public void setVoorkeursnaam(@Nullable GeregistreerdeOrganisatieVoorkeursnaam voorkeursnaam) {
     this.voorkeursnaam = voorkeursnaam;
   }
 
@@ -256,31 +256,23 @@ public class GeregistreerdeOrganisatie implements LandbouwgebruiksperceelGebruik
     this.type = type;
   }
 
-  public GeregistreerdeOrganisatie contactinfo(@Nullable List<@Valid Contactpunt> contactinfo) {
+  public GeregistreerdeOrganisatie contactinfo(@Nullable Contactpunt contactinfo) {
     this.contactinfo = contactinfo;
     return this;
   }
 
-  public GeregistreerdeOrganisatie addContactinfoItem(Contactpunt contactinfoItem) {
-    if (this.contactinfo == null) {
-      this.contactinfo = new ArrayList<>();
-    }
-    this.contactinfo.add(contactinfoItem);
-    return this;
-  }
-
   /**
-   * Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren. Lijst van Contactpunt items.
+   * Get contactinfo
    * @return contactinfo
    */
-  @Valid @Size(min = 1) 
-  @Schema(name = "contactinfo", description = "Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren. Lijst van Contactpunt items.", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
+  @Valid 
+  @Schema(name = "contactinfo", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
   @JsonProperty("contactinfo")
-  public @Nullable List<@Valid Contactpunt> getContactinfo() {
+  public @Nullable Contactpunt getContactinfo() {
     return contactinfo;
   }
 
-  public void setContactinfo(@Nullable List<@Valid Contactpunt> contactinfo) {
+  public void setContactinfo(@Nullable Contactpunt contactinfo) {
     this.contactinfo = contactinfo;
   }
 

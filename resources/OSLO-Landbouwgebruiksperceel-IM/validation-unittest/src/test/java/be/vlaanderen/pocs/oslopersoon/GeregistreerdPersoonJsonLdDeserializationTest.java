@@ -34,7 +34,20 @@ class GeregistreerdPersoonJsonLdDeserializationTest
 
     @ParameterizedTest(name = "{0}")
     @ValueSource(strings = {
+            "json/geregistreerd_persoon_5.jsonld",
             "json/geregistreerd_persoon_6.jsonld",
+            "json/geregistreerd_persoon_7.jsonld",
+            "json/geregistreerd_persoon_8.jsonld",
+            "json/geregistreerd_persoon_9.jsonld",
+            "json/geregistreerde_organisatie_5.jsonld",
+            "json/geregistreerde_organisatie_6.jsonld",
+            "json/geregistreerde_organisatie_7.jsonld",
+            "json/geregistreerde_organisatie_8.jsonld",
+            "json/geregistreerde_organisatie_9_10.jsonld",
+            "json/organisatie_zonderidentificator_5.jsonld",
+            "json/organisatie_zonderidentificator_6.jsonld",
+            "json/persoon_zonderidentificator_5.jsonld",
+            "json/persoon_zonderidentificator_6.jsonld",
     })
     void shouldDeserializeAndReserializeJsonLd(String resourcePath) throws Exception {
         JsonNode inputJson;

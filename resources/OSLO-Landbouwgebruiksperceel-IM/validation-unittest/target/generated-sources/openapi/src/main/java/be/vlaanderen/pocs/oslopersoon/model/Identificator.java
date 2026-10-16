@@ -2,6 +2,7 @@ package be.vlaanderen.pocs.oslopersoon.model;
 
 import java.net.URI;
 import java.util.Objects;
+import be.vlaanderen.pocs.oslopersoon.model.IdentificatorIdentificator;
 import be.vlaanderen.pocs.oslopersoon.model.LandbouwgebruiksperceelGebruiker;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -22,14 +23,14 @@ import jakarta.annotation.Generated;
  */
 
 @Schema(name = "Identificator", description = "Informatie gebruikt om een object uniek te identificeren.")
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-10-15T14:56:46.547161501+02:00[Europe/Brussels]", comments = "Generator version: 7.20.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-10-16T11:39:17.103739945+02:00[Europe/Brussels]", comments = "Generator version: 7.20.0")
 public class Identificator {
 
   private @Nullable URI atId;
 
   private String atType;
 
-  private @Nullable String identificator;
+  private @Nullable IdentificatorIdentificator identificator;
 
   private @Nullable LandbouwgebruiksperceelGebruiker toegekendDoor;
 
@@ -84,23 +85,23 @@ public class Identificator {
     this.atType = atType;
   }
 
-  public Identificator identificator(@Nullable String identificator) {
+  public Identificator identificator(@Nullable IdentificatorIdentificator identificator) {
     this.identificator = identificator;
     return this;
   }
 
   /**
-   * String gebruikt om het object uniek te identificeren. Type van de string slaat op het identificatiesysteem (inclusief de versie ervan), de string zelf op de eigenlijke identificator.
+   * Get identificator
    * @return identificator
    */
-  
-  @Schema(name = "identificator", description = "String gebruikt om het object uniek te identificeren. Type van de string slaat op het identificatiesysteem (inclusief de versie ervan), de string zelf op de eigenlijke identificator.", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
+  @Valid 
+  @Schema(name = "identificator", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
   @JsonProperty("identificator")
-  public @Nullable String getIdentificator() {
+  public @Nullable IdentificatorIdentificator getIdentificator() {
     return identificator;
   }
 
-  public void setIdentificator(@Nullable String identificator) {
+  public void setIdentificator(@Nullable IdentificatorIdentificator identificator) {
     this.identificator = identificator;
   }
 

@@ -59,37 +59,35 @@
       },
       "identificator": { "@value": "16579840238", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/INSZ" }
     },
-    "contactinfo": [
-      {
-        "@type": "Contactpunt",
-        "adres": {
-          "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "Broekstraat 2, 1111 Nergens"
-          },
-          "postcode": "1111",
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "BROEKSTRAAT"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "Nergens"
-          },
-          "huisnummer": "2",
-          "land": {
-            "@language": "nl",
-            "@value": "België"
-          }
+    "contactinfo": {
+      "@type": "Contactpunt",
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "volledigAdres": {
+          "@language": "nl",
+          "@value": "Broekstraat 2, 1111 Nergens"
         },
-        "telefoon": [
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Voice",
-            "@value": "010 11 12 15"
-          }
-        ]
-      }
-    ]
+        "postcode": "1111",
+        "straatnaam": {
+          "@language": "nl",
+          "@value": "BROEKSTRAAT"
+        },
+        "gemeentenaam": {
+          "@language": "nl",
+          "@value": "Nergens"
+        },
+        "huisnummer": "2",
+        "land": {
+          "@language": "nl",
+          "@value": "België"
+        }
+      },
+      "telefoon": [
+        {
+          "@type": "http://www.w3.org/2006/vcard/ns#Voice",
+          "@value": "010 11 12 15"
+        }
+      ]
+    }
   }
 }
