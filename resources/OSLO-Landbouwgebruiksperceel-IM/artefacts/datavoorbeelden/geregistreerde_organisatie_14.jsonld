@@ -77,7 +77,7 @@
           "@language": "nl",
           "@value": "HAVENLAAN 88 bus 75, 1000 BRUSSEL"
         },
-        "postbus": "75",
+        "busnummer": "75",
         "postcode": "1000",
         "straatnaam": {
           "@language": "nl",

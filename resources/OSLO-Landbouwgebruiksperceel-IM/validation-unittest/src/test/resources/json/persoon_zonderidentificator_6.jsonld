@@ -49,7 +49,7 @@
           "@language": "nl",
           "@value": "ACHWEG 121 bus B, 4661 AZ ZUNDERT, NEDERLAND"
         },
-        "postbus": "B",
+        "busnummer": "B",
         "postcode": "4661",
         "straatnaam": {
           "@language": "nl",

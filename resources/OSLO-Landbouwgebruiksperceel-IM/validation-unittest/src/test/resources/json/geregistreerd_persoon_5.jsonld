@@ -42,6 +42,9 @@
       "Frans"
     ],
     "isOverleden": true,
+    "heeftOverlijden": {
+      "@type": "Overlijden"
+    },
     "registratie": {
       "@type": "Identificator",
       "toegekendDoor": {
