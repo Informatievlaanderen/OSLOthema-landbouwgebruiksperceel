@@ -69,33 +69,31 @@
       },
       "identificator": { "@value": "00015614774", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer" }
     },
-    "contactinfo": [
-      {
-        "@type": "Contactpunt",
-        "adres": {
-          "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "HAVENLAAN 88 bus 75, 1000 BRUSSEL"
-          },
-          "postbus": "75",
-          "postcode": "1000",
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "Havenlaan"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "Brussel"
-          },
-          "huisnummer": "88",
-          "land": {
-            "@language": "nl",
-            "@value": "België"
-          }
+    "contactinfo": {
+      "@type": "Contactpunt",
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "volledigAdres": {
+          "@language": "nl",
+          "@value": "HAVENLAAN 88 bus 75, 1000 BRUSSEL"
         },
-        "email": "anb@vlaanderen.be"
-      }
-    ]
+        "busnummer": "75",
+        "postcode": "1000",
+        "straatnaam": {
+          "@language": "nl",
+          "@value": "Havenlaan"
+        },
+        "gemeentenaam": {
+          "@language": "nl",
+          "@value": "Brussel"
+        },
+        "huisnummer": "88",
+        "land": {
+          "@language": "nl",
+          "@value": "België"
+        }
+      },
+      "email": "anb@vlaanderen.be"
+    }
   }
 }

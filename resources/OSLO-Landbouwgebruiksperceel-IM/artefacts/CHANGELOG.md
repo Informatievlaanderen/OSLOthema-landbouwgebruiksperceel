@@ -7,7 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### [0.2.0] - 2026-09-30
+### [0.3.0] - 2026-10-16
+
+### Fixed
+- Contactpunt label was verkeerd, dit moest Contactinfo zijn.
+- Cardinality contactinfo adjusted to 0..1 for all classes
+- Kardinaliteit van attribuut contactinfo geharmoniseerd naar 0..1 voor alle klassen van Agent.
+- Ontbrekende root tag toegevoegd voor `@context` generatie bij Swagger.
+- Velden SKOS:Concept kwamen niet door voor codelijsten, tijdelijke workaround tot Toolchain hier mee om kan.
+
+## [0.2.0] - 2026-09-30
 
 ### Changed
 - Envelop als root object in Swagger.
@@ -24,7 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Rechtstoestand verwijdert wegens geen gebruik.
 
-### [0.1.0] - 2026-08-04
+## [0.1.0] - 2026-08-04
 
 ### Added
 - Relaties isGeassocieerdMet en isLidVan/lid bij Organisatie om Personen en Organisaties te koppelen.

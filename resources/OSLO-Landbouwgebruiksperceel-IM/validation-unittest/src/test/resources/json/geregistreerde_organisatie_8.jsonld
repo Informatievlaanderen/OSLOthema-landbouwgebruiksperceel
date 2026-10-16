@@ -1,0 +1,150 @@
+{
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.2.0/context/landbouwgebruiksperceel.jsonld",
+  "@type": "Landbouwgebruiksperceel",
+  "identificator": {
+    "@type": "Identificator",
+    "toegekendDoor": {
+      "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
+      "@type": "GeregistreerdeOrganisatie",
+      "voorkeursnaam": {
+        "@language": "nl",
+        "@value": "Agentschap Landbouw en Zeevisserij"
+      },
+      "registratie": {
+        "@id": "_:registratie:OVO000082",
+        "@type": "Identificator",
+        "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+      }
+    },
+    "identificator": { "@value": "10260_1683973651", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/AGPAKEY" }
+  },
+  "gebruiker": {
+    "@type": "GeregistreerdeOrganisatie",
+    "voorkeursnaam": {
+      "@language": "nl",
+      "@value": "ZWAERT RUDY"
+    },
+    "lid": [
+      {
+        "@type": "GeregistreerdPersoon",
+        "achternaam": "zwaert",
+        "voornaam": [
+          "rudy"
+        ],
+        "registratie": {
+          "@type": "Identificator",
+          "toegekendDoor": {
+            "@id": "http://data.vlaanderen.be/id/organisatie/OVO008218",
+            "@type": "GeregistreerdeOrganisatie",
+            "voorkeursnaam": {
+              "@language": "nl",
+              "@value": "Kruispuntbank van de Sociale Zekerheid"
+            },
+            "registratie": {
+              "@id": "_:registratie:OVO008218",
+              "@type": "Identificator",
+              "identificator": { "@value": "OVO008218", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+            }
+          },
+          "identificator": { "@value": "16579840247", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/INSZ" }
+        }
+      }
+    ],
+    "activiteit": [
+      {
+        "@id": "https://data.vlaanderen.be/id/concept/LandbouwActiviteit/gerelateerd",
+        "@type": "LandbouwActiviteit",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Gerelateerde landbouwactiviteit"
+        },
+        "code": "gerelateerd"
+      }
+    ],
+    "status": [
+      {
+        "@id": "https://data.vlaanderen.be/id/concept/OrganisatieStatus/ST",
+        "@type": "OrganisatieStatus",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Stopgezet"
+        },
+        "code": "ST"
+      }
+    ],
+    "registratie": {
+      "@type": "Identificator",
+      "toegekendDoor": {
+        "@id": "http://data.vlaanderen.be/id/organisatie/OVO027341",
+        "@type": "GeregistreerdeOrganisatie",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Kruispuntbank van Ondernemingen"
+        },
+        "registratie": {
+          "@id": "_:registratie:OVO027341",
+          "@type": "Identificator",
+          "identificator": { "@value": "OVO027341", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+        }
+      },
+      "identificator": { "@value": "761240261", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Ondernemingsnummer" }
+    },
+    "identificator": {
+      "@type": "Identificator",
+      "toegekendDoor": {
+        "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
+        "@type": "GeregistreerdeOrganisatie",
+        "voorkeursnaam": {
+          "@language": "nl",
+          "@value": "Agentschap Landbouw en Zeevisserij"
+        },
+        "registratie": {
+          "@id": "_:registratie:OVO000082",
+          "@type": "Identificator",
+          "identificator": { "@value": "OVO000082", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/OVOCode" }
+        }
+      },
+      "identificator": { "@value": "10301295", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer" }
+    },
+    "rechtspersoonlijkheid": {
+      "@id": "https://data.vlaanderen.be/id/concept/Rechtspersoonlijkheidtype/1",
+      "@type": "Rechtspersoonlijkheidtype",
+      "voorkeursnaam": {
+        "@language": "nl",
+        "@value": "Natuurlijk Persoon"
+      },
+      "code": "1"
+    },
+    "contactinfo": {
+      "@type": "Contactpunt",
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "volledigAdres": {
+          "@language": "nl",
+          "@value": "Lokstraat 10, 1234 Overal"
+        },
+        "postcode": "1234",
+        "straatnaam": {
+          "@language": "nl",
+          "@value": "Lokstraat"
+        },
+        "gemeentenaam": {
+          "@language": "nl",
+          "@value": "Overal"
+        },
+        "huisnummer": "10",
+        "land": {
+          "@language": "nl",
+          "@value": "België"
+        }
+      },
+      "email": "naamvoornaam4@mail.be",
+      "telefoon": [
+        {
+          "@type": "http://www.w3.org/2006/vcard/ns#Voice",
+          "@value": "052 35 67 89"
+        }
+      ]
+    }
+  }
+}

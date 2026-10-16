@@ -93,41 +93,39 @@
       },
       "code": "030"
     },
-    "contactinfo": [
-      {
-        "@type": "Contactpunt",
-        "adres": {
-          "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "VULSELSEWEG 17, 5531 PE PADEL, NEDERLAND"
-          },
-          "postcode": "5531",
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "Vulselseweg"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "Padel"
-          },
-          "huisnummer": "17",
-          "land": {
-            "@language": "nl",
-            "@value": "Nederland"
-          }
+    "contactinfo": {
+      "@type": "Contactpunt",
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "volledigAdres": {
+          "@language": "nl",
+          "@value": "VULSELSEWEG 17, 5531 PE PADEL, NEDERLAND"
         },
-        "telefoon": [
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Voice",
-            "@value": "+37 89 12 45 78 10"
-          },
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Cell",
-            "@value": "+34 65 13 97 53 3"
-          }
-        ]
-      }
-    ]
+        "postcode": "5531",
+        "straatnaam": {
+          "@language": "nl",
+          "@value": "Vulselseweg"
+        },
+        "gemeentenaam": {
+          "@language": "nl",
+          "@value": "Padel"
+        },
+        "huisnummer": "17",
+        "land": {
+          "@language": "nl",
+          "@value": "Nederland"
+        }
+      },
+      "telefoon": [
+        {
+          "@type": "http://www.w3.org/2006/vcard/ns#Voice",
+          "@value": "+37 89 12 45 78 10"
+        },
+        {
+          "@type": "http://www.w3.org/2006/vcard/ns#Cell",
+          "@value": "+34 65 13 97 53 3"
+        }
+      ]
+    }
   }
 }
