@@ -1,9 +1,9 @@
 {
-  "openapi": "3.0.4",
+  "openapi": "3.1.0",
   "info": {
-    "title": "LV landbouw.uitbaters REST",
+    "title": "LV landbouw.gebruikers REST",
     "description": "LV OSLO-conforme REST API voor informatie over landbouwgebruikspercelen",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "servers": [
     {
@@ -12,10 +12,10 @@
     }
   ],
   "paths": {
-    "/uitbaters/{agpakey}": {
+    "/v1/gebruikers/{agpakey}": {
       "get": {
-        "summary": "Vraag de uitbater op van een landbouwgebruiksperceel.",
-        "description": "Vraag de informatie over de uitbater op van een landbouwgebruikersperceel op basis van de AGPAKEY die de uitbating uniek identificeert volgens de uitbatingsperiode, uitbater, en landbouwgebruiksperceel.",
+        "summary": "Vraag de gebruiker op van een landbouwgebruiksperceel.",
+        "description": "Vraag de informatie over de gebruiker op van een landbouwgebruikersperceel op basis van de AGPAKEY die de uitbating uniek identificeert volgens de gebruiksperiode, gebruiker, en landbouwgebruiksperceel.",
         "operationId": "LandbouwgebruiksperceelGET",
         "parameters": [
           {
