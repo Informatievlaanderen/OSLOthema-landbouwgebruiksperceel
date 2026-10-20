@@ -1,5 +1,5 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.2.0/context/landbouwgebruiksperceel.jsonld",
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.3.0/context/landbouwgebruiksperceel.jsonld",
   "@type": "Landbouwgebruiksperceel",
   "identificator": {
     "@type": "Identificator",
@@ -98,38 +98,36 @@
       },
       "code": "610"
     },
-    "contactinfo": [
-      {
-        "@type": "Contactpunt",
-        "adres": {
-          "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "Sokstraat 10, 1234 Overal"
-          },
-          "postcode": "1234",
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "Sokstraat"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "Overal"
-          },
-          "huisnummer": "10",
-          "land": {
-            "@language": "nl",
-            "@value": "België"
-          }
+    "contactinfo": {
+      "@type": "Contactinfo",
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "volledigAdres": {
+          "@language": "nl",
+          "@value": "Sokstraat 10, 1234 Overal"
         },
-        "email": "naamvoornaam2@mail.be",
-        "telefoon": [
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Cell",
-            "@value": "0457 78 91 23"
-          }
-        ]
-      }
-    ]
+        "postcode": "1234",
+        "straatnaam": {
+          "@language": "nl",
+          "@value": "Sokstraat"
+        },
+        "gemeentenaam": {
+          "@language": "nl",
+          "@value": "Overal"
+        },
+        "huisnummer": "10",
+        "land": {
+          "@language": "nl",
+          "@value": "België"
+        }
+      },
+      "email": "naamvoornaam2@mail.be",
+      "telefoon": [
+        {
+          "@type": "http://www.w3.org/2006/vcard/ns#Cell",
+          "@value": "0457 78 91 23"
+        }
+      ]
+    }
   }
 }

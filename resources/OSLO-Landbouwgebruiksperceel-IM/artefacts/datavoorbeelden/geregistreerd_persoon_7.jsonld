@@ -1,5 +1,5 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.2.0/context/landbouwgebruiksperceel.jsonld",
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.3.0/context/landbouwgebruiksperceel.jsonld",
   "@type": "Landbouwgebruiksperceel",
   "identificator": {
     "@type": "Identificator",
@@ -58,37 +58,35 @@
       },
       "identificator": { "@value": "16579840240", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/INSZ" }
     },
-    "contactinfo": [
-      {
-        "@type": "Contactpunt",
-        "adres": {
-          "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "Broekstraat 3, 1111 Nergens"
-          },
-          "postcode": "1111",
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "BROEKSTRAAT"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "Nergens"
-          },
-          "huisnummer": "3",
-          "land": {
-            "@language": "nl",
-            "@value": "België"
-          }
+    "contactinfo": {
+      "@type": "Contactinfo",
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "volledigAdres": {
+          "@language": "nl",
+          "@value": "Broekstraat 3, 1111 Nergens"
         },
-        "telefoon": [
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Voice",
-            "@value": "010 11 12 17"
-          }
-        ]
-      }
-    ]
+        "postcode": "1111",
+        "straatnaam": {
+          "@language": "nl",
+          "@value": "BROEKSTRAAT"
+        },
+        "gemeentenaam": {
+          "@language": "nl",
+          "@value": "Nergens"
+        },
+        "huisnummer": "3",
+        "land": {
+          "@language": "nl",
+          "@value": "België"
+        }
+      },
+      "telefoon": [
+        {
+          "@type": "http://www.w3.org/2006/vcard/ns#Voice",
+          "@value": "010 11 12 17"
+        }
+      ]
+    }
   }
 }

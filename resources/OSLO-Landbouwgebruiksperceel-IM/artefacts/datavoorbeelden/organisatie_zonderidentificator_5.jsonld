@@ -1,11 +1,11 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.2.0/context/landbouwgebruiksperceel.jsonld",
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.3.0/context/landbouwgebruiksperceel.jsonld",
   "@type": "Landbouwgebruiksperceel",
   "identificator": {
     "@type": "Identificator",
     "toegekendDoor": {
       "@id": "http://data.vlaanderen.be/id/organisatie/OVO000082",
-      "@type": "Organisatie",
+      "@type": "GeregistreerdeOrganisatie",
       "voorkeursnaam": {
         "@language": "nl",
         "@value": "Agentschap Landbouw en Zeevisserij"
@@ -44,7 +44,7 @@
     "type": [
       {
         "@id": "https://data.vlaanderen.be/id/concept/Rechtsvormtype/610",
-        "@type": "Concept",
+        "@type": "Rechtsvormtype",
         "voorkeursnaam": {
           "@language": "nl",
           "@value": "Besloten Vennootschap"
@@ -52,37 +52,35 @@
         "code": "610"
       }
     ],
-    "contactinfo": [
-      {
-        "@type": "Contactpunt",
-        "adres": {
-          "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "PEERS 23, 5504 RG HOVEN, NEDERLAND"
-          },
-          "postcode": "5504",
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "Peers"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "RG Hoven"
-          },
-          "huisnummer": "23",
-          "land": {
-            "@language": "nl",
-            "@value": "Nederland"
-          }
+    "contactinfo": {
+      "@type": "Contactinfo",
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "volledigAdres": {
+          "@language": "nl",
+          "@value": "PEERS 23, 5504 RG HOVEN, NEDERLAND"
         },
-        "telefoon": [
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Cell",
-            "@value": "37256989"
-          }
-        ]
-      }
-    ]
+        "postcode": "5504",
+        "straatnaam": {
+          "@language": "nl",
+          "@value": "Peers"
+        },
+        "gemeentenaam": {
+          "@language": "nl",
+          "@value": "RG Hoven"
+        },
+        "huisnummer": "23",
+        "land": {
+          "@language": "nl",
+          "@value": "Nederland"
+        }
+      },
+      "telefoon": [
+        {
+          "@type": "http://www.w3.org/2006/vcard/ns#Cell",
+          "@value": "37256989"
+        }
+      ]
+    }
   }
 }

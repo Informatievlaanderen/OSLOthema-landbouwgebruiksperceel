@@ -1,5 +1,5 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.2.0/context/landbouwgebruiksperceel.jsonld",
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.3.0/context/landbouwgebruiksperceel.jsonld",
   "@type": "Landbouwgebruiksperceel",
   "identificator":
   {
@@ -99,44 +99,36 @@
       },
       "code": "721"
     },
-    "contactinfo": [
-      {
-        "@type": "Contactpunt",
-        "adres": {
-          "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "Mokstraat 10, 1234 Overal"
-          },
-          "postcode": {
-            "@value": "1234"
-          },
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "Mokstraat"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "Overal"
-          },
-          "huisnummer": {
-            "@value": "10"
-          },
-          "land": {
-            "@language": "nl",
-            "@value": "België"
-          }
+    "contactinfo": {
+      "@type": "Contactinfo",
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "volledigAdres": {
+          "@language": "nl",
+          "@value": "Mokstraat 10, 1234 Overal"
         },
-        "email": {
-          "@value": "naamvoornaam3@mail.be"
+        "postcode": "1234",
+        "straatnaam": {
+          "@language": "nl",
+          "@value": "Mokstraat"
         },
-        "telefoon": [
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Cell",
-            "@value": "0458 78 91 23"
-          }
-        ]
-      }
-    ]
+        "gemeentenaam": {
+          "@language": "nl",
+          "@value": "Overal"
+        },
+        "huisnummer": "10",
+        "land": {
+          "@language": "nl",
+          "@value": "België"
+        }
+      },
+      "email": "naamvoornaam3@mail.be",
+      "telefoon": [
+        {
+          "@type": "http://www.w3.org/2006/vcard/ns#Cell",
+          "@value": "0458 78 91 23"
+        }
+      ]
+    }
   }
 }

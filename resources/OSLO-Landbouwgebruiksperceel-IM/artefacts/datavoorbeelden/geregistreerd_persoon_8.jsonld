@@ -1,5 +1,5 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.2.0/context/landbouwgebruiksperceel.jsonld",
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.3.0/context/landbouwgebruiksperceel.jsonld",
   "@type": "Landbouwgebruiksperceel",
   "identificator": {
     "@type": "Identificator",
@@ -52,42 +52,40 @@
       },
       "identificator": { "@value": "16579840241", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/INSZ" }
     },
-    "contactinfo": [
-      {
-        "@type": "Contactpunt",
-        "adres": {
-          "@type": "Adresvoorstelling",
-          "volledigAdres": {
-            "@language": "nl",
-            "@value": "Broekstraat 4, 1111 Nergens"
-          },
-          "postcode": "1111",
-          "straatnaam": {
-            "@language": "nl",
-            "@value": "BROEKSTRAAT"
-          },
-          "gemeentenaam": {
-            "@language": "nl",
-            "@value": "Nergens"
-          },
-          "huisnummer": "4",
-          "land": {
-            "@language": "nl",
-            "@value": "Nederland"
-          }
+    "contactinfo": {
+      "@type": "Contactinfo",
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "volledigAdres": {
+          "@language": "nl",
+          "@value": "Broekstraat 4, 1111 Nergens"
         },
-        "email": "Springschans@mail.be",
-        "telefoon": [
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Voice",
-            "@value": "+21 45 78 89 3"
-          },
-          {
-            "@type": "http://www.w3.org/2006/vcard/ns#Cell",
-            "@value": "+21 31 54 97 2"
-          }
-        ]
-      }
-    ]
+        "postcode": "1111",
+        "straatnaam": {
+          "@language": "nl",
+          "@value": "BROEKSTRAAT"
+        },
+        "gemeentenaam": {
+          "@language": "nl",
+          "@value": "Nergens"
+        },
+        "huisnummer": "4",
+        "land": {
+          "@language": "nl",
+          "@value": "Nederland"
+        }
+      },
+      "email": "Springschans@mail.be",
+      "telefoon": [
+        {
+          "@type": "http://www.w3.org/2006/vcard/ns#Voice",
+          "@value": "+21 45 78 89 3"
+        },
+        {
+          "@type": "http://www.w3.org/2006/vcard/ns#Cell",
+          "@value": "+21 31 54 97 2"
+        }
+      ]
+    }
   }
 }
