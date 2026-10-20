@@ -711,12 +711,12 @@
         ]
       },
       "OrganisatieType.code": {
-        "title": "Concept.code",
+        "title": "OrganisatieType.code",
         "description": "De waarde van de code van het OrganisatieType.",
         "type": "string"
       },
       "OrganisatieType.voorkeursnaam": {
-        "title": "Concept.voorkeursnaam",
+        "title": "OrganisatieType.voorkeursnaam",
         "description": "De naam van het OrganisatieType.",
         "type": "object",
         "properties": {

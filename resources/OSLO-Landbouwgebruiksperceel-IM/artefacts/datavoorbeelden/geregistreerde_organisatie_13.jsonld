@@ -1,5 +1,5 @@
 {
-  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.2.0/context/landbouwgebruiksperceel.jsonld",
+  "@context": "https://implementatie.data.vlaanderen.be/doc/implementatiemodel/lv/landbouwgebruiksperceel/v0.3.0/context/landbouwgebruiksperceel.jsonld",
   "@type": "Landbouwgebruiksperceel",
   "identificator": {
     "@type": "Identificator",
@@ -70,7 +70,7 @@
       "identificator": { "@value": "00038102610", "@type": "https://data.vlaanderen.be/id/concept/Identificatortype/Klantnummer" }
     },
     "contactinfo": {
-      "@type": "Contactpunt",
+      "@type": "Contactinfo",
       "adres": {
         "@type": "Adresvoorstelling",
         "volledigAdres": {
